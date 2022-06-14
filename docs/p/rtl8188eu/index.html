@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Realtek rtl8188eu wireless Lan USB Network Adapter'><title>Rtl8188eu</title>
+
+<link rel='canonical' href='https://tsinling.org/p/rtl8188eu/'>
+
+<link rel="stylesheet" href="/scss/style.min.fe253589db5a54c99fe6b16bfbaf0243d856d34f8c07f3534613b39ed043b738.css"><meta property='og:title' content='Rtl8188eu'>
+<meta property='og:description' content='Realtek rtl8188eu wireless Lan USB Network Adapter'>
+<meta property='og:url' content='https://tsinling.org/p/rtl8188eu/'>
+<meta property='og:site_name' content='bob&#39;s rabbit hole'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='wlan' /><meta property='article:tag' content='wifi' /><meta property='article:tag' content='iw' /><meta property='article:published_time' content='2022-05-25T15:49:34&#43;08:00'/><meta property='article:modified_time' content='2022-05-25T15:49:34&#43;08:00'/>
+<meta name="twitter:title" content="Rtl8188eu">
+<meta name="twitter:description" content="Realtek rtl8188eu wireless Lan USB Network Adapter">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_huda2458f72ce188392d75c5d51cd8e24e_373_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🐰</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">bob&#39;s rabbit hole</a></h1>
+            <h2 class="site-description">🌞👷🏻‍♂️💻🌙</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/bob1118'
+                        target="_blank"
+                        title="GitHub"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+                <li id="i18n-switch">  
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                    <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
+                        
+                            <option value="https://tsinling.org/en/" >English</option>
+                        
+                            <option value="https://tsinling.org/" selected>中文简体</option>
+                        
+                    </select>
+                </li>
+            
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>暗色模式</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/pub/" >
+                pub
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/rtl8188eu/">Rtl8188eu</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Realtek rtl8188eu wireless Lan USB Network Adapter
+        </h3>
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2022-05-25 15:49</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 4 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="realtek-rtl8188eu">Realtek rtl8188eu</h1>
+<p>在抽屉翻出来个十年前的USB无线网卡，怼到windows计算机的usb口上，直接使用即可（windows10带8188eu驱动程序）。
+切换一下系统到debian，默认是不能驱动的。于是到realtek官方网站看看有没有新的驱动，翻遍了网站也没找到下载链接。</p>
+<h2 id="debian">Debian</h2>
+<p>在debian环境下，realtek的驱动和固件在non-free里面。
+打开sources.list，在main后面加入non-free search一下 rtl8188eu(源里面需支持non-free，否则要切换带nong-free的安装源)。<br>
+安装驱动firmware-realtek，ip link查看网卡，显示wlx0c826830b763网卡。<br>
+安装wpasupplicant，在wlx0c826830b763连接到SSID时需要wpa辅助wpa key协商。<br>
+打开/etc/network/interfaces，为wlx0c826830b763网卡添加参数。<br>
+ifup wlx0c826830b763，连ssid，获取ip完成联网。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> /etc/apt/sources.list
+</span></span><span class="line"><span class="cl">deb https://mirrors.bfsu.edu.cn/debian/ bullseye main contrib non-free
+</span></span><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">apt-get update <span class="o">&amp;&amp;</span> apt-cache search rtl8188eu
+</span></span><span class="line"><span class="cl">firmware-realtek - Binary firmware <span class="k">for</span> Realtek wired/wifi/BT adapters
+</span></span><span class="line"><span class="cl">apt-get -y install firmware-realtek
+</span></span><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">ip link
+</span></span><span class="line"><span class="cl">1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu <span class="m">65536</span> qdisc noqueue state UNKNOWN mode DEFAULT group default qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+</span></span><span class="line"><span class="cl">2: wlx0c826830b763: &lt;BROADCAST,MULTICAST&gt; mtu <span class="m">2312</span> qdisc noop state DOWN mode DEFAULT group default qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">    link/ether 0c:82:68:30:b7:63 brd ff:ff:ff:ff:ff:ff
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">apt-get install wpasupplicant
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cat /etc/network/interfaces
+</span></span><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl">auto  wlx0c826830b763
+</span></span><span class="line"><span class="cl">iface wlx0c826830b763 inet dhcp
+</span></span><span class="line"><span class="cl">wpa-ssid myssid
+</span></span><span class="line"><span class="cl">wpa-psk  mypswd
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">ifup wlx0c826830b763
+</span></span><span class="line"><span class="cl">...
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="wireless-modes">wireless modes</h2>
+<h3 id="ap">AP</h3>
+<p>AP(AccessPoint infrastructure mode)，我们常用的热点就可以叫ap。</p>
+<h3 id="station">Station</h3>
+<p>Station连接到AP，成为WIFI网络的一部分。我们常用的手机、计算机、等终端。</p>
+<h3 id="monitor">Monitor</h3>
+<p>监听模式，只进不出，用来分析网络状况。</p>
+<h3 id="ad-hocibss">Ad-Hoc（IBSS）</h3>
+<p>IBSS(Independent Basic Service)，点对点模式。</p>
+<h3 id="wds">WDS</h3>
+<p>Wireless Distribution System，有无线桥接和无线中继两种。</p>
+<h3 id="mesh">mesh</h3>
+<p>多跳无线网格，mesh网络是一种基于多跳路由和对等网络的技术。</p>
+<h2 id="iw">iw</h2>
+<p>iw是管理802.11设备的命令行工具，支持被添加进内核的的驱动程序管理和配置。</p>
+<p>iw list 列出所有的wireless设备的参数。<br>
+iw dev wlx0c826830b763 scan 扫描AP。<br>
+iw dev wlx0c826830b763 link 获取链路状态。<br>
+iw wlx0c826830b763 connect myssid 连接到myssid。<br>
+&hellip;</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">apt-get update <span class="o">&amp;&amp;</span> apt-get install iw
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">iw list
+</span></span><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">iw dev
+</span></span><span class="line"><span class="cl">        Interface wlx0c826830b763
+</span></span><span class="line"><span class="cl">                ifindex <span class="m">2</span>
+</span></span><span class="line"><span class="cl">                wdev 0x200000001
+</span></span><span class="line"><span class="cl">                addr 0c:82:68:30:b7:63
+</span></span><span class="line"><span class="cl">                ssid hello
+</span></span><span class="line"><span class="cl">                <span class="nb">type</span> managed
+</span></span><span class="line"><span class="cl">                txpower 13.00 dBm
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">iw dev wlx0c826830b763 link
+</span></span><span class="line"><span class="cl">Connected to c0:bc:9a:15:d3:50 <span class="o">(</span>on wlx0c826830b763<span class="o">)</span>
+</span></span><span class="line"><span class="cl">        SSID: hello
+</span></span><span class="line"><span class="cl">        freq: <span class="m">2422</span>
+</span></span><span class="line"><span class="cl">        signal: -82 dBm
+</span></span><span class="line"><span class="cl">        tx bitrate: 65.0 MBit/s
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">...
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="aircrack-ng">aircrack-ng</h2>
+<p>aircrack-ng是无线网络的安全套件包。<br>
+主要致力于以下四个领域。</p>
+<ol>
+<li>监控，数据包捕获、导出、分析。</li>
+<li>渗透，数据包注入，取消身份验证，虚拟接入点。</li>
+<li>测试，网卡和驱动功能的测试。</li>
+<li>破解，WEP和WPA PSK（WPA1和WPA2）</li>
+</ol>
+<h3 id="开始前">开始前</h3>
+<p>在使用aircrack-ng套件之前需要检查无线网卡的芯片组是否兼容。<br>
+检查了一下rtl8188eu在kernel.org中仅能做为station，不支持ap、ibss、mesh、monitor。</p>
+<p><a class="link" href="https://wireless.wiki.kernel.org/en/users/drivers"  target="_blank" rel="noopener"
+    >https://wireless.wiki.kernel.org/en/users/drivers</a><br>
+<a class="link" href="http://linux-wless.passys.nl/"  target="_blank" rel="noopener"
+    >http://linux-wless.passys.nl/</a></p>
+<h3 id="新的驱动">新的驱动</h3>
+<p>linux firmware 中rtl8188eu就是个普通的上网卡，其他方式是不可行的。<br>
+在aircrack-ng上翻了翻，找到了支持mesh、monitor和frame injiection的新驱动<a class="link" href="https://github.com/aircrack-ng/rtl8188eus"  target="_blank" rel="noopener"
+    >https://github.com/aircrack-ng/rtl8188eus</a>。<br>
+按照README一路安装驱动程序，注意这里的仅仅是驱动程序，固件还是使用前面non-free里面的bin文件。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">apt-get update <span class="o">&amp;&amp;</span> apt-get upgrade <span class="o">&amp;&amp;</span> apt-get dist-upgrade
+</span></span><span class="line"><span class="cl">apt-get install linux-headers-<span class="k">$(</span>uname -r<span class="k">)</span>
+</span></span><span class="line"><span class="cl">apt get install git build-essential libelf-dev dkms bc 
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s1">&#39;blacklist r8188eu&#39;</span><span class="p">|</span>sudo tee -a <span class="s1">&#39;/etc/modprobe.d/realtek.conf&#39;</span>
+</span></span><span class="line"><span class="cl">rmmod r8188eu.ko
+</span></span><span class="line"><span class="cl">reboot
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> usr/src
+</span></span><span class="line"><span class="cl">git clone https://github.com/aircrack-ng/rtl8188eus.git
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> rtl8188eus <span class="o">&amp;&amp;</span> make <span class="o">&amp;&amp;</span> make install
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">lsmod<span class="p">|</span>grep <span class="m">8188</span>
+</span></span><span class="line"><span class="cl">8188eu               <span class="m">1249280</span>  <span class="m">0</span>
+</span></span><span class="line"><span class="cl">cfg80211              <span class="m">970752</span>  <span class="m">1</span> 8188eu
+</span></span><span class="line"><span class="cl">usbcore               <span class="m">323584</span>  <span class="m">5</span> ehci_pci,usbhid,8188eu,ehci_hcd,uhci_hcd
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">ip link
+</span></span><span class="line"><span class="cl">1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu <span class="m">65536</span> qdisc noqueue state UNKNOWN mode DEFAULT group default qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+</span></span><span class="line"><span class="cl">2: wlx0c826830b763: &lt;BROADCAST,MULTICAST&gt; mtu <span class="m">2312</span> qdisc noop state DOWN mode DEFAULT group default qlen <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">    link/ether 0c:82:68:30:b7:63 brd ff:ff:ff:ff:ff:ff
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">iw dev 
+</span></span><span class="line"><span class="cl">phy#0
+</span></span><span class="line"><span class="cl">        Interface wlx0c826830b763
+</span></span><span class="line"><span class="cl">                ifindex <span class="m">2</span>
+</span></span><span class="line"><span class="cl">                wdev 0x1
+</span></span><span class="line"><span class="cl">                addr 0c:82:68:30:b7:63
+</span></span><span class="line"><span class="cl">                <span class="nb">type</span> managed
+</span></span><span class="line"><span class="cl">                txpower 13.00 dBm
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">ifup wlx0c826830b763
+</span></span><span class="line"><span class="cl">Internet Systems Consortium DHCP Client 4.4.1
+</span></span><span class="line"><span class="cl">Copyright 2004-2018 Internet Systems Consortium.
+</span></span><span class="line"><span class="cl">All rights reserved.
+</span></span><span class="line"><span class="cl">For info, please visit https://www.isc.org/software/dhcp/
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Listening on LPF/wlx0c826830b763/0c:82:68:30:b7:63
+</span></span><span class="line"><span class="cl">Sending on   LPF/wlx0c826830b763/0c:82:68:30:b7:63
+</span></span><span class="line"><span class="cl">Sending on   Socket/fallback
+</span></span><span class="line"><span class="cl">DHCPDISCOVER on wlx0c826830b763 to 255.255.255.255 port <span class="m">67</span> interval <span class="m">6</span>
+</span></span><span class="line"><span class="cl">DHCPDISCOVER on wlx0c826830b763 to 255.255.255.255 port <span class="m">67</span> interval <span class="m">6</span>
+</span></span><span class="line"><span class="cl">DHCPOFFER of 192.168.1.221 from 192.168.1.1
+</span></span><span class="line"><span class="cl">DHCPREQUEST <span class="k">for</span> 192.168.1.221 on wlx0c826830b763 to 255.255.255.255 port <span class="m">67</span>
+</span></span><span class="line"><span class="cl">DHCPACK of 192.168.1.221 from 192.168.1.1
+</span></span><span class="line"><span class="cl">bound to 192.168.1.221 -- renewal in <span class="m">1407</span> seconds.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>网卡做为statsion可以正常上网了。新驱动支持其他几种模式，我们下来安装aircrack-ng来看看。</p>
+<h3 id="安装">安装</h3>
+<p>aircrack-ng可以编译安装也可以下安装包。<br>
+<a class="link" href="https://github.com/aircrack-ng/aircrack-ng.git"  target="_blank" rel="noopener"
+    >https://github.com/aircrack-ng/aircrack-ng.git</a><br>
+<a class="link" href="https://packagecloud.io/aircrack-ng/release"  target="_blank" rel="noopener"
+    >https://packagecloud.io/aircrack-ng/release</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">wget --content-disposition https://packagecloud.io/aircrack-ng/release/packages/any/any/aircrack-ng_1.7-1_amd64.deb/download.deb
+</span></span><span class="line"><span class="cl">apt-get install wireless-tools
+</span></span><span class="line"><span class="cl">dpkg -i aircrack-ng_1.7-1_amd64.deb
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="监控">监控</h3>
+<p>断开刚才的station连接，设置网卡处于monitor模式，扫描周边网络。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">airmon-ng check <span class="nb">kill</span>
+</span></span><span class="line"><span class="cl">ip link <span class="nb">set</span> wlx0c826830b763 down
+</span></span><span class="line"><span class="cl">iw dev wlx0c826830b763 <span class="nb">set</span> <span class="nb">type</span> monitor
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">iw dev
+</span></span><span class="line"><span class="cl">phy#0
+</span></span><span class="line"><span class="cl">        Interface wlx0c826830b763
+</span></span><span class="line"><span class="cl">                ifindex <span class="m">2</span>
+</span></span><span class="line"><span class="cl">                wdev 0x100000001
+</span></span><span class="line"><span class="cl">                addr 0c:82:68:30:b7:63
+</span></span><span class="line"><span class="cl">                <span class="nb">type</span> monitor
+</span></span><span class="line"><span class="cl">                txpower 13.00 dBm
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">airodump-ng wlx0c826830b763
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/wlan/">wlan</a>
+        
+            <a href="/tags/wifi/">wifi</a>
+        
+            <a href="/tags/iw/">iw</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/vscode-remote-ssh/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Vscode Remote Ssh</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/postgresql-how-to/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Postgresql How To</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/mac-port-8021/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Mac Port 8021</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/macbook-pro-2021/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Macbook Pro 2021</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/vmware-network/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Vmware Network</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2017 - 
+        
+        2022 bob&#39;s rabbit hole
+    </section>
+    
+    <section class="powerby">
+        
+            <a href ="http://beian.miit.gov.cn/" target="_blank">陕ICP备14012495号-1</a><img src="https://www.12389.gov.cn/images/5692312.png"><a href ="http://www.beian.gov.cn/portal/registerSystemInfo" target="_blank">陕公安备61012402000103号</a> <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.12.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#debian">Debian</a></li>
+    <li><a href="#wireless-modes">wireless modes</a>
+      <ol>
+        <li><a href="#ap">AP</a></li>
+        <li><a href="#station">Station</a></li>
+        <li><a href="#monitor">Monitor</a></li>
+        <li><a href="#ad-hocibss">Ad-Hoc（IBSS）</a></li>
+        <li><a href="#wds">WDS</a></li>
+        <li><a href="#mesh">mesh</a></li>
+      </ol>
+    </li>
+    <li><a href="#iw">iw</a></li>
+    <li><a href="#aircrack-ng">aircrack-ng</a>
+      <ol>
+        <li><a href="#开始前">开始前</a></li>
+        <li><a href="#新的驱动">新的驱动</a></li>
+        <li><a href="#安装">安装</a></li>
+        <li><a href="#监控">监控</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

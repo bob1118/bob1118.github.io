@@ -1,7 +1,13 @@
 # Uncomment this file to enable multilanguage site support
 
-#[en]
-#languageName = "English"
-#languagedirection = "ltr"
-#title = "Example Site"
-#weight = 1
+[en]
+languageName = "English"
+languagedirection = "ltr"
+title = "Example Site"
+weight = 1
+
+[zh-cn]
+languageName = "中文简体"
+languagedirection ="ltr"
+title = "bob's rabbit hole"
+weight = 2

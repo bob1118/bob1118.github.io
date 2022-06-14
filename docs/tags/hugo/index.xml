@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>hugo on bob&#39;s rabbit hole</title>
+        <link>https://tsinling.org/tags/hugo/</link>
+        <description>Recent content in hugo on bob&#39;s rabbit hole</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Tue, 22 Sep 2020 13:27:37 +0800</lastBuildDate><atom:link href="https://tsinling.org/tags/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Install Hugo With Extended</title>
+        <link>https://tsinling.org/p/install-hugo-with-extended/</link>
+        <pubDate>Tue, 22 Sep 2020 13:27:37 +0800</pubDate>
+        
+        <guid>https://tsinling.org/p/install-hugo-with-extended/</guid>
+        <description>&lt;h1 id=&#34;hugo&#34;&gt;hugo&lt;/h1&gt;
+&lt;p&gt;hugo 在windows X64平台支持Sass/SCCS。&lt;/p&gt;
+&lt;h2 id=&#34;快捷安装&#34;&gt;快捷安装&lt;/h2&gt;
+&lt;p&gt;最快捷的方法就是去tag下载二进制文件了，&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/releases/download/v0.75.1/hugo_extended_0.75.1_Windows-64bit.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo0.75.1 with extended&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;编译安装&#34;&gt;编译安装&lt;/h2&gt;
+&lt;p&gt;可以参考hugo的&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/blob/master/README.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Readme.md&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;在编译之前需要CGO支持，windowsx64下CGO需要用到 &lt;a class=&#34;link&#34; href=&#34;https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-win32/sjlj/x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0.7z&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;MinGW-W64 GCC-8.1.0&lt;/a&gt;。访问 &lt;a class=&#34;link&#34; href=&#34;https://sourceforge.net/projects/mingw-w64/files&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://sourceforge.net/projects/mingw-w64/files&lt;/a&gt; 找需要的mingw win64版本。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;go version
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;go version go1.15.2 windows/amd64
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/gohugoio/hugo.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; hugo
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;go install --tags extended
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Error: &lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; ordinal too large: &lt;span class=&#34;m&#34;&gt;78124&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;go install -a -x --tags extended
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;c:&lt;span class=&#34;se&#34;&gt;\g&lt;/span&gt;o&lt;span class=&#34;se&#34;&gt;\p&lt;/span&gt;kg&lt;span class=&#34;se&#34;&gt;\t&lt;/span&gt;ool&lt;span class=&#34;se&#34;&gt;\w&lt;/span&gt;indows_amd64&lt;span class=&#34;se&#34;&gt;\l&lt;/span&gt;ink.exe: running g++ failed: &lt;span class=&#34;nb&#34;&gt;exit&lt;/span&gt; status &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;../x86_64-w64-mingw32/bin/ld.exe: Error: &lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; ordinal too large: &lt;span class=&#34;m&#34;&gt;78124&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;collect2.exe: error: ld returned &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;exit&lt;/span&gt; status
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;go install -a -x -v -buildmode&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;exe --tags extended
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cp &lt;span class=&#34;nv&#34;&gt;$WORK&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\b&lt;/span&gt;001&lt;span class=&#34;se&#34;&gt;\e&lt;/span&gt;xe&lt;span class=&#34;se&#34;&gt;\a&lt;/span&gt;.out.exe C:&lt;span class=&#34;se&#34;&gt;\U&lt;/span&gt;sers&lt;span class=&#34;se&#34;&gt;\b&lt;/span&gt;ob&lt;span class=&#34;se&#34;&gt;\g&lt;/span&gt;o&lt;span class=&#34;se&#34;&gt;\b&lt;/span&gt;in&lt;span class=&#34;se&#34;&gt;\h&lt;/span&gt;ugo.exe
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;编译的时候报告&lt;em&gt;Error: export ordinal too large: 78124&lt;/em&gt;，参考 &lt;a class=&#34;link&#34; href=&#34;https://github.com/golang/go/issues/40795&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/golang/go/issues/40795&lt;/a&gt; 需要加上-buildmode=exe，具体原因需要等待golang官方调查&amp;hellip;&lt;/p&gt;
+&lt;p&gt;该问题已经在go1.16版本修复.&lt;/p&gt;
+&lt;h2 id=&#34;ldflags&#34;&gt;ldflags&lt;/h2&gt;
+&lt;p&gt;默认编译的文件比较大，可以使用-ldflags &amp;ldquo;-w -s&amp;quot;去掉调试信息。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;go install -a -x -v -ldflags &lt;span class=&#34;s2&#34;&gt;&amp;#34;-w -s&amp;#34;&lt;/span&gt; --tags extended
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
