@@ -38,7 +38,7 @@ hugo server -D
 ## build
 
 ```shell
-hugo -D -d ./docs -b https://tsinling.org
+hugo -D -ddocs -bhttps://tsinling.org --enableGitInfo
 ```
 
 ## deploy
@@ -46,5 +46,5 @@ hugo -D -d ./docs -b https://tsinling.org
 ```shell
 git add --all
 git commit -m "new post comit"
-git push -u origin main
+git push -u origin master
 ```
