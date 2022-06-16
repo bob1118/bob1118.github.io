@@ -280,7 +280,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2020-09-20 16:10</time>
+                <time class="article-time--published">2020-09-20</time>
             </div>
         
 
@@ -295,7 +295,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -319,15 +319,28 @@
 <li>Iphone-&gt;设置-&gt;通用-&gt;软件更新</li>
 </ul>
 <p>我也尝试升级到了IOS14，总体效果还是值得赞赏的。听了一下午网易云音乐，后盖烫的厉害，尝试DFU恢复一下看看。</p>
-<h2 id="dfu恢复">DFU恢复</h2>
+<h2 id="itunes">iTunes</h2>
 <p>手机自身无法更新或恢复的时候，借助<a class="link" href="https://www.apple.com/itunes/download/win64"  target="_blank" rel="noopener"
     >Itunes</a>来恢复，参考<a class="link" href="https://support.apple.com/zh-cn/HT201263"  target="_blank" rel="noopener"
     >用Itunes来恢复</a>。</p>
+<h3 id="recovery模式">recovery模式</h3>
+<p>recovery模式是apple官方给出的刷机方式，进入恢复模式后屏幕显示笔记本和一根线缆。<br>
+操作步骤如下：</p>
 <ul>
 <li>连接iphone到计算机usb</li>
 <li>在计算机中运行Itunes（Itunes版本最新）</li>
-<li>按下调高音量按钮再快速松开。按下调低音量按钮再快速松开。按住开机按钮，直到设备开始重新启动。</li>
+<li>按下调高音量按钮再快速松开。按下调低音量按钮再快速松开。按住开机按钮，直到屏幕变黑开始重新启动。</li>
 <li>继续按住开机按钮，直到设备进入恢复模式。(适用iphone8以上版)</li>
+<li>Itunes弹出“iphone出现问题需要更新或恢复”，点恢复下载ios14.ispw恢复Iphone。</li>
+</ul>
+<h3 id="dfu模式">dfu模式</h3>
+<p>Device firmware Upgrade mode，进入dft模式后屏幕显示黑色。<br>
+操作步骤如下：</p>
+<ul>
+<li>连接iPhone到计算机usb</li>
+<li>在计算机中运行iTunes</li>
+<li>按下音量调高按钮再快速松开。按下音量调低按钮再快速松开。按住开机按钮，直到屏幕变黑开始重新启动。</li>
+<li>按住开机按钮和量调低按钮，几秒钟后松开开机按钮，再过几秒钟松开音量调低按钮，进入dfu模式。</li>
 <li>Itunes弹出“iphone出现问题需要更新或恢复”，点恢复下载ios14.ispw恢复Iphone。</li>
 </ul>
 </section>
@@ -575,7 +588,12 @@
             <nav id="TableOfContents">
   <ol>
     <li><a href="#ota升级">OTA升级</a></li>
-    <li><a href="#dfu恢复">DFU恢复</a></li>
+    <li><a href="#itunes">iTunes</a>
+      <ol>
+        <li><a href="#recovery模式">recovery模式</a></li>
+        <li><a href="#dfu模式">dfu模式</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
