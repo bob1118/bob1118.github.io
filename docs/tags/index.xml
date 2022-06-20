@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Tags on bob&#39;s rabbit hole</title>
+        <link>https://tsinling.org/tags/</link>
+        <description>Recent content in Tags on bob&#39;s rabbit hole</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Mon, 20 Jun 2022 13:25:51 +0800</lastBuildDate><atom:link href="https://tsinling.org/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>cli</title>
+        <link>https://tsinling.org/tags/cli/</link>
+        <pubDate>Mon, 20 Jun 2022 13:25:51 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/cli/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>cobra</title>
+        <link>https://tsinling.org/tags/cobra/</link>
+        <pubDate>Mon, 20 Jun 2022 13:25:51 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/cobra/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>flag</title>
+        <link>https://tsinling.org/tags/flag/</link>
+        <pubDate>Mon, 20 Jun 2022 13:25:51 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/flag/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>iw</title>
+        <link>https://tsinling.org/tags/iw/</link>
+        <pubDate>Wed, 25 May 2022 15:49:34 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/iw/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>wifi</title>
+        <link>https://tsinling.org/tags/wifi/</link>
+        <pubDate>Wed, 25 May 2022 15:49:34 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/wifi/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>wlan</title>
+        <link>https://tsinling.org/tags/wlan/</link>
+        <pubDate>Wed, 25 May 2022 15:49:34 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/wlan/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>vscode</title>
+        <link>https://tsinling.org/tags/vscode/</link>
+        <pubDate>Fri, 15 Apr 2022 15:39:30 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/vscode/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>vscode remote ssh</title>
+        <link>https://tsinling.org/tags/vscode-remote-ssh/</link>
+        <pubDate>Fri, 15 Apr 2022 15:39:30 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/vscode-remote-ssh/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>postgresql</title>
+        <link>https://tsinling.org/tags/postgresql/</link>
+        <pubDate>Wed, 22 Dec 2021 16:09:56 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/postgresql/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>mac</title>
+        <link>https://tsinling.org/tags/mac/</link>
+        <pubDate>Mon, 13 Dec 2021 14:51:09 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/mac/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>vmware</title>
+        <link>https://tsinling.org/tags/vmware/</link>
+        <pubDate>Wed, 14 Jul 2021 20:26:17 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/vmware/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>html</title>
+        <link>https://tsinling.org/tags/html/</link>
+        <pubDate>Wed, 23 Jun 2021 10:43:28 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/html/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>javascript</title>
+        <link>https://tsinling.org/tags/javascript/</link>
+        <pubDate>Tue, 15 Jun 2021 09:24:52 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/javascript/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>CSS</title>
+        <link>https://tsinling.org/tags/css/</link>
+        <pubDate>Wed, 02 Jun 2021 07:17:50 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/css/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>freeswitch</title>
+        <link>https://tsinling.org/tags/freeswitch/</link>
+        <pubDate>Sat, 31 Oct 2020 09:49:45 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/freeswitch/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>hugo</title>
+        <link>https://tsinling.org/tags/hugo/</link>
+        <pubDate>Tue, 22 Sep 2020 13:27:37 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/hugo/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>iphone</title>
+        <link>https://tsinling.org/tags/iphone/</link>
+        <pubDate>Sun, 20 Sep 2020 16:10:22 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/iphone/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Example Tag</title>
+        <link>https://tsinling.org/tags/example-tag/</link>
+        <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsinling.org/tags/example-tag/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

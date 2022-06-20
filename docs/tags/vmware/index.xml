@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>vmware on bob&#39;s rabbit hole</title>
+        <link>https://tsinling.org/tags/vmware/</link>
+        <description>Recent content in vmware on bob&#39;s rabbit hole</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Wed, 14 Jul 2021 20:26:17 +0800</lastBuildDate><atom:link href="https://tsinling.org/tags/vmware/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Vmware Network</title>
+        <link>https://tsinling.org/p/vmware-network/</link>
+        <pubDate>Wed, 14 Jul 2021 20:26:17 +0800</pubDate>
+        
+        <guid>https://tsinling.org/p/vmware-network/</guid>
+        <description>&lt;h1 id=&#34;vmware-network&#34;&gt;Vmware Network&lt;/h1&gt;
+&lt;h2 id=&#34;环境&#34;&gt;环境&lt;/h2&gt;
+&lt;p&gt;本地机器两个千兆网卡，在本地机器上安装win10，VMwareWorkstation16，还有一些日常软件。&lt;br&gt;
+在VMware上创建一台虚拟机，网络桥接到本地，虚拟机DHCP获取IP地址上网。发现虚拟机的网络经常出现获取不到IP地址。&lt;/p&gt;
+&lt;h2 id=&#34;可能的原因&#34;&gt;可能的原因&lt;/h2&gt;
+&lt;h3 id=&#34;dhcp-server&#34;&gt;DHCP Server&lt;/h3&gt;
+&lt;p&gt;dhcp server 使用RouterOS v6.48.3 dhcp package，dhcp client只有虚拟机上时好时坏，其他的dhcp client正常使用。在winbox里查看dhcp client的状态，在等待client发包。&lt;/p&gt;
+&lt;h3 id=&#34;dhcp-client&#34;&gt;DHCP Client&lt;/h3&gt;
+&lt;p&gt;dhcp client 使用命令ifdown,ifup皆不能从dhcp server收到任何回应。&lt;/p&gt;
+&lt;h2 id=&#34;罪魁祸首&#34;&gt;罪魁祸首&lt;/h2&gt;
+&lt;p&gt;Vmware-&amp;gt;编辑-&amp;gt;虚拟网络编辑器-&amp;gt;更改设置&lt;br&gt;
+把默认的已桥接至(自动)改成(目标网卡),应用保存就可以了。&lt;/p&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
