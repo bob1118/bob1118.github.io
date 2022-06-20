@@ -6,7 +6,31 @@
         <description>Recent content in Tags on bob&#39;s rabbit hole</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Wed, 25 May 2022 15:49:34 +0800</lastBuildDate><atom:link href="https://tsinling.org/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 20 Jun 2022 13:25:51 +0800</lastBuildDate><atom:link href="https://tsinling.org/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>cli</title>
+        <link>https://tsinling.org/tags/cli/</link>
+        <pubDate>Mon, 20 Jun 2022 13:25:51 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/cli/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>cobra</title>
+        <link>https://tsinling.org/tags/cobra/</link>
+        <pubDate>Mon, 20 Jun 2022 13:25:51 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/cobra/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>flag</title>
+        <link>https://tsinling.org/tags/flag/</link>
+        <pubDate>Mon, 20 Jun 2022 13:25:51 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/flag/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>iw</title>
         <link>https://tsinling.org/tags/iw/</link>
         <pubDate>Wed, 25 May 2022 15:49:34 +0800</pubDate>

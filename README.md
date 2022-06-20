@@ -38,7 +38,7 @@ hugo server -D
 ## build
 
 ```shell
-hugo -D -ddocs -bhttps://tsinling.org --enableGitInfo
+hugo -D -d docs -b https://tsinling.org --enableGitInfo
 ```
 
 ## deploy
