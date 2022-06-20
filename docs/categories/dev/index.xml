@@ -68,6 +68,8 @@
 &lt;/div&gt;&lt;p&gt;flags 格式可以参考:&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://pkg.go.dev/flag#hdr-Command_line_flag_syntax&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://pkg.go.dev/flag#hdr-Command_line_flag_syntax&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/spf13/pflag#command-line-flag-syntax&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/spf13/pflag#command-line-flag-syntax&lt;/a&gt;&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://www.gnu.org/software/libc/manual/html_node/Argument-Syntax.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.gnu.org/software/libc/manual/html_node/Argument-Syntax.html&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

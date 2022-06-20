@@ -49,6 +49,7 @@ git clone   -bv1.0  -v      https://github.com/signalwire/freeswitch.git    free
 
 flags 格式可以参考:  
 <https://pkg.go.dev/flag#hdr-Command_line_flag_syntax>  
+<https://github.com/spf13/pflag#command-line-flag-syntax>  
 <https://www.gnu.org/software/libc/manual/html_node/Argument-Syntax.html>  
 
 ```shell
