@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='learn mdn javascript'><title>mdn Javascript</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='learn mdn javascript'>
+<meta name="keywords" content="jvavascript"><title>mdn Javascript</title>
 
 <link rel='canonical' href='https://tsinling.org/p/mdn-javascript/'>
 
-<link rel="stylesheet" href="/scss/style.min.fe253589db5a54c99fe6b16bfbaf0243d856d34f8c07f3534613b39ed043b738.css"><meta property='og:title' content='mdn Javascript'>
+<link rel="stylesheet" href="/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='mdn Javascript'>
 <meta property='og:description' content='learn mdn javascript'>
 <meta property='og:url' content='https://tsinling.org/p/mdn-javascript/'>
 <meta property='og:site_name' content='bob&#39;s rabbit hole'>
@@ -78,6 +79,7 @@
                         href='https://github.com/bob1118'
                         target="_blank"
                         title="GitHub"
+                        rel="me"
                     >
                         
                         
@@ -97,6 +99,7 @@
                         href='https://twitter.com'
                         target="_blank"
                         title="Twitter"
+                        rel="me"
                     >
                         
                         
@@ -244,7 +247,155 @@
         </div>
     </ol>
 </aside>
-<main class="main full-width">
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#31-first-steps">3.1 First Steps</a>
+      <ol>
+        <li><a href="#311-概述">3.1.1 概述</a></li>
+        <li><a href="#312-什么是javascript">3.1.2 什么是javascript</a>
+          <ol>
+            <li><a href="#3121-javascript定义">3.1.2.1 javascript定义</a></li>
+            <li><a href="#3122-javascript可以做什么">3.1.2.2 javascript可以做什么</a></li>
+            <li><a href="#3123-javascript在页面上做了什么">3.1.2.3 javascript在页面上做了什么</a></li>
+            <li><a href="#3124-向页面添加javascript">3.1.2.4 向页面添加JavaScript</a></li>
+            <li><a href="#3125-注释">3.1.2.5 注释</a></li>
+          </ol>
+        </li>
+        <li><a href="#313-javascript初体验">3.1.3 Javascript初体验</a>
+          <ol>
+            <li><a href="#3131-像程序员一样思考">3.1.3.1 像程序员一样思考</a></li>
+            <li><a href="#3132-猜数字游戏">3.1.3.2 猜数字游戏</a></li>
+            <li><a href="#3133-大功告成">3.1.3.3 大功告成</a></li>
+          </ol>
+        </li>
+        <li><a href="#314-javascript代码的错误">3.1.4 Javascript代码的错误</a>
+          <ol>
+            <li><a href="#3141-错误类型">3.1.4.1 错误类型</a></li>
+            <li><a href="#3142-出错的示例">3.1.4.2 出错的示例</a></li>
+            <li><a href="#3143-修复语法错误">3.1.4.3 修复语法错误</a></li>
+          </ol>
+        </li>
+        <li><a href="#315-变量">3.1.5 变量</a>
+          <ol>
+            <li><a href="#3151-声明变量">3.1.5.1 声明变量</a></li>
+            <li><a href="#3152-初始化变量">3.1.5.2 初始化变量</a></li>
+            <li><a href="#3153-var与let的区别">3.1.5.3 var与let的区别</a></li>
+            <li><a href="#3154-更新变量">3.1.5.4 更新变量</a></li>
+            <li><a href="#3155-变量类型">3.1.5.5 变量类型</a></li>
+            <li><a href="#3156-动态类型">3.1.5.6 动态类型</a></li>
+          </ol>
+        </li>
+        <li><a href="#316-数字与运算符">3.1.6 数字与运算符</a>
+          <ol>
+            <li><a href="#3161-数字">3.1.6.1 数字</a></li>
+            <li><a href="#3162-算术运算符">3.1.6.2 算术运算符</a></li>
+            <li><a href="#3163-自增和自减">3.1.6.3 自增和自减</a></li>
+            <li><a href="#3164-赋值运算符">3.1.6.4 赋值运算符</a></li>
+            <li><a href="#3165-比较运算符">3.1.6.5 比较运算符</a></li>
+          </ol>
+        </li>
+        <li><a href="#317-字符串">3.1.7 字符串</a>
+          <ol>
+            <li><a href="#3171-基本知识">3.1.7.1 基本知识</a></li>
+            <li><a href="#3172-连接字符串">3.1.7.2 连接字符串</a></li>
+          </ol>
+        </li>
+        <li><a href="#318-有用的字符串方法">3.1.8 有用的字符串方法</a>
+          <ol>
+            <li><a href="#3181-字符串当对象">3.1.8.1 字符串当对象</a></li>
+          </ol>
+        </li>
+        <li><a href="#319-数组">3.1.9 数组</a>
+          <ol>
+            <li><a href="#3191-什么是数组">3.1.9.1 什么是数组</a></li>
+            <li><a href="#3192-有用的方法">3.1.9.2 有用的方法</a></li>
+          </ol>
+        </li>
+        <li><a href="#3110-笑话生成器">3.1.10 笑话生成器</a></li>
+      </ol>
+    </li>
+    <li><a href="#32-javascript基础要件">3.2 Javascript基础要件</a>
+      <ol>
+        <li><a href="#321-基础要件概述">3.2.1 基础要件概述</a></li>
+        <li><a href="#322-条件语句">3.2.2 条件语句</a></li>
+        <li><a href="#323-代码循环">3.2.3 代码循环</a></li>
+        <li><a href="#324-函数">3.2.4 函数</a></li>
+        <li><a href="#325-建立自己的函数">3.2.5 建立自己的函数</a></li>
+        <li><a href="#325-函数返回值">3.2.5 函数返回值</a></li>
+        <li><a href="#326-事件介绍">3.2.6 事件介绍</a>
+          <ol>
+            <li><a href="#3261-事件举例">3.2.6.1 事件举例</a></li>
+            <li><a href="#3262-使用事件">3.2.6.2 使用事件</a></li>
+            <li><a href="#3262-其他事件概念">3.2.6.2 其他事件概念</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#33-javascript对象介绍">3.3 Javascript对象介绍</a>
+      <ol>
+        <li><a href="#331-对象概述">3.3.1 对象概述</a></li>
+        <li><a href="#332-对象基础概念">3.3.2 对象基础概念</a></li>
+        <li><a href="#333-适合新手的javascript">3.3.3 适合新手的javascript</a></li>
+        <li><a href="#334-对象原型">3.3.4 对象原型</a></li>
+        <li><a href="#335-继承">3.3.5 继承</a></li>
+        <li><a href="#336-json">3.3.6 JSON</a></li>
+        <li><a href="#337-对象构建实践">3.3.7 对象构建实践</a></li>
+      </ol>
+    </li>
+    <li><a href="#34-异步javascript">3.4 异步Javascript</a>
+      <ol>
+        <li><a href="#341-异步概述">3.4.1 异步概述</a></li>
+        <li><a href="#342-异步编程概念">3.4.2 异步编程概念</a></li>
+        <li><a href="#343-异步javascript简介">3.4.3 异步JavaScript简介</a></li>
+        <li><a href="#344-超时和间隔">3.4.4 超时和间隔</a></li>
+        <li><a href="#345-优雅的异步处理">3.4.5 优雅的异步处理</a></li>
+        <li><a href="#346-async和await">3.4.6 async和await</a></li>
+        <li><a href="#347-选择正确的方法">3.4.7 选择正确的方法</a></li>
+      </ol>
+    </li>
+    <li><a href="#35-客户端网页api">3.5 客户端网页API</a>
+      <ol>
+        <li><a href="#351-网页api介绍">3.5.1 网页API介绍</a></li>
+        <li><a href="#352-操纵文档">3.5.2 操纵文档</a></li>
+        <li><a href="#353-从服务器获取数据">3.5.3 从服务器获取数据</a></li>
+        <li><a href="#354-第三方api">3.5.4 第三方API</a></li>
+        <li><a href="#355-画图">3.5.5 画图</a></li>
+        <li><a href="#356-视频与音频">3.5.6 视频与音频</a></li>
+        <li><a href="#357-客户端存储">3.5.7 客户端存储</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
     <article class="main-article">
     <header class="article-header">
 
@@ -271,6 +422,9 @@
         
     </div>
 
+    
+    
+    
     
     <footer class="article-time">
         
@@ -308,6 +462,7 @@
 
     
 </div>
+
 </header>
 
     <section class="article-content">
@@ -976,7 +1131,7 @@
         
             <a href ="http://beian.miit.gov.cn/" target="_blank">陕ICP备14012495号-1</a><img src="https://www.12389.gov.cn/images/5692312.png"><a href ="http://www.beian.gov.cn/portal/registerSystemInfo" target="_blank">陕公安备61012402000103号</a> <br/>
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.12.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 
@@ -1060,153 +1215,6 @@
             >
 
             </main>
-    <aside class="sidebar right-sidebar sticky">
-        
-            
-                
-    <section class="widget archives">
-        <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">目录</h2>
-        
-        <div class="widget--toc">
-            <nav id="TableOfContents">
-  <ol>
-    <li><a href="#31-first-steps">3.1 First Steps</a>
-      <ol>
-        <li><a href="#311-概述">3.1.1 概述</a></li>
-        <li><a href="#312-什么是javascript">3.1.2 什么是javascript</a>
-          <ol>
-            <li><a href="#3121-javascript定义">3.1.2.1 javascript定义</a></li>
-            <li><a href="#3122-javascript可以做什么">3.1.2.2 javascript可以做什么</a></li>
-            <li><a href="#3123-javascript在页面上做了什么">3.1.2.3 javascript在页面上做了什么</a></li>
-            <li><a href="#3124-向页面添加javascript">3.1.2.4 向页面添加JavaScript</a></li>
-            <li><a href="#3125-注释">3.1.2.5 注释</a></li>
-          </ol>
-        </li>
-        <li><a href="#313-javascript初体验">3.1.3 Javascript初体验</a>
-          <ol>
-            <li><a href="#3131-像程序员一样思考">3.1.3.1 像程序员一样思考</a></li>
-            <li><a href="#3132-猜数字游戏">3.1.3.2 猜数字游戏</a></li>
-            <li><a href="#3133-大功告成">3.1.3.3 大功告成</a></li>
-          </ol>
-        </li>
-        <li><a href="#314-javascript代码的错误">3.1.4 Javascript代码的错误</a>
-          <ol>
-            <li><a href="#3141-错误类型">3.1.4.1 错误类型</a></li>
-            <li><a href="#3142-出错的示例">3.1.4.2 出错的示例</a></li>
-            <li><a href="#3143-修复语法错误">3.1.4.3 修复语法错误</a></li>
-          </ol>
-        </li>
-        <li><a href="#315-变量">3.1.5 变量</a>
-          <ol>
-            <li><a href="#3151-声明变量">3.1.5.1 声明变量</a></li>
-            <li><a href="#3152-初始化变量">3.1.5.2 初始化变量</a></li>
-            <li><a href="#3153-var与let的区别">3.1.5.3 var与let的区别</a></li>
-            <li><a href="#3154-更新变量">3.1.5.4 更新变量</a></li>
-            <li><a href="#3155-变量类型">3.1.5.5 变量类型</a></li>
-            <li><a href="#3156-动态类型">3.1.5.6 动态类型</a></li>
-          </ol>
-        </li>
-        <li><a href="#316-数字与运算符">3.1.6 数字与运算符</a>
-          <ol>
-            <li><a href="#3161-数字">3.1.6.1 数字</a></li>
-            <li><a href="#3162-算术运算符">3.1.6.2 算术运算符</a></li>
-            <li><a href="#3163-自增和自减">3.1.6.3 自增和自减</a></li>
-            <li><a href="#3164-赋值运算符">3.1.6.4 赋值运算符</a></li>
-            <li><a href="#3165-比较运算符">3.1.6.5 比较运算符</a></li>
-          </ol>
-        </li>
-        <li><a href="#317-字符串">3.1.7 字符串</a>
-          <ol>
-            <li><a href="#3171-基本知识">3.1.7.1 基本知识</a></li>
-            <li><a href="#3172-连接字符串">3.1.7.2 连接字符串</a></li>
-          </ol>
-        </li>
-        <li><a href="#318-有用的字符串方法">3.1.8 有用的字符串方法</a>
-          <ol>
-            <li><a href="#3181-字符串当对象">3.1.8.1 字符串当对象</a></li>
-          </ol>
-        </li>
-        <li><a href="#319-数组">3.1.9 数组</a>
-          <ol>
-            <li><a href="#3191-什么是数组">3.1.9.1 什么是数组</a></li>
-            <li><a href="#3192-有用的方法">3.1.9.2 有用的方法</a></li>
-          </ol>
-        </li>
-        <li><a href="#3110-笑话生成器">3.1.10 笑话生成器</a></li>
-      </ol>
-    </li>
-    <li><a href="#32-javascript基础要件">3.2 Javascript基础要件</a>
-      <ol>
-        <li><a href="#321-基础要件概述">3.2.1 基础要件概述</a></li>
-        <li><a href="#322-条件语句">3.2.2 条件语句</a></li>
-        <li><a href="#323-代码循环">3.2.3 代码循环</a></li>
-        <li><a href="#324-函数">3.2.4 函数</a></li>
-        <li><a href="#325-建立自己的函数">3.2.5 建立自己的函数</a></li>
-        <li><a href="#325-函数返回值">3.2.5 函数返回值</a></li>
-        <li><a href="#326-事件介绍">3.2.6 事件介绍</a>
-          <ol>
-            <li><a href="#3261-事件举例">3.2.6.1 事件举例</a></li>
-            <li><a href="#3262-使用事件">3.2.6.2 使用事件</a></li>
-            <li><a href="#3262-其他事件概念">3.2.6.2 其他事件概念</a></li>
-          </ol>
-        </li>
-      </ol>
-    </li>
-    <li><a href="#33-javascript对象介绍">3.3 Javascript对象介绍</a>
-      <ol>
-        <li><a href="#331-对象概述">3.3.1 对象概述</a></li>
-        <li><a href="#332-对象基础概念">3.3.2 对象基础概念</a></li>
-        <li><a href="#333-适合新手的javascript">3.3.3 适合新手的javascript</a></li>
-        <li><a href="#334-对象原型">3.3.4 对象原型</a></li>
-        <li><a href="#335-继承">3.3.5 继承</a></li>
-        <li><a href="#336-json">3.3.6 JSON</a></li>
-        <li><a href="#337-对象构建实践">3.3.7 对象构建实践</a></li>
-      </ol>
-    </li>
-    <li><a href="#34-异步javascript">3.4 异步Javascript</a>
-      <ol>
-        <li><a href="#341-异步概述">3.4.1 异步概述</a></li>
-        <li><a href="#342-异步编程概念">3.4.2 异步编程概念</a></li>
-        <li><a href="#343-异步javascript简介">3.4.3 异步JavaScript简介</a></li>
-        <li><a href="#344-超时和间隔">3.4.4 超时和间隔</a></li>
-        <li><a href="#345-优雅的异步处理">3.4.5 优雅的异步处理</a></li>
-        <li><a href="#346-async和await">3.4.6 async和await</a></li>
-        <li><a href="#347-选择正确的方法">3.4.7 选择正确的方法</a></li>
-      </ol>
-    </li>
-    <li><a href="#35-客户端网页api">3.5 客户端网页API</a>
-      <ol>
-        <li><a href="#351-网页api介绍">3.5.1 网页API介绍</a></li>
-        <li><a href="#352-操纵文档">3.5.2 操纵文档</a></li>
-        <li><a href="#353-从服务器获取数据">3.5.3 从服务器获取数据</a></li>
-        <li><a href="#354-第三方api">3.5.4 第三方API</a></li>
-        <li><a href="#355-画图">3.5.5 画图</a></li>
-        <li><a href="#356-视频与音频">3.5.6 视频与音频</a></li>
-        <li><a href="#357-客户端存储">3.5.7 客户端存储</a></li>
-      </ol>
-    </li>
-  </ol>
-</nav>
-        </div>
-    </section>
-
-            
-        
-    </aside>
-
-
         </div>
         <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"

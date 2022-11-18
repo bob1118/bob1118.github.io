@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='learn mdn html form'><title>Mdn Html Form</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='learn mdn html form'>
+<meta name="keywords" content="html"><title>Mdn Html Form</title>
 
 <link rel='canonical' href='https://tsinling.org/p/mdn-html-form/'>
 
-<link rel="stylesheet" href="/scss/style.min.fe253589db5a54c99fe6b16bfbaf0243d856d34f8c07f3534613b39ed043b738.css"><meta property='og:title' content='Mdn Html Form'>
+<link rel="stylesheet" href="/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='Mdn Html Form'>
 <meta property='og:description' content='learn mdn html form'>
 <meta property='og:url' content='https://tsinling.org/p/mdn-html-form/'>
 <meta property='og:site_name' content='bob&#39;s rabbit hole'>
@@ -78,6 +79,7 @@
                         href='https://github.com/bob1118'
                         target="_blank"
                         title="GitHub"
+                        rel="me"
                     >
                         
                         
@@ -97,6 +99,7 @@
                         href='https://twitter.com'
                         target="_blank"
                         title="Twitter"
+                        rel="me"
                     >
                         
                         
@@ -244,7 +247,119 @@
         </div>
     </ol>
 </aside>
-<main class="main full-width">
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#41-web表单核心">4.1 Web表单核心</a>
+      <ol>
+        <li><a href="#411-表单概述">4.1.1 表单概述</a></li>
+        <li><a href="#412-第一个表单">4.1.2 第一个表单</a>
+          <ol>
+            <li><a href="#4121-表单定义">4.1.2.1 表单定义</a></li>
+            <li><a href="#4122-设计表单">4.1.2.2 设计表单</a></li>
+            <li><a href="#4123-实现表单">4.1.2.3 实现表单</a></li>
+            <li><a href="#4124-基本表单样式">4.1.2.4 基本表单样式</a></li>
+            <li><a href="#4125-发送数据">4.1.2.5 发送数据</a></li>
+          </ol>
+        </li>
+        <li><a href="#413-构造表单">4.1.3 构造表单</a></li>
+        <li><a href="#414-表单控件">4.1.4 表单控件</a>
+          <ol>
+            <li><a href="#4141-通用属性">4.1.4.1 通用属性</a></li>
+            <li><a href="#4142-文本输入">4.1.4.2 文本输入</a></li>
+            <li><a href="#4143-下拉内容">4.1.4.3 下拉内容</a></li>
+            <li><a href="#4144-可选中项">4.1.4.4 可选中项</a></li>
+            <li><a href="#4145-按钮">4.1.4.5 按钮</a></li>
+            <li><a href="#4146-高级表单部件">4.1.4.6 高级表单部件</a></li>
+            <li><a href="#4147-其他小部件">4.1.4.7 其他小部件</a></li>
+          </ol>
+        </li>
+        <li><a href="#415-html5的表单">4.1.5 HTML5的表单</a></li>
+        <li><a href="#416-其他表单">4.1.6 其他表单</a></li>
+        <li><a href="#417-样式化表单">4.1.7 样式化表单</a>
+          <ol>
+            <li><a href="#4171-基本样式美化">4.1.7.1 基本样式美化</a></li>
+            <li><a href="#4172-实际案例">4.1.7.2 实际案例</a></li>
+          </ol>
+        </li>
+        <li><a href="#418-高级样式表单">4.1.8 高级样式表单</a>
+          <ol>
+            <li><a href="#4181-css表现力">4.1.8.1 CSS表现力</a></li>
+            <li><a href="#4182-案例">4.1.8.2 案例</a></li>
+          </ol>
+        </li>
+        <li><a href="#419-ui伪类">4.1.9 UI伪类</a></li>
+        <li><a href="#4110-客户端表单验证">4.1.10 客户端表单验证</a>
+          <ol>
+            <li><a href="#41101-什么是表单数据校验">4.1.10.1 什么是表单数据校验</a></li>
+            <li><a href="#41102-html5内置表单校验">4.1.10.2 HTML5内置表单校验</a></li>
+            <li><a href="#41103-javascript校验表单">4.1.10.3 JavaScript校验表单</a></li>
+          </ol>
+        </li>
+        <li><a href="#4111-发送表单数据">4.1.11 发送表单数据</a>
+          <ol>
+            <li><a href="#41111-数据都去那儿了">4.1.11.1 数据都去那儿了</a></li>
+            <li><a href="#41112-发送文件">4.1.11.2 发送文件</a></li>
+            <li><a href="#41113-安全问题">4.1.11.3 安全问题</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#42-web表单进阶">4.2 Web表单进阶</a>
+      <ol>
+        <li><a href="#421-构造自定义表单控件">4.2.1 构造自定义表单控件</a>
+          <ol>
+            <li><a href="#4211-设计结构和语义">4.2.1.1 设计、结构、和语义</a></li>
+            <li><a href="#4212-通过javascript让您的小部件动起来">4.2.1.2 通过JavaScript让您的小部件动起来</a></li>
+            <li><a href="#4213-可访问性">4.2.1.3 可访问性</a></li>
+          </ol>
+        </li>
+        <li><a href="#422-使用javascript发送表单">4.2.2 使用Javascript发送表单</a>
+          <ol>
+            <li><a href="#4221-表单不总是表单">4.2.2.1 表单不总是表单</a></li>
+            <li><a href="#4222-发送表单数据">4.2.2.2 发送表单数据</a></li>
+            <li><a href="#4223-处理二进制">4.2.2.3 处理二进制</a></li>
+          </ol>
+        </li>
+        <li><a href="#423-表单组件兼容性列表">4.2.3 表单组件兼容性列表</a>
+          <ol>
+            <li><a href="#4231-如何阅读表格">4.2.3.1 如何阅读表格</a></li>
+            <li><a href="#4232-兼容性表格">4.2.3.2 兼容性表格</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
     <article class="main-article">
     <header class="article-header">
 
@@ -271,6 +386,9 @@
         
     </div>
 
+    
+    
+    
     
     <footer class="article-time">
         
@@ -308,6 +426,7 @@
 
     
 </div>
+
 </header>
 
     <section class="article-content">
@@ -1909,7 +2028,7 @@
         
             <a href ="http://beian.miit.gov.cn/" target="_blank">陕ICP备14012495号-1</a><img src="https://www.12389.gov.cn/images/5692312.png"><a href ="http://www.beian.gov.cn/portal/registerSystemInfo" target="_blank">陕公安备61012402000103号</a> <br/>
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.12.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 
@@ -1993,117 +2112,6 @@
             >
 
             </main>
-    <aside class="sidebar right-sidebar sticky">
-        
-            
-                
-    <section class="widget archives">
-        <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">目录</h2>
-        
-        <div class="widget--toc">
-            <nav id="TableOfContents">
-  <ol>
-    <li><a href="#41-web表单核心">4.1 Web表单核心</a>
-      <ol>
-        <li><a href="#411-表单概述">4.1.1 表单概述</a></li>
-        <li><a href="#412-第一个表单">4.1.2 第一个表单</a>
-          <ol>
-            <li><a href="#4121-表单定义">4.1.2.1 表单定义</a></li>
-            <li><a href="#4122-设计表单">4.1.2.2 设计表单</a></li>
-            <li><a href="#4123-实现表单">4.1.2.3 实现表单</a></li>
-            <li><a href="#4124-基本表单样式">4.1.2.4 基本表单样式</a></li>
-            <li><a href="#4125-发送数据">4.1.2.5 发送数据</a></li>
-          </ol>
-        </li>
-        <li><a href="#413-构造表单">4.1.3 构造表单</a></li>
-        <li><a href="#414-表单控件">4.1.4 表单控件</a>
-          <ol>
-            <li><a href="#4141-通用属性">4.1.4.1 通用属性</a></li>
-            <li><a href="#4142-文本输入">4.1.4.2 文本输入</a></li>
-            <li><a href="#4143-下拉内容">4.1.4.3 下拉内容</a></li>
-            <li><a href="#4144-可选中项">4.1.4.4 可选中项</a></li>
-            <li><a href="#4145-按钮">4.1.4.5 按钮</a></li>
-            <li><a href="#4146-高级表单部件">4.1.4.6 高级表单部件</a></li>
-            <li><a href="#4147-其他小部件">4.1.4.7 其他小部件</a></li>
-          </ol>
-        </li>
-        <li><a href="#415-html5的表单">4.1.5 HTML5的表单</a></li>
-        <li><a href="#416-其他表单">4.1.6 其他表单</a></li>
-        <li><a href="#417-样式化表单">4.1.7 样式化表单</a>
-          <ol>
-            <li><a href="#4171-基本样式美化">4.1.7.1 基本样式美化</a></li>
-            <li><a href="#4172-实际案例">4.1.7.2 实际案例</a></li>
-          </ol>
-        </li>
-        <li><a href="#418-高级样式表单">4.1.8 高级样式表单</a>
-          <ol>
-            <li><a href="#4181-css表现力">4.1.8.1 CSS表现力</a></li>
-            <li><a href="#4182-案例">4.1.8.2 案例</a></li>
-          </ol>
-        </li>
-        <li><a href="#419-ui伪类">4.1.9 UI伪类</a></li>
-        <li><a href="#4110-客户端表单验证">4.1.10 客户端表单验证</a>
-          <ol>
-            <li><a href="#41101-什么是表单数据校验">4.1.10.1 什么是表单数据校验</a></li>
-            <li><a href="#41102-html5内置表单校验">4.1.10.2 HTML5内置表单校验</a></li>
-            <li><a href="#41103-javascript校验表单">4.1.10.3 JavaScript校验表单</a></li>
-          </ol>
-        </li>
-        <li><a href="#4111-发送表单数据">4.1.11 发送表单数据</a>
-          <ol>
-            <li><a href="#41111-数据都去那儿了">4.1.11.1 数据都去那儿了</a></li>
-            <li><a href="#41112-发送文件">4.1.11.2 发送文件</a></li>
-            <li><a href="#41113-安全问题">4.1.11.3 安全问题</a></li>
-          </ol>
-        </li>
-      </ol>
-    </li>
-    <li><a href="#42-web表单进阶">4.2 Web表单进阶</a>
-      <ol>
-        <li><a href="#421-构造自定义表单控件">4.2.1 构造自定义表单控件</a>
-          <ol>
-            <li><a href="#4211-设计结构和语义">4.2.1.1 设计、结构、和语义</a></li>
-            <li><a href="#4212-通过javascript让您的小部件动起来">4.2.1.2 通过JavaScript让您的小部件动起来</a></li>
-            <li><a href="#4213-可访问性">4.2.1.3 可访问性</a></li>
-          </ol>
-        </li>
-        <li><a href="#422-使用javascript发送表单">4.2.2 使用Javascript发送表单</a>
-          <ol>
-            <li><a href="#4221-表单不总是表单">4.2.2.1 表单不总是表单</a></li>
-            <li><a href="#4222-发送表单数据">4.2.2.2 发送表单数据</a></li>
-            <li><a href="#4223-处理二进制">4.2.2.3 处理二进制</a></li>
-          </ol>
-        </li>
-        <li><a href="#423-表单组件兼容性列表">4.2.3 表单组件兼容性列表</a>
-          <ol>
-            <li><a href="#4231-如何阅读表格">4.2.3.1 如何阅读表格</a></li>
-            <li><a href="#4232-兼容性表格">4.2.3.2 兼容性表格</a></li>
-          </ol>
-        </li>
-      </ol>
-    </li>
-  </ol>
-</nav>
-        </div>
-    </section>
-
-            
-        
-    </aside>
-
-
         </div>
         <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"

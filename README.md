@@ -38,6 +38,8 @@ hugo server -D
 ## build
 
 ```shell
+hugo mod get -u github.com/CaiJimmy/hugo-theme-stack/v3
+hugo mod tidy
 hugo -D -d docs -b https://tsinling.org
 ```
 
