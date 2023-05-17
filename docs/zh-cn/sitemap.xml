@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://tsinling.org/p/curl-how-to/</loc>
+    <lastmod>2023-05-14T10:44:13+08:00</lastmod>
+  </url><url>
+    <loc>https://tsinling.org/post/</loc>
+    <lastmod>2023-05-14T10:44:13+08:00</lastmod>
+  </url><url>
     <loc>https://tsinling.org/categories/</loc>
     <lastmod>2022-06-20T23:11:07+08:00</lastmod>
     <xhtml:link
@@ -28,9 +34,6 @@
     <lastmod>2022-06-20T23:11:07+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/tags/flag/</loc>
-    <lastmod>2022-06-20T23:11:07+08:00</lastmod>
-  </url><url>
-    <loc>https://tsinling.org/post/</loc>
     <lastmod>2022-06-20T23:11:07+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/tags/</loc>
