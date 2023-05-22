@@ -2,7 +2,7 @@
 title: "Postgresql How To"
 date: 2021-12-22T16:09:56+08:00
 lastmod: 2021-12-22T16:09:56+08:00
-draft: true
+draft: false
 keywords: [postgresql,postgres,pgsql]
 description: "postgresql how to"
 tags: [postgresql]

@@ -6,7 +6,15 @@
         <description>Recent content in Posts on bob&#39;s rabbit hole</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sun, 14 May 2023 10:44:13 +0800</lastBuildDate><atom:link href="https://tsinling.org/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 22 May 2023 15:56:20 +0800</lastBuildDate><atom:link href="https://tsinling.org/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>1st</title>
+        <link>https://tsinling.org/p/1st/</link>
+        <pubDate>Mon, 22 May 2023 15:56:20 +0800</pubDate>
+        
+        <guid>https://tsinling.org/p/1st/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Curl How To</title>
         <link>https://tsinling.org/p/curl-how-to/</link>
         <pubDate>Sun, 14 May 2023 10:44:13 +0800</pubDate>
@@ -14,8 +22,8 @@
         <guid>https://tsinling.org/p/curl-how-to/</guid>
         <description>&lt;h1 id=&#34;curl&#34;&gt;CURL&lt;/h1&gt;
 &lt;p&gt;curl是一个linux下的命令行工具，基于libcurl开发。用来和服务器交互数据。&lt;br&gt;
-curl常用来模仿浏览器向服务器发起请求，方便在开发、测试中调试httd接口。&lt;br&gt;
 curl支持多种协议(DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS)。&lt;br&gt;
+curl常用来模仿浏览器向服务器发起请求，方便在开发、测试中调试httd接口。&lt;br&gt;
 要深入了解可以阅读在线文档&lt;a class=&#34;link&#34; href=&#34;https://everything.curl.dev/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://everything.curl.dev/&lt;/a&gt;。&lt;/p&gt;
 &lt;h2 id=&#34;http&#34;&gt;HTTP&lt;/h2&gt;

@@ -13,8 +13,8 @@ draft: true
 # CURL
 
 curl是一个linux下的命令行工具，基于libcurl开发。用来和服务器交互数据。  
-curl常用来模仿浏览器向服务器发起请求，方便在开发、测试中调试httd接口。  
 curl支持多种协议(DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS)。  
+curl常用来模仿浏览器向服务器发起请求，方便在开发、测试中调试httd接口。  
 要深入了解可以阅读在线文档<https://everything.curl.dev/>。  
 
 ## HTTP

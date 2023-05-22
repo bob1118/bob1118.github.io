@@ -2,7 +2,7 @@
 title: "Macbook Pro 2021"
 date: 2021-12-10T16:52:16+08:00
 lastmod: 2021-12-10T16:52:16+08:00
-draft: true
+draft: false
 keywords: [macbook pro 2021, macbook pro M1 pro, macbook pro M1 max]
 description: "Apple new macbook pro 2021 release."
 tags: [mac]

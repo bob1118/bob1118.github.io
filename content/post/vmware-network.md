@@ -2,7 +2,7 @@
 title: "Vmware Network"
 date: 2021-07-14T20:26:17+08:00
 lastmod: 2021-07-14T20:26:17+08:00
-draft: true
+draft: false
 keywords: [vmware]
 description: "virtual machine networking missing"
 tags: [vmware]

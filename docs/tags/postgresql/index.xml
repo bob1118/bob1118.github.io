@@ -6,7 +6,15 @@
         <description>Recent content in postgresql on bob&#39;s rabbit hole</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Wed, 22 Dec 2021 16:09:56 +0800</lastBuildDate><atom:link href="https://tsinling.org/tags/postgresql/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 22 May 2023 15:56:20 +0800</lastBuildDate><atom:link href="https://tsinling.org/tags/postgresql/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>1st</title>
+        <link>https://tsinling.org/p/1st/</link>
+        <pubDate>Mon, 22 May 2023 15:56:20 +0800</pubDate>
+        
+        <guid>https://tsinling.org/p/1st/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Postgresql How To</title>
         <link>https://tsinling.org/p/postgresql-how-to/</link>
         <pubDate>Wed, 22 Dec 2021 16:09:56 +0800</pubDate>

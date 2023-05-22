@@ -2,7 +2,7 @@
 title: "Mac Port 8021"
 date: 2021-12-13T14:51:09+08:00
 lastmod: 2021-12-13T14:51:09+08:00
-draft: true
+draft: false
 keywords: [mac tcp port 8021,mac udp port 8021,mac port 8021]
 description: "mac port already used."
 tags: [mac]

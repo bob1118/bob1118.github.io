@@ -2,7 +2,7 @@
 title: "mdn Javascript"
 date: 2021-06-15T09:24:52+08:00
 lastmod: 2021-06-15T09:24:52+08:00
-draft: true
+draft: false
 keywords: [jvavascript]
 description: "learn mdn javascript"
 tags: [javascript]
