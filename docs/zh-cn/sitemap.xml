@@ -2,11 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tsinling.org/p/1st/</loc>
-    <lastmod>2023-05-22T15:56:20+08:00</lastmod>
-  </url><url>
     <loc>https://tsinling.org/categories/</loc>
-    <lastmod>2023-05-22T15:56:20+08:00</lastmod>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -18,17 +15,23 @@
                 href="https://tsinling.org/categories/"
                 />
   </url><url>
-    <loc>https://tsinling.org/tags/postgresql/</loc>
-    <lastmod>2023-05-22T15:56:20+08:00</lastmod>
+    <loc>https://tsinling.org/tags/curl/</loc>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
+  </url><url>
+    <loc>https://tsinling.org/p/curl-how-to/</loc>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
+  </url><url>
+    <loc>https://tsinling.org/tags/httpd/</loc>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/post/</loc>
-    <lastmod>2023-05-22T15:56:20+08:00</lastmod>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/categories/pub/</loc>
-    <lastmod>2023-05-22T15:56:20+08:00</lastmod>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/tags/</loc>
-    <lastmod>2023-05-22T15:56:20+08:00</lastmod>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -39,9 +42,6 @@
                 hreflang="zh-cn"
                 href="https://tsinling.org/tags/"
                 />
-  </url><url>
-    <loc>https://tsinling.org/p/curl-how-to/</loc>
-    <lastmod>2023-05-18T00:49:52+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/tags/cli/</loc>
     <lastmod>2022-06-20T23:11:07+08:00</lastmod>
@@ -85,44 +85,47 @@
     <loc>https://tsinling.org/page/</loc>
     <lastmod>2022-06-14T15:08:29+08:00</lastmod>
   </url><url>
+    <loc>https://tsinling.org/tags/postgresql/</loc>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
+  </url><url>
     <loc>https://tsinling.org/p/postgresql-how-to/</loc>
-    <lastmod>2022-06-14T18:48:56+08:00</lastmod>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/tags/mac/</loc>
-    <lastmod>2022-06-14T18:48:56+08:00</lastmod>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/p/mac-port-8021/</loc>
-    <lastmod>2022-06-14T18:48:56+08:00</lastmod>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/p/macbook-pro-2021/</loc>
-    <lastmod>2022-06-14T18:48:56+08:00</lastmod>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/tags/vmware/</loc>
-    <lastmod>2022-06-14T18:48:56+08:00</lastmod>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/p/vmware-network/</loc>
-    <lastmod>2022-06-14T18:48:56+08:00</lastmod>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/tags/html/</loc>
-    <lastmod>2022-06-14T18:48:56+08:00</lastmod>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/p/mdn-html-form/</loc>
-    <lastmod>2022-06-14T18:48:56+08:00</lastmod>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/tags/javascript/</loc>
-    <lastmod>2022-06-14T18:48:56+08:00</lastmod>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/p/mdn-javascript/</loc>
-    <lastmod>2022-06-14T18:48:56+08:00</lastmod>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/tags/css/</loc>
-    <lastmod>2022-06-14T18:48:56+08:00</lastmod>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/p/mdn-css/</loc>
-    <lastmod>2022-06-14T18:48:56+08:00</lastmod>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/p/mdn-html/</loc>
-    <lastmod>2022-06-14T18:48:56+08:00</lastmod>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/tags/freeswitch/</loc>
     <lastmod>2022-06-14T18:48:56+08:00</lastmod>

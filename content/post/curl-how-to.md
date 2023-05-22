@@ -2,6 +2,9 @@
 title: "Curl How To"
 description: "how to debug http server"
 date: 2023-05-14T10:44:13+08:00
+keywords: [curl, httpd]
+tags: [curl, httpd]
+categories: [pub]
 image: 
 math: 
 license: 
