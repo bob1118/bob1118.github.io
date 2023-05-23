@@ -1,14 +1,18 @@
 ---
-title: "Iphone Restore"
+title: Iphone Restore
+description: Iphone Restore
 date: 2020-09-20T16:10:22+08:00
-lastmod: 2020-09-20T16:10:22+08:00
+image: 
+keywords: 
+    - iphone
+tags: 
+    - iphone
+categories: 
+    - pub
+author: bob
 draft: true
-keywords: []
-description: ""
-tags: [iphone]
-categories: [pub]
-author: "bob"
-
+hidden: false
+comments: true
 ---
 
 <!--more-->

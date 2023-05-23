@@ -9,6 +9,20 @@ tags: [javascript]
 categories: [pub]
 author: "bob"
 
+title: MDN Javascript
+description: learn mdn javascript
+date: 2021-06-15T09:24:52+08:00
+image: 
+keywords: 
+    - javascript
+tags: 
+    - javascript
+categories: 
+    - pub
+author: bob
+draft: true
+hidden: false
+comments: true
 ---
 
 <!--more-->

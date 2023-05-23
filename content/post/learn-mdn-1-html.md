@@ -1,14 +1,18 @@
 ---
-title: "Mdn Html"
+title: Mdn Html
+description: learn html from mdn web docs
 date: 2021-05-30T20:22:15+08:00
-lastmod: 2021-05-30T20:22:15+08:00
-draft: false
-keywords: [html]
-description: "learn html from mdn web docs"
-tags: [html]
-categories: [pub]
-author: "bob"
-
+image: 
+keywords: 
+    - html
+tags: 
+    - html
+categories: 
+    - pub
+author: bob
+draft: true
+hidden: false
+comments: true
 ---
 
 <!--more-->

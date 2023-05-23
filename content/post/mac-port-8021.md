@@ -9,6 +9,21 @@ tags: [mac]
 categories: [pub]
 author: "bob"
 
+title: Port 8021 on mac
+description: port 8021 already used on macbook 2021 pro.
+date: 2021-12-13T14:51:09+08:00
+image: 
+keywords: 
+    - macbook
+    - port 8021
+tags: 
+    - mac
+categories: 
+    - pub
+author: bob
+draft: false
+hidden: false
+comments: true
 ---
 
 <!--more-->

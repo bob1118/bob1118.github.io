@@ -1,14 +1,20 @@
 ---
-title: "Macbook Pro 2021"
+title: Macbook Pro 2021
+description: Apple new macbook pro 2021 release.
 date: 2021-12-10T16:52:16+08:00
-lastmod: 2021-12-10T16:52:16+08:00
+image: 
+keywords: 
+    - macbook pro 2021
+    - macbook pro M1 pro
+    - macbook pro M1 max
+tags: 
+    - mac
+categories: 
+    - pub
+author: bob
 draft: false
-keywords: [macbook pro 2021, macbook pro M1 pro, macbook pro M1 max]
-description: "Apple new macbook pro 2021 release."
-tags: [mac]
-categories: [pub]
-author: "bob"
-
+hidden: false
+comments: true
 ---
 
 <!--more-->

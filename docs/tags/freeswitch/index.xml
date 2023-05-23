@@ -14,8 +14,8 @@
         <guid>https://tsinling.org/p/freeswitch-stunserver/</guid>
         <description>&lt;h1 id=&#34;stun-unreachable&#34;&gt;stun unreachable&lt;/h1&gt;
 &lt;p&gt;最近的freesiwtch stun server stun.freeswitch.org因不明原因不可达。
-默认的stun.freeswitch.org是指向第三方的stun server的，自从stun.freeswitch.org指向stun.signalwire.com，很有可能freeswitch team自举了stunserver，丢弃了外部的stun请求。
-这样造成了采取默认配置的freeswitch启动的时候失败，mod_sofia获取不到external ip加载失败。&lt;/p&gt;
+默认的stun.freeswitch.org是指向第三方的stun server的。stun.freeswitch.org指向stun.signalwire.com，很有可能freeswitch team自举了stunserver，丢弃了外部的stun请求。
+这样造成了采取默认配置的freeswitch启动的时候失败(mod_sofia获取不到external ip)。&lt;/p&gt;
 &lt;p&gt;可以调整配置中默认的stun地址解决，也可以配置sofia的external ip地址来解决。&lt;/p&gt;
 &lt;p&gt;以上源自FS-11604: [Configuration] Improve Vanilla config所造成。&lt;/p&gt;
 &lt;h2 id=&#34;公共的stun&#34;&gt;公共的stun&lt;/h2&gt;

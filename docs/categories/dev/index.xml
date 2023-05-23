@@ -7,12 +7,12 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <lastBuildDate>Mon, 20 Jun 2022 13:25:51 +0800</lastBuildDate><atom:link href="https://tsinling.org/categories/dev/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Command Line</title>
-        <link>https://tsinling.org/p/command-line/</link>
+        <title>Command Line develop</title>
+        <link>https://tsinling.org/p/command-line-develop/</link>
         <pubDate>Mon, 20 Jun 2022 13:25:51 +0800</pubDate>
         
-        <guid>https://tsinling.org/p/command-line/</guid>
-        <description>&lt;img src="https://tsinling.org/p/command-line/cli.png" alt="Featured image of post Command Line" /&gt;&lt;h1 id=&#34;cobra&#34;&gt;Cobra&lt;/h1&gt;
+        <guid>https://tsinling.org/p/command-line-develop/</guid>
+        <description>&lt;img src="https://tsinling.org/p/command-line-develop/cli.png" alt="Featured image of post Command Line develop" /&gt;&lt;h1 id=&#34;cobra&#34;&gt;Cobra&lt;/h1&gt;
 &lt;p&gt;cobra是一个用来创建命令行程序的扩展库 &lt;a class=&#34;link&#34; href=&#34;https://github.com/spf13/cobra&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/spf13/cobra&lt;/a&gt;。&lt;/p&gt;
 &lt;h2 id=&#34;cli&#34;&gt;cli&lt;/h2&gt;

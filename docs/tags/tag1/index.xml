@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>tag1 on bob&#39;s rabbit hole</title>
+        <link>https://tsinling.org/tags/tag1/</link>
+        <description>Recent content in tag1 on bob&#39;s rabbit hole</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sat, 23 May 2020 20:44:37 +0800</lastBuildDate><atom:link href="https://tsinling.org/tags/tag1/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hugo Image</title>
+        <link>https://tsinling.org/p/hugo-image/</link>
+        <pubDate>Sat, 23 May 2020 20:44:37 +0800</pubDate>
+        
+        <guid>https://tsinling.org/p/hugo-image/</guid>
+        <description>&lt;img src="https://tsinling.org/p/hugo-image/hugo-image.jpg" alt="Featured image of post Hugo Image" /&gt;&lt;p&gt;hugo image.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

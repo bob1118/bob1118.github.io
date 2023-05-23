@@ -7,19 +7,11 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <lastBuildDate>Sun, 14 May 2023 10:44:13 +0800</lastBuildDate><atom:link href="https://tsinling.org/tags/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>curl</title>
+        <title>Curl</title>
         <link>https://tsinling.org/tags/curl/</link>
         <pubDate>Sun, 14 May 2023 10:44:13 +0800</pubDate>
         
         <guid>https://tsinling.org/tags/curl/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>httpd</title>
-        <link>https://tsinling.org/tags/httpd/</link>
-        <pubDate>Sun, 14 May 2023 10:44:13 +0800</pubDate>
-        
-        <guid>https://tsinling.org/tags/httpd/</guid>
         <description></description>
         </item>
         <item>
@@ -28,22 +20,6 @@
         <pubDate>Mon, 20 Jun 2022 13:25:51 +0800</pubDate>
         
         <guid>https://tsinling.org/tags/cli/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>cobra</title>
-        <link>https://tsinling.org/tags/cobra/</link>
-        <pubDate>Mon, 20 Jun 2022 13:25:51 +0800</pubDate>
-        
-        <guid>https://tsinling.org/tags/cobra/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>flag</title>
-        <link>https://tsinling.org/tags/flag/</link>
-        <pubDate>Mon, 20 Jun 2022 13:25:51 +0800</pubDate>
-        
-        <guid>https://tsinling.org/tags/flag/</guid>
         <description></description>
         </item>
         <item>
@@ -71,19 +47,19 @@
         <description></description>
         </item>
         <item>
+        <title>ssh</title>
+        <link>https://tsinling.org/tags/ssh/</link>
+        <pubDate>Fri, 15 Apr 2022 15:39:30 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/ssh/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>vscode</title>
         <link>https://tsinling.org/tags/vscode/</link>
         <pubDate>Fri, 15 Apr 2022 15:39:30 +0800</pubDate>
         
         <guid>https://tsinling.org/tags/vscode/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>vscode remote ssh</title>
-        <link>https://tsinling.org/tags/vscode-remote-ssh/</link>
-        <pubDate>Fri, 15 Apr 2022 15:39:30 +0800</pubDate>
-        
-        <guid>https://tsinling.org/tags/vscode-remote-ssh/</guid>
         <description></description>
         </item>
         <item>
@@ -95,11 +71,27 @@
         <description></description>
         </item>
         <item>
+        <title>psql</title>
+        <link>https://tsinling.org/tags/psql/</link>
+        <pubDate>Wed, 22 Dec 2021 16:09:56 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/psql/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>mac</title>
         <link>https://tsinling.org/tags/mac/</link>
         <pubDate>Mon, 13 Dec 2021 14:51:09 +0800</pubDate>
         
         <guid>https://tsinling.org/tags/mac/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>dhcp</title>
+        <link>https://tsinling.org/tags/dhcp/</link>
+        <pubDate>Wed, 14 Jul 2021 20:26:17 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/dhcp/</guid>
         <description></description>
         </item>
         <item>
@@ -127,7 +119,7 @@
         <description></description>
         </item>
         <item>
-        <title>CSS</title>
+        <title>css</title>
         <link>https://tsinling.org/tags/css/</link>
         <pubDate>Wed, 02 Jun 2021 07:17:50 +0800</pubDate>
         
@@ -143,7 +135,7 @@
         <description></description>
         </item>
         <item>
-        <title>hugo</title>
+        <title>Hugo</title>
         <link>https://tsinling.org/tags/hugo/</link>
         <pubDate>Tue, 22 Sep 2020 13:27:37 +0800</pubDate>
         
@@ -159,11 +151,11 @@
         <description></description>
         </item>
         <item>
-        <title>Example Tag</title>
-        <link>https://tsinling.org/tags/example-tag/</link>
-        <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
+        <title>tag1</title>
+        <link>https://tsinling.org/tags/tag1/</link>
+        <pubDate>Sat, 23 May 2020 20:44:37 +0800</pubDate>
         
-        <guid>https://tsinling.org/tags/example-tag/</guid>
+        <guid>https://tsinling.org/tags/tag1/</guid>
         <description></description>
         </item>
         

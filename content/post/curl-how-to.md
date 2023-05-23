@@ -1,16 +1,19 @@
 ---
-title: "Curl How To"
-description: "how to debug http server"
+title: Curl How To
+description: how to debug httpd rest api.
 date: 2023-05-14T10:44:13+08:00
-keywords: [curl, httpd]
-tags: [curl, httpd]
-categories: [pub]
 image: 
-math: 
-license: 
+keywords: 
+    - curl
+    - httpd
+tags: 
+    - Curl
+categories: 
+    - pub
+author: bob
+draft: true
 hidden: false
 comments: true
-draft: true
 ---
 
 # CURL

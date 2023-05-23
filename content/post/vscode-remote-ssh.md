@@ -1,14 +1,20 @@
 ---
-title: "Vscode Remote Ssh"
+title: Vscode Remote Ssh
+description: vscode remote development how to .
 date: 2022-04-15T15:39:30+08:00
-lastmod: 2022-04-15T15:39:30+08:00
+image: 
+keywords: 
+    - vscode
+    - remote ssh
+tags: 
+    - vscode
+    - ssh
+categories: 
+    - pub
+author: bob
 draft: true
-keywords: ["vscode","vsocde remote ssh"]
-description: "vscode remote ssh."
-tags: ["vscode","vscode remote ssh"]
-categories: [pub]
-author: "bob"
-
+hidden: false
+comments: true
 ---
 
 <!--more-->

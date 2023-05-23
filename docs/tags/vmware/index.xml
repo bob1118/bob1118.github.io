@@ -22,8 +22,7 @@
 &lt;h3 id=&#34;dhcp-client&#34;&gt;DHCP Client&lt;/h3&gt;
 &lt;p&gt;dhcp client 使用命令ifdown,ifup皆不能从dhcp server收到任何回应。&lt;/p&gt;
 &lt;h2 id=&#34;罪魁祸首&#34;&gt;罪魁祸首&lt;/h2&gt;
-&lt;p&gt;Vmware-&amp;gt;编辑-&amp;gt;虚拟网络编辑器-&amp;gt;更改设置&lt;br&gt;
-把默认的已桥接至(自动)改成(目标网卡),应用保存就可以了。&lt;/p&gt;</description>
+&lt;p&gt;Vmware-&amp;gt;编辑-&amp;gt;虚拟网络编辑器-&amp;gt;更改设置，把默认的已桥接至(自动)改成(目标网卡)，应用保存即可。&lt;/p&gt;</description>
         </item>
         
     </channel>

@@ -7,11 +7,11 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <lastBuildDate>Mon, 13 Dec 2021 14:51:09 +0800</lastBuildDate><atom:link href="https://tsinling.org/tags/mac/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Mac Port 8021</title>
-        <link>https://tsinling.org/p/mac-port-8021/</link>
+        <title>Port 8021 on mac</title>
+        <link>https://tsinling.org/p/port-8021-on-mac/</link>
         <pubDate>Mon, 13 Dec 2021 14:51:09 +0800</pubDate>
         
-        <guid>https://tsinling.org/p/mac-port-8021/</guid>
+        <guid>https://tsinling.org/p/port-8021-on-mac/</guid>
         <description>&lt;h1 id=&#34;mac-port-8021&#34;&gt;Mac port 8021&lt;/h1&gt;
 &lt;p&gt;在mac上调试程序的时，偶尔碰到tcp端口8021被系统占用，调试失败。&lt;br&gt;
 用lsof -Pi:8021看看PID，kill就可以了。碰到不能kill的需要进一步调查，然后得到如下命令，下次碰到被占用时试试。&lt;br&gt;

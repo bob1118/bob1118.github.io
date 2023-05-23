@@ -1407,7 +1407,7 @@ LocalOS使用ssh_rsa登入root@remoteOS。&lt;/p&gt;
 &lt;/div&gt;&lt;p&gt;在vscode中，我们SSH到一台RemoteOS就像我们本地LocalOS开发一样简单。&lt;/p&gt;</description>
         </item>
         <item>
-        <title>Postgresql How To</title>
+        <title>postgresql how to</title>
         <link>https://tsinling.org/p/postgresql-how-to/</link>
         <pubDate>Wed, 22 Dec 2021 16:09:56 +0800</pubDate>
         
@@ -1618,11 +1618,11 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>Mac Port 8021</title>
-        <link>https://tsinling.org/p/mac-port-8021/</link>
+        <title>Port 8021 on mac</title>
+        <link>https://tsinling.org/p/port-8021-on-mac/</link>
         <pubDate>Mon, 13 Dec 2021 14:51:09 +0800</pubDate>
         
-        <guid>https://tsinling.org/p/mac-port-8021/</guid>
+        <guid>https://tsinling.org/p/port-8021-on-mac/</guid>
         <description>&lt;h1 id=&#34;mac-port-8021&#34;&gt;Mac port 8021&lt;/h1&gt;
 &lt;p&gt;在mac上调试程序的时，偶尔碰到tcp端口8021被系统占用，调试失败。&lt;br&gt;
 用lsof -Pi:8021看看PID，kill就可以了。碰到不能kill的需要进一步调查，然后得到如下命令，下次碰到被占用时试试。&lt;br&gt;
@@ -1842,8 +1842,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;h3 id=&#34;dhcp-client&#34;&gt;DHCP Client&lt;/h3&gt;
 &lt;p&gt;dhcp client 使用命令ifdown,ifup皆不能从dhcp server收到任何回应。&lt;/p&gt;
 &lt;h2 id=&#34;罪魁祸首&#34;&gt;罪魁祸首&lt;/h2&gt;
-&lt;p&gt;Vmware-&amp;gt;编辑-&amp;gt;虚拟网络编辑器-&amp;gt;更改设置&lt;br&gt;
-把默认的已桥接至(自动)改成(目标网卡),应用保存就可以了。&lt;/p&gt;</description>
+&lt;p&gt;Vmware-&amp;gt;编辑-&amp;gt;虚拟网络编辑器-&amp;gt;更改设置，把默认的已桥接至(自动)改成(目标网卡)，应用保存即可。&lt;/p&gt;</description>
         </item>
         <item>
         <title>Mdn Html Form</title>
@@ -3311,7 +3310,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;h4 id=&#34;4232-兼容性表格&#34;&gt;4.2.3.2 兼容性表格&lt;/h4&gt;</description>
         </item>
         <item>
-        <title>mdn Javascript</title>
+        <title>MDN Javascript</title>
         <link>https://tsinling.org/p/mdn-javascript/</link>
         <pubDate>Tue, 15 Jun 2021 09:24:52 +0800</pubDate>
         
@@ -3843,7 +3842,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;h3 id=&#34;357-客户端存储&#34;&gt;3.5.7 客户端存储&lt;/h3&gt;</description>
         </item>
         <item>
-        <title>Mdn Css</title>
+        <title>Mdn CSS</title>
         <link>https://tsinling.org/p/mdn-css/</link>
         <pubDate>Wed, 02 Jun 2021 07:17:50 +0800</pubDate>
         
@@ -7532,8 +7531,8 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
         <guid>https://tsinling.org/p/freeswitch-stunserver/</guid>
         <description>&lt;h1 id=&#34;stun-unreachable&#34;&gt;stun unreachable&lt;/h1&gt;
 &lt;p&gt;最近的freesiwtch stun server stun.freeswitch.org因不明原因不可达。
-默认的stun.freeswitch.org是指向第三方的stun server的，自从stun.freeswitch.org指向stun.signalwire.com，很有可能freeswitch team自举了stunserver，丢弃了外部的stun请求。
-这样造成了采取默认配置的freeswitch启动的时候失败，mod_sofia获取不到external ip加载失败。&lt;/p&gt;
+默认的stun.freeswitch.org是指向第三方的stun server的。stun.freeswitch.org指向stun.signalwire.com，很有可能freeswitch team自举了stunserver，丢弃了外部的stun请求。
+这样造成了采取默认配置的freeswitch启动的时候失败(mod_sofia获取不到external ip)。&lt;/p&gt;
 &lt;p&gt;可以调整配置中默认的stun地址解决，也可以配置sofia的external ip地址来解决。&lt;/p&gt;
 &lt;p&gt;以上源自FS-11604: [Configuration] Improve Vanilla config所造成。&lt;/p&gt;
 &lt;h2 id=&#34;公共的stun&#34;&gt;公共的stun&lt;/h2&gt;
@@ -7607,8 +7606,8 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
         <description>&lt;h1 id=&#34;hugo&#34;&gt;hugo&lt;/h1&gt;
 &lt;p&gt;hugo 在windows X64平台支持Sass/SCCS。&lt;/p&gt;
 &lt;h2 id=&#34;快捷安装&#34;&gt;快捷安装&lt;/h2&gt;
-&lt;p&gt;最快捷的方法就是去tag下载二进制文件了，&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/releases/download/v0.75.1/hugo_extended_0.75.1_Windows-64bit.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;hugo0.75.1 with extended&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;最快捷的方法就是去tag下载二进制文件了，&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo with extended&lt;/a&gt;。&lt;/p&gt;
 &lt;h2 id=&#34;编译安装&#34;&gt;编译安装&lt;/h2&gt;
 &lt;p&gt;可以参考hugo的&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/blob/master/README.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Readme.md&lt;/a&gt;。&lt;/p&gt;
@@ -7712,6 +7711,15 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;li&gt;按住开机按钮和量调低按钮，几秒钟后松开开机按钮，再过几秒钟松开音量调低按钮，进入dfu模式。&lt;/li&gt;
 &lt;li&gt;Itunes弹出“iphone出现问题需要更新或恢复”，点恢复下载ios14.ispw恢复Iphone。&lt;/li&gt;
 &lt;/ul&gt;</description>
+        </item>
+        <item>
+        <title>Hugo Image</title>
+        <link>https://tsinling.org/p/hugo-image/</link>
+        <pubDate>Sat, 23 May 2020 20:44:37 +0800</pubDate>
+        
+        <guid>https://tsinling.org/p/hugo-image/</guid>
+        <description>&lt;img src="https://tsinling.org/p/hugo-image/hugo-image.jpg" alt="Featured image of post Hugo Image" /&gt;&lt;p&gt;hugo image.&lt;/p&gt;
+</description>
         </item>
         
     </channel>

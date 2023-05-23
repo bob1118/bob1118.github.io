@@ -1,14 +1,19 @@
 ---
-title: "Install Hugo With Extended"
+title: Install Hugo With Extended
+description: Install Hugo With Extended
 date: 2020-09-22T13:27:37+08:00
-lastmod: 2020-09-22T13:27:37+08:00
+image: 
+keywords: 
+    - hugo
+    - hugo extended
+tags: 
+    - Hugo
+categories: 
+    - pub
+author: bob
 draft: true
-keywords: []
-description: ""
-tags: [hugo]
-categories: [pub]
-author: "bob"
-
+hidden: false
+comments: true
 ---
 
 <!--more-->
@@ -18,7 +23,7 @@ hugo 在windows X64平台支持Sass/SCCS。
 
 ## 快捷安装
 
-最快捷的方法就是去tag下载二进制文件了，[hugo0.75.1 with extended](https://github.com/gohugoio/hugo/releases/download/v0.75.1/hugo_extended_0.75.1_Windows-64bit.zip)。
+最快捷的方法就是去tag下载二进制文件了，[hugo with extended](https://github.com/gohugoio/hugo/releases)。
 
 ## 编译安装
 

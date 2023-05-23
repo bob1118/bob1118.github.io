@@ -1,14 +1,20 @@
 ---
-title: "Vmware Network"
+title: Vmware Network
+description: virtual machine networking missing
 date: 2021-07-14T20:26:17+08:00
-lastmod: 2021-07-14T20:26:17+08:00
+image: 
+keywords: 
+    - vmware network
+    - dhcp client
+tags: 
+    - vmware
+    - dhcp
+categories: 
+    - pub
+author: bob
 draft: false
-keywords: [vmware]
-description: "virtual machine networking missing"
-tags: [vmware]
-categories: [pub]
-author: "bob"
-
+hidden: false
+comments: true
 ---
 
 <!--more-->
@@ -31,5 +37,4 @@ dhcp client 使用命令ifdown,ifup皆不能从dhcp server收到任何回应。
 
 ## 罪魁祸首
 
-Vmware->编辑->虚拟网络编辑器->更改设置  
-把默认的已桥接至(自动)改成(目标网卡),应用保存就可以了。
+Vmware->编辑->虚拟网络编辑器->更改设置，把默认的已桥接至(自动)改成(目标网卡)，应用保存即可。

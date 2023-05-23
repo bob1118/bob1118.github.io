@@ -1,14 +1,19 @@
 ---
-title: "Postgresql How To"
+title: postgresql how to
+description: postgres database how to. 
 date: 2021-12-22T16:09:56+08:00
-lastmod: 2021-12-22T16:09:56+08:00
-draft: false
-keywords: [postgresql,postgres,pgsql]
-description: "postgresql how to"
-tags: [postgresql]
-categories: [pub]
-author: "bob"
-
+image: 
+keywords: 
+    - postgresql
+tags: 
+    - postgresql
+    - psql
+categories: 
+    - pub
+author: bob
+draft: true
+hidden: false
+comments: true
 ---
 
 <!--more-->

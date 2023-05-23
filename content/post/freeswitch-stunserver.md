@@ -1,22 +1,27 @@
 ---
-title: "Freeswitch Stunserver"
+title: Freeswitch Stunserver
+description: freeswitch default stunserver stun.freeswitch.org unreachable.
 date: 2020-10-31T09:49:45+08:00
-lastmod: 2020-10-31T09:49:45+08:00
+image: 
+keywords: 
+    - freeswitch
+    - stunserver
+tags: 
+    - freeswitch
+categories: 
+    - pub
+author: bob
 draft: true
-keywords: []
-description: "freeswitch default stunserver stun.freeswitch.org unreachable."
-tags: [freeswitch]
-categories: [pub]
-author: "bob"
-
+hidden: false
+comments: true
 ---
 
 <!--more-->
 # stun unreachable
 
 最近的freesiwtch stun server stun.freeswitch.org因不明原因不可达。
-默认的stun.freeswitch.org是指向第三方的stun server的，自从stun.freeswitch.org指向stun.signalwire.com，很有可能freeswitch team自举了stunserver，丢弃了外部的stun请求。
-这样造成了采取默认配置的freeswitch启动的时候失败，mod_sofia获取不到external ip加载失败。
+默认的stun.freeswitch.org是指向第三方的stun server的。stun.freeswitch.org指向stun.signalwire.com，很有可能freeswitch team自举了stunserver，丢弃了外部的stun请求。
+这样造成了采取默认配置的freeswitch启动的时候失败(mod_sofia获取不到external ip)。
 
 可以调整配置中默认的stun地址解决，也可以配置sofia的external ip地址来解决。
 

@@ -1,14 +1,21 @@
 ---
-title: "Rtl8188eu"
+title: Rtl8188eu
+description: Realtek rtl8188eu wireless Lan USB Network Adapter sniffer.
 date: 2022-05-25T15:49:34+08:00
-lastmod: 2022-05-25T15:49:34+08:00
+image: 
+keywords: 
+    - wlan wifi
+    - airport interface sniffer
+tags: 
+    - wlan
+    - wifi
+    - iw
+categories: 
+    - pub
+author: bob
 draft: true
-keywords: ["rtl8188eu","wireless lan usb"]
-description: "Realtek rtl8188eu wireless Lan USB Network Adapter"
-tags: ["wlan","wifi","iw"]
-categories: [pub]
-author: "bob"
-
+hidden: false
+comments: true
 ---
 <!--more-->
 # Realtek rtl8188eu

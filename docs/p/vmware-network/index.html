@@ -2,7 +2,7 @@
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='virtual machine networking missing'>
-<meta name="keywords" content="vmware"><title>Vmware Network</title>
+<meta name="keywords" content="vmware network, dhcp client"><title>Vmware Network</title>
 
 <link rel='canonical' href='https://tsinling.org/p/vmware-network/'>
 
@@ -10,7 +10,7 @@
 <meta property='og:description' content='virtual machine networking missing'>
 <meta property='og:url' content='https://tsinling.org/p/vmware-network/'>
 <meta property='og:site_name' content='bob&#39;s rabbit hole'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='vmware' /><meta property='article:published_time' content='2021-07-14T20:26:17&#43;08:00'/><meta property='article:modified_time' content='2023-05-22T15:59:30&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='vmware' /><meta property='article:tag' content='dhcp' /><meta property='article:published_time' content='2021-07-14T20:26:17&#43;08:00'/><meta property='article:modified_time' content='2023-05-22T15:59:30&#43;08:00'/>
 <meta name="twitter:title" content="Vmware Network">
 <meta name="twitter:description" content="virtual machine networking missing">
     </head>
@@ -367,8 +367,7 @@
 <h3 id="dhcp-client">DHCP Client</h3>
 <p>dhcp client 使用命令ifdown,ifup皆不能从dhcp server收到任何回应。</p>
 <h2 id="罪魁祸首">罪魁祸首</h2>
-<p>Vmware-&gt;编辑-&gt;虚拟网络编辑器-&gt;更改设置<br>
-把默认的已桥接至(自动)改成(目标网卡),应用保存就可以了。</p>
+<p>Vmware-&gt;编辑-&gt;虚拟网络编辑器-&gt;更改设置，把默认的已桥接至(自动)改成(目标网卡)，应用保存即可。</p>
 </section>
 
 
@@ -377,6 +376,8 @@
     <section class="article-tags">
         
             <a href="/tags/vmware/">vmware</a>
+        
+            <a href="/tags/dhcp/">dhcp</a>
         
     </section>
 
@@ -466,7 +467,7 @@
         
 
         <div class="article-details">
-            <h2 class="article-title">Postgresql How To</h2>
+            <h2 class="article-title">postgresql how to</h2>
         </div>
     </a>
 </article>
@@ -474,12 +475,12 @@
             
                 
 <article class="">
-    <a href="/p/mac-port-8021/">
+    <a href="/p/port-8021-on-mac/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Mac Port 8021</h2>
+            <h2 class="article-title">Port 8021 on mac</h2>
         </div>
     </a>
 </article>

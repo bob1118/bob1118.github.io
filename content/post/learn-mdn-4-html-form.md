@@ -1,16 +1,20 @@
 ---
-title: "Mdn Html Form"
+title: Mdn Html Form
+description: learn mdn html form
 date: 2021-06-23T10:43:28+08:00
-lastmod: 2021-06-23T10:43:28+08:00
-draft: false
-keywords: [html]
-description: "learn mdn html form"
-tags: [html]
-categories: [pub]
-author: "bob"
-
+image: 
+keywords: 
+    - html
+    - form
+tags: 
+    - html
+categories: 
+    - pub
+author: bob
+draft: true
+hidden: false
+comments: true
 ---
-
 <!--more-->
 # 4 FORM
 

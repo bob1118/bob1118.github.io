@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://tsinling.org/categories/</loc>
-    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
+    <lastmod>2023-05-22T16:14:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,22 +16,19 @@
                 />
   </url><url>
     <loc>https://tsinling.org/tags/curl/</loc>
-    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
+    <lastmod>2023-05-22T16:14:11+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/p/curl-how-to/</loc>
-    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
-  </url><url>
-    <loc>https://tsinling.org/tags/httpd/</loc>
-    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
+    <lastmod>2023-05-22T16:14:11+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/post/</loc>
-    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
+    <lastmod>2023-05-22T16:14:11+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/categories/pub/</loc>
-    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
+    <lastmod>2023-05-22T16:14:11+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/tags/</loc>
-    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
+    <lastmod>2023-05-22T16:14:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -46,16 +43,10 @@
     <loc>https://tsinling.org/tags/cli/</loc>
     <lastmod>2022-06-20T23:11:07+08:00</lastmod>
   </url><url>
-    <loc>https://tsinling.org/tags/cobra/</loc>
-    <lastmod>2022-06-20T23:11:07+08:00</lastmod>
-  </url><url>
-    <loc>https://tsinling.org/p/command-line/</loc>
+    <loc>https://tsinling.org/p/command-line-develop/</loc>
     <lastmod>2022-06-20T23:11:07+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/categories/dev/</loc>
-    <lastmod>2022-06-20T23:11:07+08:00</lastmod>
-  </url><url>
-    <loc>https://tsinling.org/tags/flag/</loc>
     <lastmod>2022-06-20T23:11:07+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/tags/iw/</loc>
@@ -70,10 +61,10 @@
     <loc>https://tsinling.org/tags/wlan/</loc>
     <lastmod>2022-06-14T18:48:56+08:00</lastmod>
   </url><url>
-    <loc>https://tsinling.org/tags/vscode/</loc>
+    <loc>https://tsinling.org/tags/ssh/</loc>
     <lastmod>2022-06-14T18:48:56+08:00</lastmod>
   </url><url>
-    <loc>https://tsinling.org/tags/vscode-remote-ssh/</loc>
+    <loc>https://tsinling.org/tags/vscode/</loc>
     <lastmod>2022-06-14T18:48:56+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/p/vscode-remote-ssh/</loc>
@@ -91,13 +82,19 @@
     <loc>https://tsinling.org/p/postgresql-how-to/</loc>
     <lastmod>2023-05-22T15:59:30+08:00</lastmod>
   </url><url>
+    <loc>https://tsinling.org/tags/psql/</loc>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
+  </url><url>
     <loc>https://tsinling.org/tags/mac/</loc>
     <lastmod>2023-05-22T15:59:30+08:00</lastmod>
   </url><url>
-    <loc>https://tsinling.org/p/mac-port-8021/</loc>
+    <loc>https://tsinling.org/p/port-8021-on-mac/</loc>
     <lastmod>2023-05-22T15:59:30+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/p/macbook-pro-2021/</loc>
+    <lastmod>2023-05-22T15:59:30+08:00</lastmod>
+  </url><url>
+    <loc>https://tsinling.org/tags/dhcp/</loc>
     <lastmod>2023-05-22T15:59:30+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/tags/vmware/</loc>
@@ -145,11 +142,11 @@
     <loc>https://tsinling.org/p/iphone-restore/</loc>
     <lastmod>2022-06-16T17:03:16+08:00</lastmod>
   </url><url>
-    <loc>https://tsinling.org/tags/example-tag/</loc>
-    <lastmod>2022-06-14T18:48:56+08:00</lastmod>
+    <loc>https://tsinling.org/p/hugo-image/</loc>
+    <lastmod>2020-05-23T20:44:37+08:00</lastmod>
   </url><url>
-    <loc>https://tsinling.org/p/hello-world/</loc>
-    <lastmod>2022-06-14T18:48:56+08:00</lastmod>
+    <loc>https://tsinling.org/tags/tag1/</loc>
+    <lastmod>2020-05-23T20:44:37+08:00</lastmod>
   </url><url>
     <loc>https://tsinling.org/</loc>
     <lastmod>2022-06-14T15:08:29+08:00</lastmod>

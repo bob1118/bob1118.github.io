@@ -10,6 +10,23 @@ tags:
     - flag
     - cobra
 draft: true
+
+title: Command Line develop
+description: how to build a command line tool
+date: 2022-06-20T13:25:51+08:00
+image: cli.png
+keywords: 
+    - cobra
+    - cli
+    - flag
+tags: 
+    - cli
+categories: 
+    - dev
+author: bob
+draft: true
+hidden: false
+comments: true
 ---
 
 # Cobra

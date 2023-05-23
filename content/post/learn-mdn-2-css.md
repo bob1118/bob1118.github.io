@@ -1,14 +1,18 @@
 ---
-title: "Mdn Css"
+title: Mdn CSS
+description: learn Mdn Cascading Style Sheets
 date: 2021-06-02T07:17:50+08:00
-lastmod: 2021-06-02T07:17:50+08:00
-draft: false
-keywords: [CSS]
-description: "learn Mdn Cascading Style Sheets"
-tags: [CSS]
-categories: [pub]
-author: "bob"
-
+image: 
+keywords: 
+    - css
+tags: 
+    - css
+categories: 
+    - pub
+author: bob
+draft: true
+hidden: false
+comments: true
 ---
 
 <!--more-->
