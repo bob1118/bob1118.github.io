@@ -10,7 +10,7 @@
 <meta property='og:description' content='Install Hugo With Extended'>
 <meta property='og:url' content='https://tsinling.org/p/install-hugo-with-extended/'>
 <meta property='og:site_name' content='bob&#39;s rabbit hole'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo' /><meta property='article:published_time' content='2020-09-22T13:27:37&#43;08:00'/><meta property='article:modified_time' content='2022-06-14T18:48:56&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo' /><meta property='article:published_time' content='2020-09-22T13:27:37&#43;08:00'/><meta property='article:modified_time' content='2023-05-23T20:59:40&#43;08:00'/>
 <meta name="twitter:title" content="Install Hugo With Extended">
 <meta name="twitter:description" content="Install Hugo With Extended">
     </head>
@@ -394,13 +394,13 @@
 </span></span><span class="line"><span class="cl">...
 </span></span><span class="line"><span class="cl">Error: <span class="nb">export</span> ordinal too large: <span class="m">78124</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">go install -a -x --tags extended
+</span></span><span class="line"><span class="cl">go install -a -x -tags extended
 </span></span><span class="line"><span class="cl">...
 </span></span><span class="line"><span class="cl">c:<span class="se">\g</span>o<span class="se">\p</span>kg<span class="se">\t</span>ool<span class="se">\w</span>indows_amd64<span class="se">\l</span>ink.exe: running g++ failed: <span class="nb">exit</span> status <span class="m">1</span>
 </span></span><span class="line"><span class="cl">../x86_64-w64-mingw32/bin/ld.exe: Error: <span class="nb">export</span> ordinal too large: <span class="m">78124</span>
 </span></span><span class="line"><span class="cl">collect2.exe: error: ld returned <span class="m">1</span> <span class="nb">exit</span> status
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">go install -a -x -v -buildmode<span class="o">=</span>exe --tags extended
+</span></span><span class="line"><span class="cl">go install -a -x -v -buildmode<span class="o">=</span>exe -tags extended
 </span></span><span class="line"><span class="cl">...
 </span></span><span class="line"><span class="cl">cp <span class="nv">$WORK</span><span class="se">\b</span>001<span class="se">\e</span>xe<span class="se">\a</span>.out.exe C:<span class="se">\U</span>sers<span class="se">\b</span>ob<span class="se">\g</span>o<span class="se">\b</span>in<span class="se">\h</span>ugo.exe
 </span></span></code></pre></td></tr></table>
@@ -415,7 +415,16 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">go install -a -x -v -ldflags <span class="s2">&#34;-w -s&#34;</span> --tags extended
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">go install -v -ldflags <span class="s2">&#34;-w -s&#34;</span> -tags extended
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>需要全编译加上 -a即可。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">go install -a -x -v -ldflags <span class="s2">&#34;-w -s&#34;</span> -tags extended
 </span></span></code></pre></td></tr></table>
 </div>
 </div>
@@ -453,7 +462,7 @@
 
 
         <span>
-            最后更新于 2022-06-14 18:48 CST
+            最后更新于 2023-05-23 20:59 CST
         </span>
     </section></footer>
 

@@ -41,13 +41,13 @@ go install --tags extended
 ...
 Error: export ordinal too large: 78124
 
-go install -a -x --tags extended
+go install -a -x -tags extended
 ...
 c:\go\pkg\tool\windows_amd64\link.exe: running g++ failed: exit status 1
 ../x86_64-w64-mingw32/bin/ld.exe: Error: export ordinal too large: 78124
 collect2.exe: error: ld returned 1 exit status
 
-go install -a -x -v -buildmode=exe --tags extended
+go install -a -x -v -buildmode=exe -tags extended
 ...
 cp $WORK\b001\exe\a.out.exe C:\Users\bob\go\bin\hugo.exe
 ```
@@ -61,5 +61,10 @@ cp $WORK\b001\exe\a.out.exe C:\Users\bob\go\bin\hugo.exe
 默认编译的文件比较大，可以使用-ldflags "-w -s"去掉调试信息。
 
 ``` shell
-go install -a -x -v -ldflags "-w -s" --tags extended
+go install -v -ldflags "-w -s" -tags extended
+```
+
+需要全编译加上 -a即可。
+```shell 
+go install -a -x -v -ldflags "-w -s" -tags extended
 ```
