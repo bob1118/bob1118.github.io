@@ -1,16 +1,4 @@
 ---
-title: "Command Line"
-description: how to build a command line tool
-date: 2022-06-20T13:25:51+08:00
-image: cli.png
-categories:
-    - dev
-tags:
-    - cli
-    - flag
-    - cobra
-draft: true
-
 title: Command Line develop
 description: how to build a command line tool
 date: 2022-06-20T13:25:51+08:00
