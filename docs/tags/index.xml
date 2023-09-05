@@ -6,7 +6,23 @@
         <description>Recent content in Tags on bob&#39;s rabbit hole</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sun, 11 Jun 2023 10:27:32 +0800</lastBuildDate><atom:link href="https://tsinling.org/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 06 Jul 2023 16:50:58 +0800</lastBuildDate><atom:link href="https://tsinling.org/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>mod_acd</title>
+        <link>https://tsinling.org/tags/mod_acd/</link>
+        <pubDate>Thu, 06 Jul 2023 16:50:58 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/mod_acd/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>mod_fifo</title>
+        <link>https://tsinling.org/tags/mod_fifo/</link>
+        <pubDate>Thu, 06 Jul 2023 16:50:58 +0800</pubDate>
+        
+        <guid>https://tsinling.org/tags/mod_fifo/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>shm</title>
         <link>https://tsinling.org/tags/shm/</link>
         <pubDate>Sun, 11 Jun 2023 10:27:32 +0800</pubDate>

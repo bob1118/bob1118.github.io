@@ -3,10 +3,13 @@ title: "mdn Javascript"
 date: 2021-06-15T09:24:52+08:00
 lastmod: 2021-06-15T09:24:52+08:00
 draft: false
-keywords: [jvavascript]
+keywords: 
+    - jvavascript
 description: "learn mdn javascript"
-tags: [javascript]
-categories: [pub]
+tags: 
+    - javascript
+categories: 
+    - pub
 author: "bob"
 
 title: MDN Javascript

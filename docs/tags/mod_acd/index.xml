@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>mod_acd on bob&#39;s rabbit hole</title>
+        <link>https://tsinling.org/tags/mod_acd/</link>
+        <description>Recent content in mod_acd on bob&#39;s rabbit hole</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Thu, 06 Jul 2023 16:50:58 +0800</lastBuildDate><atom:link href="https://tsinling.org/tags/mod_acd/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Freeswitch Mod_fifo</title>
+        <link>https://tsinling.org/p/freeswitch-mod_fifo/</link>
+        <pubDate>Thu, 06 Jul 2023 16:50:58 +0800</pubDate>
+        
+        <guid>https://tsinling.org/p/freeswitch-mod_fifo/</guid>
+        <description>&lt;h1 id=&#34;mod_fifo&#34;&gt;MOD_FIFO&lt;/h1&gt;
+&lt;p&gt;freeswitch mod_fifo 是一个做做排队的app，允许您使用分配的优先级创建自定义的呼叫队列。&lt;br&gt;
+在使用mod_fifo时，一般是caller(profile external的incoming channel/outgoing channel)执行app命中坐席的过程。&lt;/p&gt;
+&lt;p&gt;坐席定义了两种(consumer和member):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;consumer是坐席先呼入，被应答，登入队列保持等待。consumer等待caller提供通道服务。&lt;/li&gt;
+&lt;li&gt;member是在配置fifo.conf.xml中定义或fifo_member动态增减。member等待caller。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;用法&#34;&gt;用法&lt;/h2&gt;
+&lt;p&gt;fifo app 在caller channel 执行。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;fifo name&amp;gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;!&amp;lt;importance_number&amp;gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;in &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&amp;lt;announce file&amp;gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;undef&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&amp;lt;music file&amp;gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;undef&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; out &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;wait&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;nowait&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&amp;lt;announce file&amp;gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;undef&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&amp;lt;music file&amp;gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;undef&lt;span class=&#34;o&#34;&gt;]]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;//dialplan take a &lt;span class=&#34;nb&#34;&gt;caller&lt;/span&gt; out of FIFO queue.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;action &lt;span class=&#34;nv&#34;&gt;application&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;fifo&amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;myqueue out nowait /tmp/caller-found.wav /tmp/agent-music-on-hold.wav&amp;#34;&lt;/span&gt;/&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;//dialplan put a &lt;span class=&#34;nb&#34;&gt;caller&lt;/span&gt; into a FIFO queue.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;action &lt;span class=&#34;nv&#34;&gt;application&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;fifo&amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;myqueue in /tmp/exit-message.wav /tmp/music-on-hold.wav&amp;#34;&lt;/span&gt;/&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
