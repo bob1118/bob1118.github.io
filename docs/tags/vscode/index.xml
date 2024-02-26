@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>vscode on bob&#39;s rabbit hole</title>
+        <title>Vscode on bob&#39;s rabbit hole</title>
         <link>https://tsinling.org/tags/vscode/</link>
-        <description>Recent content in vscode on bob&#39;s rabbit hole</description>
+        <description>Recent content in Vscode on bob&#39;s rabbit hole</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <lastBuildDate>Fri, 15 Apr 2022 15:39:30 +0800</lastBuildDate><atom:link href="https://tsinling.org/tags/vscode/index.xml" rel="self" type="application/rss+xml" /><item>
@@ -157,12 +157,12 @@ LocalOS使用ssh_rsa登入root@remoteOS。&lt;/p&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-vim&#34; data-lang=&#34;vim&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;Host&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;debian&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;remote&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;server&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;&lt;/span&gt;  &lt;span class=&#34;nx&#34;&gt;HostName&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;10&lt;/span&gt;.&lt;span class=&#34;m&#34;&gt;10&lt;/span&gt;.&lt;span class=&#34;m&#34;&gt;10&lt;/span&gt;.&lt;span class=&#34;m&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;&lt;/span&gt;  &lt;span class=&#34;nx&#34;&gt;User&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;root&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;&lt;/span&gt;  &lt;span class=&#34;nx&#34;&gt;ForwardAgent&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;yes&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;&lt;/span&gt;  &lt;span class=&#34;nx&#34;&gt;IdentityFile&lt;/span&gt; &lt;span class=&#34;sr&#34;&gt;/Users/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;mymac&lt;/span&gt;&lt;span class=&#34;sr&#34;&gt;/.ssh/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;ssh_rsa&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-vim&#34; data-lang=&#34;vim&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;Host&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;debian&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;remote&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;server&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nx&#34;&gt;HostName&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;10&lt;/span&gt;.&lt;span class=&#34;m&#34;&gt;10&lt;/span&gt;.&lt;span class=&#34;m&#34;&gt;10&lt;/span&gt;.&lt;span class=&#34;m&#34;&gt;10&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nx&#34;&gt;User&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;root&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nx&#34;&gt;ForwardAgent&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;yes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nx&#34;&gt;IdentityFile&lt;/span&gt; &lt;span class=&#34;sr&#34;&gt;/Users/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;mymac&lt;/span&gt;&lt;span class=&#34;sr&#34;&gt;/.ssh/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;ssh_rsa&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;在vscode中，我们SSH到一台RemoteOS就像我们本地LocalOS开发一样简单。&lt;/p&gt;</description>
         </item>

@@ -197,8 +197,9 @@
         
 
         <div class="menu-bottom-section">
-                <li id="i18n-switch">  
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                
+                    <li id="i18n-switch">  
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M4 5h7" />
   <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
@@ -209,16 +210,17 @@
 
 
 
-                    <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
-                        
-                            <option value="https://tsinling.org/en/" >English</option>
-                        
-                            <option value="https://tsinling.org/" selected>中文简体</option>
-                        
-                    </select>
-                </li>
+                        <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
+                            
+                                <option value="https://tsinling.org/en/" >English</option>
+                            
+                                <option value="https://tsinling.org/" selected>中文简体</option>
+                            
+                        </select>
+                    </li>
+                
             
-            
+
             
                 <li id="dark-mode-toggle">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -293,7 +295,7 @@
     <header class="article-category">
         
             <a href="/categories/pub/" >
-                pub
+                Pub
             </a>
         
     </header>
@@ -502,12 +504,12 @@ LocalOS使用ssh_rsa登入root@remoteOS。</p>
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-vim" data-lang="vim"><span class="line"><span class="cl"><span class="nx">Host</span> <span class="nx">debian</span> <span class="nx">remote</span> <span class="nx">server</span><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>  <span class="nx">HostName</span> <span class="m">10</span>.<span class="m">10</span>.<span class="m">10</span>.<span class="m">10</span><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>  <span class="nx">User</span> <span class="nx">root</span><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>  <span class="nx">ForwardAgent</span> <span class="nx">yes</span><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>  <span class="nx">IdentityFile</span> <span class="sr">/Users/</span><span class="nx">mymac</span><span class="sr">/.ssh/</span><span class="nx">ssh_rsa</span><span class="err">
-</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-vim" data-lang="vim"><span class="line"><span class="cl"><span class="nx">Host</span> <span class="nx">debian</span> <span class="nx">remote</span> <span class="nx">server</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">HostName</span> <span class="m">10</span>.<span class="m">10</span>.<span class="m">10</span>.<span class="m">10</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">User</span> <span class="nx">root</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">ForwardAgent</span> <span class="nx">yes</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">IdentityFile</span> <span class="sr">/Users/</span><span class="nx">mymac</span><span class="sr">/.ssh/</span><span class="nx">ssh_rsa</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>在vscode中，我们SSH到一台RemoteOS就像我们本地LocalOS开发一样简单。</p>
 </section>
@@ -517,9 +519,9 @@ LocalOS使用ssh_rsa登入root@remoteOS。</p>
     
     <section class="article-tags">
         
-            <a href="/tags/vscode/">vscode</a>
+            <a href="/tags/vscode/">Vscode</a>
         
-            <a href="/tags/ssh/">ssh</a>
+            <a href="/tags/ssh/">Ssh</a>
         
     </section>
 
@@ -643,14 +645,14 @@ LocalOS使用ssh_rsa登入root@remoteOS。</p>
         
             2017 - 
         
-        2023 bob&#39;s rabbit hole
+        2024 bob&#39;s rabbit hole
     </section>
     
     <section class="powerby">
         
             <a href ="http://beian.miit.gov.cn/" target="_blank">陕ICP备14012495号-1</a><img src="https://www.12389.gov.cn/images/5692312.png"><a href ="http://www.beian.gov.cn/portal/registerSystemInfo" target="_blank">陕公安备61012402000103号</a> <br/>
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.20.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.22.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 

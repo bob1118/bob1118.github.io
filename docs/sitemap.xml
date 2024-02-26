@@ -2,14 +2,14 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <sitemap>
-    <loc>https://tsinling.org/en/sitemap.xml</loc>
+    <loc>https://tsinling.org/zh-cn/sitemap.xml</loc>
+    
+      <lastmod>2023-09-05T18:03:44+08:00</lastmod>
     
   </sitemap>
   
   <sitemap>
-    <loc>https://tsinling.org/zh-cn/sitemap.xml</loc>
-    
-      <lastmod>2023-07-06T16:50:58+08:00</lastmod>
+    <loc>https://tsinling.org/en/sitemap.xml</loc>
     
   </sitemap>
   
