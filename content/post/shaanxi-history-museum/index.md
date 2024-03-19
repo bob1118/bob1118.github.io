@@ -2,7 +2,7 @@
 title: Shaanxi History Museum
 description: 陕西历史博物馆抢票指南
 date: 2023-06-11T10:27:32+08:00
-image: shm.png
+image: shm.jpg
 keywords: 
     - 陕历博
     - 陕历博抢票
