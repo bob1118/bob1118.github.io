@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://tsinling.org/p/vscode-remote-ssh/'>
 
-<link rel="stylesheet" href="/scss/style.min.d8118f156935b64eca93aca758476adca858d2c47354971654d9bd2933a0e45f.css"><meta property='og:title' content="Vscode Remote Ssh">
+<link rel="stylesheet" href="/scss/style.min.8e60baf4cd3fc55968717a6e39762f4d28ed7ef6007566b6c7970ad0fe907198.css"><meta property='og:title' content="Vscode Remote Ssh">
 <meta property='og:description' content="vscode remote development how to .">
 <meta property='og:url' content='https://tsinling.org/p/vscode-remote-ssh/'>
 <meta property='og:site_name' content='bob&#39;s rabbit hole'>
@@ -72,7 +72,7 @@
             <h1 class="site-name"><a href="/">bob&#39;s rabbit hole</a></h1>
             <h2 class="site-description">🌞👷🏻‍♂️💻🌙</h2>
         </div>
-    </header><ol class="social-menu">
+    </header><ol class="menu-social">
             
                 <li>
                     <a 
@@ -360,16 +360,22 @@
     <section class="article-content">
     
     
-    <h1 id="vscode远程开发">VSCODE远程开发</h1>
-<h2 id="简介">简介</h2>
-<p>微软家的开发工具从来不缺少远程开发，从二十年前的visual stuidio 6到现在的visual stuidio 2022都具有远程开发的功能。<br>
+    <h1 id="vscode远程开发">
+    <a href="#vscode%e8%bf%9c%e7%a8%8b%e5%bc%80%e5%8f%91">#</a>
+    VSCODE远程开发
+</h1><h2 id="简介">
+    <a href="#%e7%ae%80%e4%bb%8b">#</a>
+    简介
+</h2><p>微软家的开发工具从来不缺少远程开发，从二十年前的visual stuidio 6到现在的visual stuidio 2022都具有远程开发的功能。<br>
 那么号称宇宙第一IDE的vscode当然不会例外，vscode对远程开发的支持通过扩展remote-ssh来实现。<br>
 visualstudio的远程开发参考 <a class="link" href="https://docs.microsoft.com/zh-cn/visualstudio/debugger/remote-debugging"  target="_blank" rel="noopener"
     >https://docs.microsoft.com/zh-cn/visualstudio/debugger/remote-debugging</a><br>
 vscode的远程开发参考 <a class="link" href="https://code.visualstudio.com/docs/remote/remote-overview"  target="_blank" rel="noopener"
     >https://code.visualstudio.com/docs/remote/remote-overview</a></p>
-<h2 id="构架">构架</h2>
-<p>我们看一下vscode远程开发的结构示意图</p>
+<h2 id="构架">
+    <a href="#%e6%9e%84%e6%9e%b6">#</a>
+    构架
+</h2><p>我们看一下vscode远程开发的结构示意图</p>
 <p><img src="https://code.visualstudio.com/assets/docs/remote/remote-overview/architecture.png"
 	
 	
@@ -382,10 +388,14 @@ vscode的远程开发参考 <a class="link" href="https://code.visualstudio.com/
 ></p>
 <p>LocalOS是vscode（remote-ssh）使用的客户端主机，RemoteOS是安装vscode server（具备真实开发环境的服务器）等服务端。<br>
 我们操作LocalOS上的vscode通过ssh遥控RemoteOS上的代码，完成开发、调试工作。</p>
-<h2 id="目标">目标</h2>
-<p>在LocalOS Mac上远程调试 RemoteOS debian11.3上的golang中间件。</p>
-<h3 id="准备工作">准备工作</h3>
-<p>RemoteOS安装openssh-server，build-essential，golang(Debian11源中的golang版本比较老，可以从<a class="link" href="https://golang.google.cn/dl/"  target="_blank" rel="noopener"
+<h2 id="目标">
+    <a href="#%e7%9b%ae%e6%a0%87">#</a>
+    目标
+</h2><p>在LocalOS Mac上远程调试 RemoteOS debian11.3上的golang中间件。</p>
+<h3 id="准备工作">
+    <a href="#%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c">#</a>
+    准备工作
+</h3><p>RemoteOS安装openssh-server，build-essential，golang(Debian11源中的golang版本比较老，可以从<a class="link" href="https://golang.google.cn/dl/"  target="_blank" rel="noopener"
     >https://golang.google.cn/dl/</a>下载新版本安装)。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -491,8 +501,10 @@ LocalOS使用ssh_rsa登入root@remoteOS。</p>
 </span></span><span class="line"><span class="cl">root@d113:~#
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="小试牛刀">小试牛刀</h3>
-<p>LocalOS使用密钥ssh到RemoteOS成功后就可以打开vscode使用远程开发了。<br>
+</div><h3 id="小试牛刀">
+    <a href="#%e5%b0%8f%e8%af%95%e7%89%9b%e5%88%80">#</a>
+    小试牛刀
+</h3><p>LocalOS使用密钥ssh到RemoteOS成功后就可以打开vscode使用远程开发了。<br>
 接下来基本都是图形化操作，可以参考<a class="link" href="https://code.visualstudio.com/docs/remote/ssh-tutorial"  target="_blank" rel="noopener"
     >https://code.visualstudio.com/docs/remote/ssh-tutorial</a>。<br>
 对于每一个RemoteOS都可以有如下配置，配置保存在~/.ssh/config文件里。</p>
@@ -653,7 +665,7 @@ LocalOS使用ssh_rsa登入root@remoteOS。</p>
         
             <a href ="http://beian.miit.gov.cn/" target="_blank">陕ICP备14012495号-1</a><img src="https://www.12389.gov.cn/images/5692312.png"><a href ="http://www.beian.gov.cn/portal/registerSystemInfo" target="_blank">陕公安备61012402000103号</a> <br/>
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.24.2">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.25.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 

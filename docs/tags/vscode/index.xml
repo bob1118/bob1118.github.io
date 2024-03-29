@@ -12,16 +12,22 @@
         <pubDate>Fri, 15 Apr 2022 15:39:30 +0800</pubDate>
         
         <guid>https://tsinling.org/p/vscode-remote-ssh/</guid>
-        <description>&lt;h1 id=&#34;vscode远程开发&#34;&gt;VSCODE远程开发&lt;/h1&gt;
-&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
-&lt;p&gt;微软家的开发工具从来不缺少远程开发，从二十年前的visual stuidio 6到现在的visual stuidio 2022都具有远程开发的功能。&lt;br&gt;
+        <description>&lt;h1 id=&#34;vscode远程开发&#34;&gt;
+    &lt;a href=&#34;#vscode%e8%bf%9c%e7%a8%8b%e5%bc%80%e5%8f%91&#34;&gt;#&lt;/a&gt;
+    VSCODE远程开发
+&lt;/h1&gt;&lt;h2 id=&#34;简介&#34;&gt;
+    &lt;a href=&#34;#%e7%ae%80%e4%bb%8b&#34;&gt;#&lt;/a&gt;
+    简介
+&lt;/h2&gt;&lt;p&gt;微软家的开发工具从来不缺少远程开发，从二十年前的visual stuidio 6到现在的visual stuidio 2022都具有远程开发的功能。&lt;br&gt;
 那么号称宇宙第一IDE的vscode当然不会例外，vscode对远程开发的支持通过扩展remote-ssh来实现。&lt;br&gt;
 visualstudio的远程开发参考 &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/zh-cn/visualstudio/debugger/remote-debugging&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://docs.microsoft.com/zh-cn/visualstudio/debugger/remote-debugging&lt;/a&gt;&lt;br&gt;
 vscode的远程开发参考 &lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/docs/remote/remote-overview&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://code.visualstudio.com/docs/remote/remote-overview&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;构架&#34;&gt;构架&lt;/h2&gt;
-&lt;p&gt;我们看一下vscode远程开发的结构示意图&lt;/p&gt;
+&lt;h2 id=&#34;构架&#34;&gt;
+    &lt;a href=&#34;#%e6%9e%84%e6%9e%b6&#34;&gt;#&lt;/a&gt;
+    构架
+&lt;/h2&gt;&lt;p&gt;我们看一下vscode远程开发的结构示意图&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://code.visualstudio.com/assets/docs/remote/remote-overview/architecture.png&#34;
 	
 	
@@ -34,10 +40,14 @@ vscode的远程开发参考 &lt;a class=&#34;link&#34; href=&#34;https://code.vi
 &gt;&lt;/p&gt;
 &lt;p&gt;LocalOS是vscode（remote-ssh）使用的客户端主机，RemoteOS是安装vscode server（具备真实开发环境的服务器）等服务端。&lt;br&gt;
 我们操作LocalOS上的vscode通过ssh遥控RemoteOS上的代码，完成开发、调试工作。&lt;/p&gt;
-&lt;h2 id=&#34;目标&#34;&gt;目标&lt;/h2&gt;
-&lt;p&gt;在LocalOS Mac上远程调试 RemoteOS debian11.3上的golang中间件。&lt;/p&gt;
-&lt;h3 id=&#34;准备工作&#34;&gt;准备工作&lt;/h3&gt;
-&lt;p&gt;RemoteOS安装openssh-server，build-essential，golang(Debian11源中的golang版本比较老，可以从&lt;a class=&#34;link&#34; href=&#34;https://golang.google.cn/dl/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h2 id=&#34;目标&#34;&gt;
+    &lt;a href=&#34;#%e7%9b%ae%e6%a0%87&#34;&gt;#&lt;/a&gt;
+    目标
+&lt;/h2&gt;&lt;p&gt;在LocalOS Mac上远程调试 RemoteOS debian11.3上的golang中间件。&lt;/p&gt;
+&lt;h3 id=&#34;准备工作&#34;&gt;
+    &lt;a href=&#34;#%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c&#34;&gt;#&lt;/a&gt;
+    准备工作
+&lt;/h3&gt;&lt;p&gt;RemoteOS安装openssh-server，build-essential，golang(Debian11源中的golang版本比较老，可以从&lt;a class=&#34;link&#34; href=&#34;https://golang.google.cn/dl/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://golang.google.cn/dl/&lt;/a&gt;下载新版本安装)。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -143,8 +153,10 @@ LocalOS使用ssh_rsa登入root@remoteOS。&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;root@d113:~#
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;小试牛刀&#34;&gt;小试牛刀&lt;/h3&gt;
-&lt;p&gt;LocalOS使用密钥ssh到RemoteOS成功后就可以打开vscode使用远程开发了。&lt;br&gt;
+&lt;/div&gt;&lt;h3 id=&#34;小试牛刀&#34;&gt;
+    &lt;a href=&#34;#%e5%b0%8f%e8%af%95%e7%89%9b%e5%88%80&#34;&gt;#&lt;/a&gt;
+    小试牛刀
+&lt;/h3&gt;&lt;p&gt;LocalOS使用密钥ssh到RemoteOS成功后就可以打开vscode使用远程开发了。&lt;br&gt;
 接下来基本都是图形化操作，可以参考&lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/docs/remote/ssh-tutorial&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://code.visualstudio.com/docs/remote/ssh-tutorial&lt;/a&gt;。&lt;br&gt;
 对于每一个RemoteOS都可以有如下配置，配置保存在~/.ssh/config文件里。&lt;/p&gt;

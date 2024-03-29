@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://tsinling.org/p/curl-how-to/'>
 
-<link rel="stylesheet" href="/scss/style.min.d8118f156935b64eca93aca758476adca858d2c47354971654d9bd2933a0e45f.css"><meta property='og:title' content="Curl How To">
+<link rel="stylesheet" href="/scss/style.min.8e60baf4cd3fc55968717a6e39762f4d28ed7ef6007566b6c7970ad0fe907198.css"><meta property='og:title' content="Curl How To">
 <meta property='og:description' content="how to debug httpd rest api.">
 <meta property='og:url' content='https://tsinling.org/p/curl-how-to/'>
 <meta property='og:site_name' content='bob&#39;s rabbit hole'>
@@ -72,7 +72,7 @@
             <h1 class="site-name"><a href="/">bob&#39;s rabbit hole</a></h1>
             <h2 class="site-description">🌞👷🏻‍♂️💻🌙</h2>
         </div>
-    </header><ol class="social-menu">
+    </header><ol class="menu-social">
             
                 <li>
                     <a 
@@ -368,14 +368,18 @@
     <section class="article-content">
     
     
-    <h1 id="curl">CURL</h1>
-<p>curl是一个linux下的命令行工具，基于libcurl开发。用来和服务器交互数据。<br>
+    <h1 id="curl">
+    <a href="#curl">#</a>
+    CURL
+</h1><p>curl是一个linux下的命令行工具，基于libcurl开发。用来和服务器交互数据。<br>
 curl支持多种协议(DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS)。<br>
 curl常用来模仿浏览器向服务器发起请求，方便在开发、测试中调试httd接口。<br>
 要深入了解可以阅读在线文档<a class="link" href="https://everything.curl.dev/"  target="_blank" rel="noopener"
     >https://everything.curl.dev/</a>。</p>
-<h2 id="http">HTTP</h2>
-<p>参考<a class="link" href="https://everything.curl.dev/http"  target="_blank" rel="noopener"
+<h2 id="http">
+    <a href="#http">#</a>
+    HTTP
+</h2><p>参考<a class="link" href="https://everything.curl.dev/http"  target="_blank" rel="noopener"
     >https://everything.curl.dev/http</a>结合man手册就可以上手。</p>
 <p>比如curl模拟浏览器访问bing.com。</p>
 <div class="highlight"><div class="chroma">
@@ -523,8 +527,10 @@ curl常用来模仿浏览器向服务器发起请求，方便在开发、测试�
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>bing.com返回16094字节内容,返回内容如果让浏览器解析，在浏览器里就能看到微软搜索引擎UI了。</p>
-<h3 id="get">GET</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="get">
+    <a href="#get">#</a>
+    GET
+</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -548,8 +554,10 @@ curl常用来模仿浏览器向服务器发起请求，方便在开发、测试�
 </span></span><span class="line"><span class="cl">curl --get --data-urlencode <span class="nv">a</span><span class="o">=</span>b --data-urlencode <span class="nv">c</span><span class="o">=</span>d url
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="post">POST</h3>
-<div class="highlight"><div class="chroma">
+</div><h3 id="post">
+    <a href="#post">#</a>
+    POST
+</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -583,8 +591,10 @@ curl常用来模仿浏览器向服务器发起请求，方便在开发、测试�
 </span></span><span class="line"><span class="cl">curl -X POST -F <span class="nv">a</span><span class="o">=</span>b -F <span class="nv">c</span><span class="o">=</span>d url
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="put">PUT</h3>
-<div class="highlight"><div class="chroma">
+</div><h3 id="put">
+    <a href="#put">#</a>
+    PUT
+</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -594,8 +604,10 @@ curl常用来模仿浏览器向服务器发起请求，方便在开发、测试�
 </span></span><span class="line"><span class="cl">curl -X PUT  -H <span class="s2">&#34;Content-Type: application/json&#34;</span> -H <span class="s2">&#34;Accept: application/json&#34;</span> -d <span class="nv">a</span><span class="o">=</span>b -d <span class="nv">c</span><span class="o">=</span>d url
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="delete">DELETE</h3>
-<div class="highlight"><div class="chroma">
+</div><h3 id="delete">
+    <a href="#delete">#</a>
+    DELETE
+</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -607,9 +619,13 @@ curl常用来模仿浏览器向服务器发起请求，方便在开发、测试�
 </span></span><span class="line"><span class="cl">curl -X DELETE -H <span class="s2">&#34;Accept: application/json&#34;</span> url?uuid<span class="o">=</span>xxx
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="测试我的api">测试我的api</h2>
-<h3 id="get-1">get</h3>
-<ul>
+</div><h2 id="测试我的api">
+    <a href="#%e6%b5%8b%e8%af%95%e6%88%91%e7%9a%84api">#</a>
+    测试我的api
+</h2><h3 id="get-1">
+    <a href="#get-1">#</a>
+    get
+</h3><ul>
 <li>请求10.10.10.20/api/v1，返回&quot;default api v1 content&quot;。</li>
 </ul>
 <div class="highlight"><div class="chroma">
@@ -888,8 +904,10 @@ curl常用来模仿浏览器向服务器发起请求，方便在开发、测试�
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="post-1">post</h3>
-<ul>
+</div><h3 id="post-1">
+    <a href="#post-1">#</a>
+    post
+</h3><ul>
 <li>form-urlencode</li>
 </ul>
 <div class="highlight"><div class="chroma">
@@ -1128,8 +1146,10 @@ curl常用来模仿浏览器向服务器发起请求，方便在开发、测试�
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">curl -X POST -F <span class="nv">a</span><span class="o">=</span>b -F <span class="nv">c</span><span class="o">=</span>d url
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="put-1">put</h3>
-<div class="highlight"><div class="chroma">
+</div><h3 id="put-1">
+    <a href="#put-1">#</a>
+    put
+</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1219,8 +1239,10 @@ curl常用来模仿浏览器向服务器发起请求，方便在开发、测试�
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="delete-1">delete</h3>
-<div class="highlight"><div class="chroma">
+</div><h3 id="delete-1">
+    <a href="#delete-1">#</a>
+    delete
+</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -1417,7 +1439,7 @@ curl常用来模仿浏览器向服务器发起请求，方便在开发、测试�
         
             <a href ="http://beian.miit.gov.cn/" target="_blank">陕ICP备14012495号-1</a><img src="https://www.12389.gov.cn/images/5692312.png"><a href ="http://www.beian.gov.cn/portal/registerSystemInfo" target="_blank">陕公安备61012402000103号</a> <br/>
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.24.2">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.25.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 

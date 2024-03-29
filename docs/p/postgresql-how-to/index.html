@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://tsinling.org/p/postgresql-how-to/'>
 
-<link rel="stylesheet" href="/scss/style.min.d8118f156935b64eca93aca758476adca858d2c47354971654d9bd2933a0e45f.css"><meta property='og:title' content="postgresql how to">
+<link rel="stylesheet" href="/scss/style.min.8e60baf4cd3fc55968717a6e39762f4d28ed7ef6007566b6c7970ad0fe907198.css"><meta property='og:title' content="postgresql how to">
 <meta property='og:description' content="postgres database how to.">
 <meta property='og:url' content='https://tsinling.org/p/postgresql-how-to/'>
 <meta property='og:site_name' content='bob&#39;s rabbit hole'>
@@ -72,7 +72,7 @@
             <h1 class="site-name"><a href="/">bob&#39;s rabbit hole</a></h1>
             <h2 class="site-description">🌞👷🏻‍♂️💻🌙</h2>
         </div>
-    </header><ol class="social-menu">
+    </header><ol class="menu-social">
             
                 <li>
                     <a 
@@ -365,20 +365,28 @@
     <section class="article-content">
     
     
-    <h1 id="postgresql">postgresql</h1>
-<p>Postgresql 是一个功能强大的开源关系数据库系统.<br>
+    <h1 id="postgresql">
+    <a href="#postgresql">#</a>
+    postgresql
+</h1><p>Postgresql 是一个功能强大的开源关系数据库系统.<br>
 Postgresql的官方网站是 <a class="link" href="https://postgresql.org"  target="_blank" rel="noopener"
     >https://postgresql.org</a>.<br>
 最新的版本是14，了解可以访问 <a class="link" href="http://www.postgres.cn/docs/14/index.html"  target="_blank" rel="noopener"
     >http://www.postgres.cn/docs/14/index.html</a>.</p>
-<h2 id="安装">安装</h2>
-<h3 id="windows">windows</h3>
-<p>由EDB认证的Postgresql installer.<br>
+<h2 id="安装">
+    <a href="#%e5%ae%89%e8%a3%85">#</a>
+    安装
+</h2><h3 id="windows">
+    <a href="#windows">#</a>
+    windows
+</h3><p>由EDB认证的Postgresql installer.<br>
 <a class="link" href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads"  target="_blank" rel="noopener"
     >https://www.enterprisedb.com/downloads/postgres-postgresql-downloads</a><br>
 下载并安装，按照提示设置postgres数据库的密码就可以了。</p>
-<h3 id="linux">linux</h3>
-<p>linux不同发行版本都可以从自己的软件库进行安装，以debian为例.<br>
+<h3 id="linux">
+    <a href="#linux">#</a>
+    linux
+</h3><p>linux不同发行版本都可以从自己的软件库进行安装，以debian为例.<br>
 先安装postgresql，以postgres用户local（Unix domain socket）方式连接到postgres数据库.<br>
 修改用户postgres密码，再以postgres用户host（localhost）方式连接到数据库。</p>
 <div class="highlight"><div class="chroma">
@@ -469,8 +477,10 @@ Postgresql的官方网站是 <a class="link" href="https://postgresql.org"  targ
 </span></span><span class="line"><span class="cl"><span class="nv">postgres</span><span class="o">=</span><span class="c1"># </span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="mac">mac</h3>
-<p>mac系统上可以去EDB下载，也可以用brew直接安装（brew安装后要以当前用户登入数据库）。</p>
+</div><h3 id="mac">
+    <a href="#mac">#</a>
+    mac
+</h3><p>mac系统上可以去EDB下载，也可以用brew直接安装（brew安装后要以当前用户登入数据库）。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -525,9 +535,13 @@ Postgresql的官方网站是 <a class="link" href="https://postgresql.org"  targ
 </span></span><span class="line"><span class="cl"><span class="nv">postgres</span><span class="o">=</span><span class="c1"># </span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="客户端">客户端</h2>
-<h3 id="psql">psql</h3>
-<p>命令行客户端工具psql。</p>
+</div><h2 id="客户端">
+    <a href="#%e5%ae%a2%e6%88%b7%e7%ab%af">#</a>
+    客户端
+</h2><h3 id="psql">
+    <a href="#psql">#</a>
+    psql
+</h3><p>命令行客户端工具psql。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -554,8 +568,10 @@ Postgresql的官方网站是 <a class="link" href="https://postgresql.org"  targ
 </span></span><span class="line"><span class="cl">  -W, --password           force password prompt <span class="o">(</span>should happen automatically<span class="o">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="dbeaver">DBeaver</h3>
-<p>开源图形客户端工具。</p>
+</div><h3 id="dbeaver">
+    <a href="#dbeaver">#</a>
+    DBeaver
+</h3><p>开源图形客户端工具。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -709,7 +725,7 @@ Postgresql的官方网站是 <a class="link" href="https://postgresql.org"  targ
         
             <a href ="http://beian.miit.gov.cn/" target="_blank">陕ICP备14012495号-1</a><img src="https://www.12389.gov.cn/images/5692312.png"><a href ="http://www.beian.gov.cn/portal/registerSystemInfo" target="_blank">陕公安备61012402000103号</a> <br/>
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.24.2">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.25.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 

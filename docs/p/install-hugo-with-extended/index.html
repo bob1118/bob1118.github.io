@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://tsinling.org/p/install-hugo-with-extended/'>
 
-<link rel="stylesheet" href="/scss/style.min.d8118f156935b64eca93aca758476adca858d2c47354971654d9bd2933a0e45f.css"><meta property='og:title' content="Install Hugo With Extended">
+<link rel="stylesheet" href="/scss/style.min.8e60baf4cd3fc55968717a6e39762f4d28ed7ef6007566b6c7970ad0fe907198.css"><meta property='og:title' content="Install Hugo With Extended">
 <meta property='og:description' content="Install Hugo With Extended">
 <meta property='og:url' content='https://tsinling.org/p/install-hugo-with-extended/'>
 <meta property='og:site_name' content='bob&#39;s rabbit hole'>
@@ -72,7 +72,7 @@
             <h1 class="site-name"><a href="/">bob&#39;s rabbit hole</a></h1>
             <h2 class="site-description">🌞👷🏻‍♂️💻🌙</h2>
         </div>
-    </header><ol class="social-menu">
+    </header><ol class="menu-social">
             
                 <li>
                     <a 
@@ -355,13 +355,19 @@
     <section class="article-content">
     
     
-    <h1 id="hugo">hugo</h1>
-<p>hugo 在windows X64平台支持Sass/SCCS。</p>
-<h2 id="快捷安装">快捷安装</h2>
-<p>最快捷的方法就是去tag下载二进制文件了，<a class="link" href="https://github.com/gohugoio/hugo/releases"  target="_blank" rel="noopener"
+    <h1 id="hugo">
+    <a href="#hugo">#</a>
+    hugo
+</h1><p>hugo 在windows X64平台支持Sass/SCCS。</p>
+<h2 id="快捷安装">
+    <a href="#%e5%bf%ab%e6%8d%b7%e5%ae%89%e8%a3%85">#</a>
+    快捷安装
+</h2><p>最快捷的方法就是去tag下载二进制文件了，<a class="link" href="https://github.com/gohugoio/hugo/releases"  target="_blank" rel="noopener"
     >hugo with extended</a>。</p>
-<h2 id="编译安装">编译安装</h2>
-<p>可以参考hugo的<a class="link" href="https://github.com/gohugoio/hugo/blob/master/README.md"  target="_blank" rel="noopener"
+<h2 id="编译安装">
+    <a href="#%e7%bc%96%e8%af%91%e5%ae%89%e8%a3%85">#</a>
+    编译安装
+</h2><p>可以参考hugo的<a class="link" href="https://github.com/gohugoio/hugo/blob/master/README.md"  target="_blank" rel="noopener"
     >Readme.md</a>。</p>
 <p>在编译之前需要CGO支持，windowsx64下CGO需要用到 <a class="link" href="https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-win32/sjlj/x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0.7z"  target="_blank" rel="noopener"
     >MinGW-W64 GCC-8.1.0</a>。访问 <a class="link" href="https://sourceforge.net/projects/mingw-w64/files"  target="_blank" rel="noopener"
@@ -411,8 +417,10 @@
 </div><p>编译的时候报告<em>Error: export ordinal too large: 78124</em>，参考 <a class="link" href="https://github.com/golang/go/issues/40795"  target="_blank" rel="noopener"
     >https://github.com/golang/go/issues/40795</a> 需要加上-buildmode=exe，具体原因需要等待golang官方调查&hellip;</p>
 <p>该问题已经在go1.16版本修复.</p>
-<h2 id="ldflags">ldflags</h2>
-<p>默认编译的文件比较大，可以使用-ldflags &ldquo;-w -s&quot;去掉调试信息。</p>
+<h2 id="ldflags">
+    <a href="#ldflags">#</a>
+    ldflags
+</h2><p>默认编译的文件比较大，可以使用-ldflags &ldquo;-w -s&quot;去掉调试信息。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -569,7 +577,7 @@
         
             <a href ="http://beian.miit.gov.cn/" target="_blank">陕ICP备14012495号-1</a><img src="https://www.12389.gov.cn/images/5692312.png"><a href ="http://www.beian.gov.cn/portal/registerSystemInfo" target="_blank">陕公安备61012402000103号</a> <br/>
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.24.2">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.25.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 

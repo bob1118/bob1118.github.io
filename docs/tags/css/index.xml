@@ -12,14 +12,24 @@
         <pubDate>Wed, 02 Jun 2021 07:17:50 +0800</pubDate>
         
         <guid>https://tsinling.org/p/mdn-css/</guid>
-        <description>&lt;h1 id=&#34;2-css&#34;&gt;2 CSS&lt;/h1&gt;
-&lt;h2 id=&#34;21-css第一步&#34;&gt;2.1 CSS第一步&lt;/h2&gt;
-&lt;h3 id=&#34;211-css概述&#34;&gt;2.1.1 CSS概述&lt;/h3&gt;
-&lt;h3 id=&#34;212-什么是css&#34;&gt;2.1.2 什么是CSS&lt;/h3&gt;
-&lt;p&gt;CSS(层叠样式表)是用来指定文档如何展示给用户的一门语言，如网页的样式、布局、等等。&lt;br&gt;
+        <description>&lt;h1 id=&#34;2-css&#34;&gt;
+    &lt;a href=&#34;#2-css&#34;&gt;#&lt;/a&gt;
+    2 CSS
+&lt;/h1&gt;&lt;h2 id=&#34;21-css第一步&#34;&gt;
+    &lt;a href=&#34;#21-css%e7%ac%ac%e4%b8%80%e6%ad%a5&#34;&gt;#&lt;/a&gt;
+    2.1 CSS第一步
+&lt;/h2&gt;&lt;h3 id=&#34;211-css概述&#34;&gt;
+    &lt;a href=&#34;#211-css%e6%a6%82%e8%bf%b0&#34;&gt;#&lt;/a&gt;
+    2.1.1 CSS概述
+&lt;/h3&gt;&lt;h3 id=&#34;212-什么是css&#34;&gt;
+    &lt;a href=&#34;#212-%e4%bb%80%e4%b9%88%e6%98%afcss&#34;&gt;#&lt;/a&gt;
+    2.1.2 什么是CSS
+&lt;/h3&gt;&lt;p&gt;CSS(层叠样式表)是用来指定文档如何展示给用户的一门语言，如网页的样式、布局、等等。&lt;br&gt;
 CSS可以用于给文档添加样式，比如改变标题和链接的颜色及大小。它也可以用于创建布局，比如将一个单列文本变成包含主要内容区域和存放相关信息的侧边栏区域的布局。他甚至还可以用来做一些特效，比如动画。&lt;/p&gt;
-&lt;h3 id=&#34;213-css入门&#34;&gt;2.1.3 CSS入门&lt;/h3&gt;
-&lt;p&gt;index.html&lt;/p&gt;
+&lt;h3 id=&#34;213-css入门&#34;&gt;
+    &lt;a href=&#34;#213-css%e5%85%a5%e9%97%a8&#34;&gt;#&lt;/a&gt;
+    2.1.3 CSS入门
+&lt;/h3&gt;&lt;p&gt;index.html&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -155,8 +165,10 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;214-如何构建&#34;&gt;2.1.4 如何构建&lt;/h3&gt;
-&lt;ul&gt;
+&lt;/div&gt;&lt;h3 id=&#34;214-如何构建&#34;&gt;
+    &lt;a href=&#34;#214-%e5%a6%82%e4%bd%95%e6%9e%84%e5%bb%ba&#34;&gt;#&lt;/a&gt;
+    2.1.4 如何构建
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/link&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&amp;lt;link&amp;gt;&lt;/a&gt;外部样式&lt;/li&gt;
 &lt;/ul&gt;
@@ -305,8 +317,10 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;选择器属性和值&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;215-如何运行&#34;&gt;2.1.5 如何运行&lt;/h3&gt;
-&lt;p&gt;当浏览器展示一个文件的时候，处理文件的基本流程。&lt;/p&gt;
+&lt;h3 id=&#34;215-如何运行&#34;&gt;
+    &lt;a href=&#34;#215-%e5%a6%82%e4%bd%95%e8%bf%90%e8%a1%8c&#34;&gt;#&lt;/a&gt;
+    2.1.5 如何运行
+&lt;/h3&gt;&lt;p&gt;当浏览器展示一个文件的时候，处理文件的基本流程。&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;ol&gt;
 &lt;li&gt;浏览器载入HTML&lt;/li&gt;
@@ -317,10 +331,16 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;li&gt;渲染树会依照该出现的结构进行布局。&lt;/li&gt;
 &lt;li&gt;网页展示在屏幕上(这一步被称为着色)。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;22-css构建基础&#34;&gt;2.2 CSS构建基础&lt;/h2&gt;
-&lt;h3 id=&#34;221-ccs构建基础概览&#34;&gt;2.2.1 CCS构建基础概览&lt;/h3&gt;
-&lt;h3 id=&#34;222-层叠与继承&#34;&gt;2.2.2 层叠与继承&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h2 id=&#34;22-css构建基础&#34;&gt;
+    &lt;a href=&#34;#22-css%e6%9e%84%e5%bb%ba%e5%9f%ba%e7%a1%80&#34;&gt;#&lt;/a&gt;
+    2.2 CSS构建基础
+&lt;/h2&gt;&lt;h3 id=&#34;221-ccs构建基础概览&#34;&gt;
+    &lt;a href=&#34;#221-ccs%e6%9e%84%e5%bb%ba%e5%9f%ba%e7%a1%80%e6%a6%82%e8%a7%88&#34;&gt;#&lt;/a&gt;
+    2.2.1 CCS构建基础概览
+&lt;/h3&gt;&lt;h3 id=&#34;222-层叠与继承&#34;&gt;
+    &lt;a href=&#34;#222-%e5%b1%82%e5%8f%a0%e4%b8%8e%e7%bb%a7%e6%89%bf&#34;&gt;#&lt;/a&gt;
+    2.2.2 层叠与继承
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;冲突规则&lt;/p&gt;
 &lt;ul&gt;
@@ -750,8 +770,10 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;223-css选择器&#34;&gt;2.2.3 CSS选择器&lt;/h3&gt;
-&lt;ul&gt;
+&lt;/div&gt;&lt;h3 id=&#34;223-css选择器&#34;&gt;
+    &lt;a href=&#34;#223-css%e9%80%89%e6%8b%a9%e5%99%a8&#34;&gt;#&lt;/a&gt;
+    2.2.3 CSS选择器
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;类型、类和ID选择器&lt;/p&gt;
 &lt;ul&gt;
@@ -1369,8 +1391,10 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;224-盒模型&#34;&gt;2.2.4 盒模型&lt;/h3&gt;
-&lt;p&gt;网页上的区块(&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Glossary/Block/CSS&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;/div&gt;&lt;h3 id=&#34;224-盒模型&#34;&gt;
+    &lt;a href=&#34;#224-%e7%9b%92%e6%a8%a1%e5%9e%8b&#34;&gt;#&lt;/a&gt;
+    2.2.4 盒模型
+&lt;/h3&gt;&lt;p&gt;网页上的区块(&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Glossary/Block/CSS&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;block&lt;/a&gt;)是指出现在新行上的&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Glossary/HTML&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;HTML&lt;/a&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Glossary/Element&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;元素&lt;/a&gt;即在该元素的前一个元素的下方，在后一个元素的上方(通常称为块级元素)。&lt;br&gt;
@@ -1875,8 +1899,10 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;225-背景与边框&#34;&gt;2.2.5 背景与边框&lt;/h3&gt;
-&lt;ul&gt;
+&lt;/div&gt;&lt;h3 id=&#34;225-背景与边框&#34;&gt;
+    &lt;a href=&#34;#225-%e8%83%8c%e6%99%af%e4%b8%8e%e8%be%b9%e6%a1%86&#34;&gt;#&lt;/a&gt;
+    2.2.5 背景与边框
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/background&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;background&lt;/a&gt;
 &lt;ul&gt;
@@ -1982,8 +2008,10 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;226-处理不同的文本方向&#34;&gt;2.2.6 处理不同的文本方向&lt;/h3&gt;
-&lt;ul&gt;
+&lt;/div&gt;&lt;h3 id=&#34;226-处理不同的文本方向&#34;&gt;
+    &lt;a href=&#34;#226-%e5%a4%84%e7%90%86%e4%b8%8d%e5%90%8c%e7%9a%84%e6%96%87%e6%9c%ac%e6%96%b9%e5%90%91&#34;&gt;#&lt;/a&gt;
+    2.2.6 处理不同的文本方向
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;书写模式是指文本的排列方向是横向还是纵向。&lt;/p&gt;
 &lt;ul&gt;
@@ -2033,8 +2061,10 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;p&gt;逻辑内边距、边框和外边框属性&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;227-溢出的内容&#34;&gt;2.2.7 溢出的内容&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;227-溢出的内容&#34;&gt;
+    &lt;a href=&#34;#227-%e6%ba%a2%e5%87%ba%e7%9a%84%e5%86%85%e5%ae%b9&#34;&gt;#&lt;/a&gt;
+    2.2.7 溢出的内容
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/overflow&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;overflow&lt;/a&gt;
 &lt;ul&gt;
@@ -2044,22 +2074,40 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;228-值和单位&#34;&gt;2.2.8 值和单位&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;228-值和单位&#34;&gt;
+    &lt;a href=&#34;#228-%e5%80%bc%e5%92%8c%e5%8d%95%e4%bd%8d&#34;&gt;#&lt;/a&gt;
+    2.2.8 值和单位
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;229-在css中调整大小&#34;&gt;2.2.9 在CSS中调整大小&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;229-在css中调整大小&#34;&gt;
+    &lt;a href=&#34;#229-%e5%9c%a8css%e4%b8%ad%e8%b0%83%e6%95%b4%e5%a4%a7%e5%b0%8f&#34;&gt;#&lt;/a&gt;
+    2.2.9 在CSS中调整大小
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;2210-图片媒体和表单元素&#34;&gt;2.2.10 图片媒体和表单元素&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Images_media_form_elements&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;2210-图片媒体和表单元素&#34;&gt;
+    &lt;a href=&#34;#2210-%e5%9b%be%e7%89%87%e5%aa%92%e4%bd%93%e5%92%8c%e8%a1%a8%e5%8d%95%e5%85%83%e7%b4%a0&#34;&gt;#&lt;/a&gt;
+    2.2.10 图片媒体和表单元素
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Images_media_form_elements&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Images_media_form_elements&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;2211-样式化表格&#34;&gt;2.2.11 样式化表格&lt;/h3&gt;
-&lt;h3 id=&#34;2212-调试css&#34;&gt;2.2.12 调试CSS&lt;/h3&gt;
-&lt;h3 id=&#34;2213-组织css&#34;&gt;2.2.13 组织CSS&lt;/h3&gt;
-&lt;h2 id=&#34;23-样式化文本&#34;&gt;2.3 样式化文本&lt;/h2&gt;
-&lt;h3 id=&#34;231-样式化文字概述&#34;&gt;2.3.1 样式化文字概述&lt;/h3&gt;
-&lt;h3 id=&#34;232-基础文字与样式&#34;&gt;2.3.2 基础文字与样式&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;2211-样式化表格&#34;&gt;
+    &lt;a href=&#34;#2211-%e6%a0%b7%e5%bc%8f%e5%8c%96%e8%a1%a8%e6%a0%bc&#34;&gt;#&lt;/a&gt;
+    2.2.11 样式化表格
+&lt;/h3&gt;&lt;h3 id=&#34;2212-调试css&#34;&gt;
+    &lt;a href=&#34;#2212-%e8%b0%83%e8%af%95css&#34;&gt;#&lt;/a&gt;
+    2.2.12 调试CSS
+&lt;/h3&gt;&lt;h3 id=&#34;2213-组织css&#34;&gt;
+    &lt;a href=&#34;#2213-%e7%bb%84%e7%bb%87css&#34;&gt;#&lt;/a&gt;
+    2.2.13 组织CSS
+&lt;/h3&gt;&lt;h2 id=&#34;23-样式化文本&#34;&gt;
+    &lt;a href=&#34;#23-%e6%a0%b7%e5%bc%8f%e5%8c%96%e6%96%87%e6%9c%ac&#34;&gt;#&lt;/a&gt;
+    2.3 样式化文本
+&lt;/h2&gt;&lt;h3 id=&#34;231-样式化文字概述&#34;&gt;
+    &lt;a href=&#34;#231-%e6%a0%b7%e5%bc%8f%e5%8c%96%e6%96%87%e5%ad%97%e6%a6%82%e8%bf%b0&#34;&gt;#&lt;/a&gt;
+    2.3.1 样式化文字概述
+&lt;/h3&gt;&lt;h3 id=&#34;232-基础文字与样式&#34;&gt;
+    &lt;a href=&#34;#232-%e5%9f%ba%e7%a1%80%e6%96%87%e5%ad%97%e4%b8%8e%e6%a0%b7%e5%bc%8f&#34;&gt;#&lt;/a&gt;
+    2.3.2 基础文字与样式
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;用于样式文本的CSS属性分类：
 &lt;ul&gt;
 &lt;li&gt;字体样式&lt;/li&gt;
@@ -2209,8 +2257,10 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;233-样式化列表&#34;&gt;2.3.3 样式化列表&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;233-样式化列表&#34;&gt;
+    &lt;a href=&#34;#233-%e6%a0%b7%e5%bc%8f%e5%8c%96%e5%88%97%e8%a1%a8&#34;&gt;#&lt;/a&gt;
+    2.3.3 样式化列表
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/line-height&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;line-height&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/list-style&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -2231,8 +2281,10 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ol#attr-value&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;value&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;234-样式化链接&#34;&gt;2.3.4 样式化链接&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;234-样式化链接&#34;&gt;
+    &lt;a href=&#34;#234-%e6%a0%b7%e5%bc%8f%e5%8c%96%e9%93%be%e6%8e%a5&#34;&gt;#&lt;/a&gt;
+    2.3.4 样式化链接
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;链接状态
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/:link&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -2248,8 +2300,10 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;234-web字体&#34;&gt;2.3.4 web字体&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;234-web字体&#34;&gt;
+    &lt;a href=&#34;#234-web%e5%ad%97%e4%bd%93&#34;&gt;#&lt;/a&gt;
+    2.3.4 web字体
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/@font-face&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;@font-face&lt;/a&gt;
 &lt;ul&gt;
@@ -2264,10 +2318,16 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;24-css-layout&#34;&gt;2.4 CSS layout&lt;/h2&gt;
-&lt;h3 id=&#34;241-layout概述&#34;&gt;2.4.1 layout概述&lt;/h3&gt;
-&lt;h3 id=&#34;242-layout简介&#34;&gt;2.4.2 layout简介&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h2 id=&#34;24-css-layout&#34;&gt;
+    &lt;a href=&#34;#24-css-layout&#34;&gt;#&lt;/a&gt;
+    2.4 CSS layout
+&lt;/h2&gt;&lt;h3 id=&#34;241-layout概述&#34;&gt;
+    &lt;a href=&#34;#241-layout%e6%a6%82%e8%bf%b0&#34;&gt;#&lt;/a&gt;
+    2.4.1 layout概述
+&lt;/h3&gt;&lt;h3 id=&#34;242-layout简介&#34;&gt;
+    &lt;a href=&#34;#242-layout%e7%ae%80%e4%bb%8b&#34;&gt;#&lt;/a&gt;
+    2.4.2 layout简介
+&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Normal flow(&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/display&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;display&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://wiki.developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -2283,8 +2343,10 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/column-count&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;多列布局&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;243-normal-flow&#34;&gt;2.4.3 Normal flow&lt;/h3&gt;
-&lt;p&gt;取得元素的内容来放在一个独立的元素盒子中，然后在其周边加上内边距、边框和外边距。就是之前练习过的盒子模型。&lt;br&gt;
+&lt;h3 id=&#34;243-normal-flow&#34;&gt;
+    &lt;a href=&#34;#243-normal-flow&#34;&gt;#&lt;/a&gt;
+    2.4.3 Normal flow
+&lt;/h3&gt;&lt;p&gt;取得元素的内容来放在一个独立的元素盒子中，然后在其周边加上内边距、边框和外边距。就是之前练习过的盒子模型。&lt;br&gt;
 块级元素的内容宽度是其父元素的100%，其高度与其内容高度一致。&lt;br&gt;
 内联元素的高度和宽度与内容一致。内联元素的高宽无法设置，如果想要控制内联元素的尺寸，需要为元素设置display:block(或display:inline-block)。&lt;/p&gt;
 &lt;p&gt;正常布局流是一套在浏览器视口内放置、组织元素的系统。默认的，块级元素按照基于父元素的书写顺序的块流动方向放置，每一个块元素会在上一个元素下面另起一行，他们会被设置好margin分割。内联元素则不会另起一行，只要在其父级块级元素的宽度内有足够的空间，它们与其他内联元素、相邻的文本内容被安排在同一行。如果空间不够，溢出的元素将移到新的一行。&lt;/p&gt;
@@ -2388,8 +2450,10 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;244-flexbox&#34;&gt;2.4.4 Flexbox&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://wiki.developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;/div&gt;&lt;h3 id=&#34;244-flexbox&#34;&gt;
+    &lt;a href=&#34;#244-flexbox&#34;&gt;#&lt;/a&gt;
+    2.4.4 Flexbox
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://wiki.developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://wiki.developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;flex模型
@@ -2664,30 +2728,46 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;44-grid&#34;&gt;4.4 Grid&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Grids&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;/div&gt;&lt;h3 id=&#34;44-grid&#34;&gt;
+    &lt;a href=&#34;#44-grid&#34;&gt;#&lt;/a&gt;
+    4.4 Grid
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Grids&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Grids&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;网格是由一系列水平及垂直的线构成的一种布局模式。根据网格，我们能够将设计元素进行排列，帮助我们设计一系列具有固定位置以及宽度的元素的页面，使我们的网站页面更加统一。一个网格通常由列(column)与行(row)组成，列与列、行与行之间的间隙被称为沟槽(gutter)。&lt;/p&gt;
-&lt;h3 id=&#34;45-float&#34;&gt;4.5 Float&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/float&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;45-float&#34;&gt;
+    &lt;a href=&#34;#45-float&#34;&gt;#&lt;/a&gt;
+    4.5 Float
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/float&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Web/CSS/float&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;46-position&#34;&gt;4.6 Position&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/position&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;46-position&#34;&gt;
+    &lt;a href=&#34;#46-position&#34;&gt;#&lt;/a&gt;
+    4.6 Position
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/position&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Web/CSS/position&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;47-multi-column&#34;&gt;4.7 Multi column&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Columns&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;47-multi-column&#34;&gt;
+    &lt;a href=&#34;#47-multi-column&#34;&gt;#&lt;/a&gt;
+    4.7 Multi column
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Columns&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Columns&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;48-响应式布局&#34;&gt;4.8 响应式布局&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Responsive_Design&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;48-响应式布局&#34;&gt;
+    &lt;a href=&#34;#48-%e5%93%8d%e5%ba%94%e5%bc%8f%e5%b8%83%e5%b1%80&#34;&gt;#&lt;/a&gt;
+    4.8 响应式布局
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Responsive_Design&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Responsive_Design&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;49-媒体查询&#34;&gt;4.9 媒体查询&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Media_queries&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;49-媒体查询&#34;&gt;
+    &lt;a href=&#34;#49-%e5%aa%92%e4%bd%93%e6%9f%a5%e8%af%a2&#34;&gt;#&lt;/a&gt;
+    4.9 媒体查询
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Media_queries&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Media_queries&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;410-传统布局&#34;&gt;4.10 传统布局&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;410-传统布局&#34;&gt;
+    &lt;a href=&#34;#410-%e4%bc%a0%e7%bb%9f%e5%b8%83%e5%b1%80&#34;&gt;#&lt;/a&gt;
+    4.10 传统布局
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;411-支持旧浏览器&#34;&gt;4.11 支持旧浏览器&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Supporting_Older_Browsers&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;411-支持旧浏览器&#34;&gt;
+    &lt;a href=&#34;#411-%e6%94%af%e6%8c%81%e6%97%a7%e6%b5%8f%e8%a7%88%e5%99%a8&#34;&gt;#&lt;/a&gt;
+    4.11 支持旧浏览器
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Supporting_Older_Browsers&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Supporting_Older_Browsers&lt;/a&gt;&lt;/p&gt;</description>
         </item>
         
