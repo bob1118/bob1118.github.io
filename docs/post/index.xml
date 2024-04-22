@@ -8372,15 +8372,59 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
     &lt;a href=&#34;#%e5%bf%ab%e6%8d%b7%e5%ae%89%e8%a3%85&#34;&gt;#&lt;/a&gt;
     快捷安装
 &lt;/h2&gt;&lt;p&gt;最快捷的方法就是去tag下载二进制文件了，&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;hugo with extended&lt;/a&gt;。&lt;/p&gt;
+    &gt;hugo with extended&lt;/a&gt;。在下载页面寻找hugo_extended_version_os_arch下载。&lt;/p&gt;
 &lt;h2 id=&#34;编译安装&#34;&gt;
     &lt;a href=&#34;#%e7%bc%96%e8%af%91%e5%ae%89%e8%a3%85&#34;&gt;#&lt;/a&gt;
     编译安装
 &lt;/h2&gt;&lt;p&gt;可以参考hugo的&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/blob/master/README.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Readme.md&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;在编译之前需要CGO支持，windowsx64下CGO需要用到 &lt;a class=&#34;link&#34; href=&#34;https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-win32/sjlj/x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0.7z&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;MinGW-W64 GCC-8.1.0&lt;/a&gt;。访问 &lt;a class=&#34;link&#34; href=&#34;https://sourceforge.net/projects/mingw-w64/files&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://sourceforge.net/projects/mingw-w64/files&lt;/a&gt; 找需要的mingw win64版本。&lt;/p&gt;
+    &gt;Readme.md&lt;/a&gt;。&lt;br&gt;
+hugo extended 在编译之前需要CGO支持，在命令行运行&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;go env -w &lt;span class=&#34;nv&#34;&gt;CGO_ENABLED&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;在 &lt;a class=&#34;link&#34; href=&#34;https://www.mingw-w64.org/downloads/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.mingw-w64.org/downloads/&lt;/a&gt; 下载支持windows_x64的二进制构建包&lt;a class=&#34;link&#34; href=&#34;https://github.com/msys2/msys2-installer/releases/download/2024-01-13/msys2-x86_64-20240113.exe&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;mysys2&lt;/a&gt;。&lt;br&gt;
+按照mysys2安装说明&lt;a class=&#34;link&#34; href=&#34;https://www.msys2.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;mysys2 started&lt;/a&gt;安装mysys2。&lt;br&gt;
+打开 MYSYS2 UCRT64，安装支持windows x64 ucrt gcc。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pacman -Syu
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pacman -S mingw-w64-ucrt-x86_64-gcc
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gcc -v
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Using built-in specs.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;COLLECT_GCC&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;C:&lt;span class=&#34;se&#34;&gt;\m&lt;/span&gt;sys64&lt;span class=&#34;se&#34;&gt;\u&lt;/span&gt;crt64&lt;span class=&#34;se&#34;&gt;\b&lt;/span&gt;in&lt;span class=&#34;se&#34;&gt;\g&lt;/span&gt;cc.exe
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;COLLECT_LTO_WRAPPER&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/lto-wrapper.exe
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Target: x86_64-w64-mingw32
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Thread model: posix
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Supported LTO compression algorithms: zlib zstd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gcc version 13.2.0 &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;Rev6, Built by MSYS2 project&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;安装完mingw-w64-ucrt-x86_64-gcc后，在windows系统环境变量PATH里面添加C:\msys64\ucrt64\bin。让go编译的时候能找到gcc。&lt;br&gt;
+下面开始下载代码进行编译。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1

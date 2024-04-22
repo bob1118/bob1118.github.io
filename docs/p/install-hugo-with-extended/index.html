@@ -13,6 +13,9 @@
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo' /><meta property='article:published_time' content='2020-09-22T13:27:37&#43;08:00'/><meta property='article:modified_time' content='2023-05-24T11:52:46&#43;08:00'/>
 <meta name="twitter:title" content="Install Hugo With Extended">
 <meta name="twitter:description" content="Install Hugo With Extended">
+  
+
+
     </head>
     <body class="
     article-page
@@ -340,7 +343,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -363,15 +366,59 @@
     <a href="#%e5%bf%ab%e6%8d%b7%e5%ae%89%e8%a3%85">#</a>
     快捷安装
 </h2><p>最快捷的方法就是去tag下载二进制文件了，<a class="link" href="https://github.com/gohugoio/hugo/releases"  target="_blank" rel="noopener"
-    >hugo with extended</a>。</p>
+    >hugo with extended</a>。在下载页面寻找hugo_extended_version_os_arch下载。</p>
 <h2 id="编译安装">
     <a href="#%e7%bc%96%e8%af%91%e5%ae%89%e8%a3%85">#</a>
     编译安装
 </h2><p>可以参考hugo的<a class="link" href="https://github.com/gohugoio/hugo/blob/master/README.md"  target="_blank" rel="noopener"
-    >Readme.md</a>。</p>
-<p>在编译之前需要CGO支持，windowsx64下CGO需要用到 <a class="link" href="https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-win32/sjlj/x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0.7z"  target="_blank" rel="noopener"
-    >MinGW-W64 GCC-8.1.0</a>。访问 <a class="link" href="https://sourceforge.net/projects/mingw-w64/files"  target="_blank" rel="noopener"
-    >https://sourceforge.net/projects/mingw-w64/files</a> 找需要的mingw win64版本。</p>
+    >Readme.md</a>。<br>
+hugo extended 在编译之前需要CGO支持，在命令行运行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">go env -w <span class="nv">CGO_ENABLED</span><span class="o">=</span><span class="m">1</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在 <a class="link" href="https://www.mingw-w64.org/downloads/"  target="_blank" rel="noopener"
+    >https://www.mingw-w64.org/downloads/</a> 下载支持windows_x64的二进制构建包<a class="link" href="https://github.com/msys2/msys2-installer/releases/download/2024-01-13/msys2-x86_64-20240113.exe"  target="_blank" rel="noopener"
+    >mysys2</a>。<br>
+按照mysys2安装说明<a class="link" href="https://www.msys2.org/"  target="_blank" rel="noopener"
+    >mysys2 started</a>安装mysys2。<br>
+打开 MYSYS2 UCRT64，安装支持windows x64 ucrt gcc。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">pacman -Syu
+</span></span><span class="line"><span class="cl">pacman -S mingw-w64-ucrt-x86_64-gcc
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">gcc -v
+</span></span><span class="line"><span class="cl">Using built-in specs.
+</span></span><span class="line"><span class="cl"><span class="nv">COLLECT_GCC</span><span class="o">=</span>C:<span class="se">\m</span>sys64<span class="se">\u</span>crt64<span class="se">\b</span>in<span class="se">\g</span>cc.exe
+</span></span><span class="line"><span class="cl"><span class="nv">COLLECT_LTO_WRAPPER</span><span class="o">=</span>C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/lto-wrapper.exe
+</span></span><span class="line"><span class="cl">Target: x86_64-w64-mingw32
+</span></span><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl">Thread model: posix
+</span></span><span class="line"><span class="cl">Supported LTO compression algorithms: zlib zstd
+</span></span><span class="line"><span class="cl">gcc version 13.2.0 <span class="o">(</span>Rev6, Built by MSYS2 project<span class="o">)</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装完mingw-w64-ucrt-x86_64-gcc后，在windows系统环境变量PATH里面添加C:\msys64\ucrt64\bin。让go编译的时候能找到gcc。<br>
+下面开始下载代码进行编译。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
