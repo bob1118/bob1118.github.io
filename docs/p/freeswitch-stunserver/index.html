@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://tsinling.org/p/freeswitch-stunserver/'>
 
-<link rel="stylesheet" href="/scss/style.min.8e60baf4cd3fc55968717a6e39762f4d28ed7ef6007566b6c7970ad0fe907198.css"><meta property='og:title' content="Freeswitch Stunserver">
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="Freeswitch Stunserver">
 <meta property='og:description' content="freeswitch default stunserver stun.freeswitch.org unreachable.">
 <meta property='og:url' content='https://tsinling.org/p/freeswitch-stunserver/'>
 <meta property='og:site_name' content='bob&#39;s rabbit hole'>
@@ -358,17 +358,13 @@
     <section class="article-content">
     
     
-    <h1 id="stun-unreachable">
-    <a href="#stun-unreachable">#</a>
-    stun unreachable
+    <h1 id="stun-unreachable">stun unreachable
 </h1><p>最近的freesiwtch stun server stun.freeswitch.org因不明原因不可达。
 默认的stun.freeswitch.org是指向第三方的stun server的。stun.freeswitch.org指向stun.signalwire.com，很有可能freeswitch team自举了stunserver，丢弃了外部的stun请求。
 这样造成了采取默认配置的freeswitch启动的时候失败(mod_sofia获取不到external ip)。</p>
 <p>可以调整配置中默认的stun地址解决，也可以配置sofia的external ip地址来解决。</p>
 <p>以上源自FS-11604: [Configuration] Improve Vanilla config所造成。</p>
-<h2 id="公共的stun">
-    <a href="#%e5%85%ac%e5%85%b1%e7%9a%84stun">#</a>
-    公共的stun
+<h2 id="公共的stun">公共的stun
 </h2><p>stun.xten.com</p>
 <p>stun.sipgate.net</p>
 <p>&hellip;</p>
@@ -393,9 +389,7 @@
 </span></span><span class="line"><span class="cl">freeswitch@debian10&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="修改varsxml">
-    <a href="#%e4%bf%ae%e6%94%b9varsxml">#</a>
-    修改vars.xml
+</div><h2 id="修改varsxml">修改vars.xml
 </h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -408,9 +402,7 @@
 </span></span><span class="line"><span class="cl">    <span class="nt">&lt;X-PRE-PROCESS</span> <span class="na">cmd=</span><span class="s">&#34;stun-set&#34;</span> <span class="na">data=</span><span class="s">&#34;external_rtp_ip=auto-nat&#34;</span><span class="nt">/&gt;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="maillist">
-    <a href="#maillist">#</a>
-    maillist
+</div><h2 id="maillist">maillist
 </h2><p>在邮件列表里的讨论后，stun.freeswitch.org在不被滥用的前提下暂时恢复&hellip;</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -571,7 +563,7 @@
         
             <a href ="http://beian.miit.gov.cn/" target="_blank">陕ICP备14012495号-1</a><img src="https://www.12389.gov.cn/images/5692312.png"><a href ="http://www.beian.gov.cn/portal/registerSystemInfo" target="_blank">陕公安备61012402000103号</a> <br/>
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.25.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 

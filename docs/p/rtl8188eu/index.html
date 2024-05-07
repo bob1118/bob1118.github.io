@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://tsinling.org/p/rtl8188eu/'>
 
-<link rel="stylesheet" href="/scss/style.min.8e60baf4cd3fc55968717a6e39762f4d28ed7ef6007566b6c7970ad0fe907198.css"><meta property='og:title' content="Rtl8188eu">
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="Rtl8188eu">
 <meta property='og:description' content="Realtek rtl8188eu wireless Lan USB Network Adapter sniffer.">
 <meta property='og:url' content='https://tsinling.org/p/rtl8188eu/'>
 <meta property='og:site_name' content='bob&#39;s rabbit hole'>
@@ -375,14 +375,10 @@
     <section class="article-content">
     
     
-    <h1 id="realtek-rtl8188eu">
-    <a href="#realtek-rtl8188eu">#</a>
-    Realtek rtl8188eu
+    <h1 id="realtek-rtl8188eu">Realtek rtl8188eu
 </h1><p>在抽屉翻出来个十年前的USB无线网卡，怼到windows计算机的usb口上，直接使用即可（windows10带8188eu驱动程序）。
 切换一下系统到debian，默认是不能驱动的。于是到realtek官方网站看看有没有新的驱动，翻遍了网站也没找到下载链接。</p>
-<h2 id="debian">
-    <a href="#debian">#</a>
-    Debian
+<h2 id="debian">Debian
 </h2><p>在debian环境下，realtek的驱动和固件在non-free里面。
 打开sources.list，在main后面加入non-free search一下 rtl8188eu(源里面需支持non-free，否则要切换带nong-free的安装源)。<br>
 安装驱动firmware-realtek，ip link查看网卡，显示wlx0c826830b763网卡。<br>
@@ -449,36 +445,20 @@ ifup wlx0c826830b763，连ssid，获取ip完成联网。</p>
 </span></span><span class="line"><span class="cl">...
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="wireless-modes">
-    <a href="#wireless-modes">#</a>
-    wireless modes
-</h2><h3 id="ap">
-    <a href="#ap">#</a>
-    AP
+</div><h2 id="wireless-modes">wireless modes
+</h2><h3 id="ap">AP
 </h3><p>AP(AccessPoint infrastructure mode)，我们常用的热点就可以叫ap。</p>
-<h3 id="station">
-    <a href="#station">#</a>
-    Station
+<h3 id="station">Station
 </h3><p>Station连接到AP，成为WIFI网络的一部分。我们常用的手机、计算机、等终端。</p>
-<h3 id="monitor">
-    <a href="#monitor">#</a>
-    Monitor
+<h3 id="monitor">Monitor
 </h3><p>监听模式，只进不出，用来分析网络状况。</p>
-<h3 id="ad-hocibss">
-    <a href="#ad-hocibss">#</a>
-    Ad-Hoc（IBSS）
+<h3 id="ad-hocibss">Ad-Hoc（IBSS）
 </h3><p>IBSS(Independent Basic Service)，点对点模式。</p>
-<h3 id="wds">
-    <a href="#wds">#</a>
-    WDS
+<h3 id="wds">WDS
 </h3><p>Wireless Distribution System，有无线桥接和无线中继两种。</p>
-<h3 id="mesh">
-    <a href="#mesh">#</a>
-    mesh
+<h3 id="mesh">mesh
 </h3><p>多跳无线网格，mesh网络是一种基于多跳路由和对等网络的技术。</p>
-<h2 id="iw">
-    <a href="#iw">#</a>
-    iw
+<h2 id="iw">iw
 </h2><p>iw是管理802.11设备的命令行工具，支持被添加进内核的的驱动程序管理和配置。</p>
 <p>iw list 列出所有的wireless设备的参数。<br>
 iw dev wlx0c826830b763 scan 扫描AP。<br>
@@ -535,9 +515,7 @@ iw wlx0c826830b763 connect myssid 连接到myssid。<br>
 </span></span><span class="line"><span class="cl">...
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="aircrack-ng">
-    <a href="#aircrack-ng">#</a>
-    aircrack-ng
+</div><h2 id="aircrack-ng">aircrack-ng
 </h2><p>aircrack-ng是无线网络的安全套件包。<br>
 主要致力于以下四个领域。</p>
 <ol>
@@ -546,18 +524,14 @@ iw wlx0c826830b763 connect myssid 连接到myssid。<br>
 <li>测试，网卡和驱动功能的测试。</li>
 <li>破解，WEP和WPA PSK（WPA1和WPA2）</li>
 </ol>
-<h3 id="开始前">
-    <a href="#%e5%bc%80%e5%a7%8b%e5%89%8d">#</a>
-    开始前
+<h3 id="开始前">开始前
 </h3><p>在使用aircrack-ng套件之前需要检查无线网卡的芯片组是否兼容。<br>
 检查了一下rtl8188eu在kernel.org中仅能做为station，不支持ap、ibss、mesh、monitor。</p>
 <p><a class="link" href="https://wireless.wiki.kernel.org/en/users/drivers"  target="_blank" rel="noopener"
     >https://wireless.wiki.kernel.org/en/users/drivers</a><br>
 <a class="link" href="http://linux-wless.passys.nl/"  target="_blank" rel="noopener"
     >http://linux-wless.passys.nl/</a></p>
-<h3 id="新的驱动">
-    <a href="#%e6%96%b0%e7%9a%84%e9%a9%b1%e5%8a%a8">#</a>
-    新的驱动
+<h3 id="新的驱动">新的驱动
 </h3><p>linux firmware 中rtl8188eu就是个普通的上网卡，其他方式是不可行的。<br>
 在aircrack-ng上翻了翻，找到了支持mesh、monitor和frame injiection的新驱动<a class="link" href="https://github.com/aircrack-ng/rtl8188eus"  target="_blank" rel="noopener"
     >https://github.com/aircrack-ng/rtl8188eus</a>。<br>
@@ -661,9 +635,7 @@ iw wlx0c826830b763 connect myssid 连接到myssid。<br>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>网卡做为statsion可以正常上网了。新驱动支持其他几种模式，我们下来安装aircrack-ng来看看。</p>
-<h3 id="安装">
-    <a href="#%e5%ae%89%e8%a3%85">#</a>
-    安装
+<h3 id="安装">安装
 </h3><p>aircrack-ng可以编译安装也可以下安装包。<br>
 <a class="link" href="https://github.com/aircrack-ng/aircrack-ng.git"  target="_blank" rel="noopener"
     >https://github.com/aircrack-ng/aircrack-ng.git</a><br>
@@ -681,9 +653,7 @@ iw wlx0c826830b763 connect myssid 连接到myssid。<br>
 </span></span><span class="line"><span class="cl">dpkg -i aircrack-ng_1.7-1_amd64.deb
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="监控">
-    <a href="#%e7%9b%91%e6%8e%a7">#</a>
-    监控
+</div><h3 id="监控">监控
 </h3><p>断开刚才的station连接，设置网卡处于monitor模式，扫描周边网络。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -862,7 +832,7 @@ iw wlx0c826830b763 connect myssid 连接到myssid。<br>
         
             <a href ="http://beian.miit.gov.cn/" target="_blank">陕ICP备14012495号-1</a><img src="https://www.12389.gov.cn/images/5692312.png"><a href ="http://www.beian.gov.cn/portal/registerSystemInfo" target="_blank">陕公安备61012402000103号</a> <br/>
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.25.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 

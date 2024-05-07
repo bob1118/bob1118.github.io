@@ -12,27 +12,19 @@
         <pubDate>Wed, 22 Dec 2021 16:09:56 +0800</pubDate>
         
         <guid>https://tsinling.org/p/postgresql-how-to/</guid>
-        <description>&lt;h1 id=&#34;postgresql&#34;&gt;
-    &lt;a href=&#34;#postgresql&#34;&gt;#&lt;/a&gt;
-    postgresql
+        <description>&lt;h1 id=&#34;postgresql&#34;&gt;postgresql
 &lt;/h1&gt;&lt;p&gt;Postgresql 是一个功能强大的开源关系数据库系统.&lt;br&gt;
 Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgresql.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://postgresql.org&lt;/a&gt;.&lt;br&gt;
 最新的版本是14，了解可以访问 &lt;a class=&#34;link&#34; href=&#34;http://www.postgres.cn/docs/14/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://www.postgres.cn/docs/14/index.html&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;安装&#34;&gt;
-    &lt;a href=&#34;#%e5%ae%89%e8%a3%85&#34;&gt;#&lt;/a&gt;
-    安装
-&lt;/h2&gt;&lt;h3 id=&#34;windows&#34;&gt;
-    &lt;a href=&#34;#windows&#34;&gt;#&lt;/a&gt;
-    windows
+&lt;h2 id=&#34;安装&#34;&gt;安装
+&lt;/h2&gt;&lt;h3 id=&#34;windows&#34;&gt;windows
 &lt;/h3&gt;&lt;p&gt;由EDB认证的Postgresql installer.&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://www.enterprisedb.com/downloads/postgres-postgresql-downloads&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.enterprisedb.com/downloads/postgres-postgresql-downloads&lt;/a&gt;&lt;br&gt;
 下载并安装，按照提示设置postgres数据库的密码就可以了。&lt;/p&gt;
-&lt;h3 id=&#34;linux&#34;&gt;
-    &lt;a href=&#34;#linux&#34;&gt;#&lt;/a&gt;
-    linux
+&lt;h3 id=&#34;linux&#34;&gt;linux
 &lt;/h3&gt;&lt;p&gt;linux不同发行版本都可以从自己的软件库进行安装，以debian为例.&lt;br&gt;
 先安装postgresql，以postgres用户local（Unix domain socket）方式连接到postgres数据库.&lt;br&gt;
 修改用户postgres密码，再以postgres用户host（localhost）方式连接到数据库。&lt;/p&gt;
@@ -124,9 +116,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;postgres&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;# &lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;mac&#34;&gt;
-    &lt;a href=&#34;#mac&#34;&gt;#&lt;/a&gt;
-    mac
+&lt;/div&gt;&lt;h3 id=&#34;mac&#34;&gt;mac
 &lt;/h3&gt;&lt;p&gt;mac系统上可以去EDB下载，也可以用brew直接安装（brew安装后要以当前用户登入数据库）。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -182,12 +172,8 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;postgres&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;# &lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;客户端&#34;&gt;
-    &lt;a href=&#34;#%e5%ae%a2%e6%88%b7%e7%ab%af&#34;&gt;#&lt;/a&gt;
-    客户端
-&lt;/h2&gt;&lt;h3 id=&#34;psql&#34;&gt;
-    &lt;a href=&#34;#psql&#34;&gt;#&lt;/a&gt;
-    psql
+&lt;/div&gt;&lt;h2 id=&#34;客户端&#34;&gt;客户端
+&lt;/h2&gt;&lt;h3 id=&#34;psql&#34;&gt;psql
 &lt;/h3&gt;&lt;p&gt;命令行客户端工具psql。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -215,9 +201,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  -W, --password           force password prompt &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;should happen automatically&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;dbeaver&#34;&gt;
-    &lt;a href=&#34;#dbeaver&#34;&gt;#&lt;/a&gt;
-    DBeaver
+&lt;/div&gt;&lt;h3 id=&#34;dbeaver&#34;&gt;DBeaver
 &lt;/h3&gt;&lt;p&gt;开源图形客户端工具。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

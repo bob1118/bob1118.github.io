@@ -12,14 +12,10 @@
         <pubDate>Mon, 20 Jun 2022 13:25:51 +0800</pubDate>
         
         <guid>https://tsinling.org/p/command-line-develop/</guid>
-        <description>&lt;img src="https://tsinling.org/p/command-line-develop/cli.png" alt="Featured image of post Command Line develop" /&gt;&lt;h1 id=&#34;cobra&#34;&gt;
-    &lt;a href=&#34;#cobra&#34;&gt;#&lt;/a&gt;
-    Cobra
+        <description>&lt;img src="https://tsinling.org/p/command-line-develop/cli.png" alt="Featured image of post Command Line develop" /&gt;&lt;h1 id=&#34;cobra&#34;&gt;Cobra
 &lt;/h1&gt;&lt;p&gt;cobra是一个用来创建命令行程序的扩展库 &lt;a class=&#34;link&#34; href=&#34;https://github.com/spf13/cobra&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/spf13/cobra&lt;/a&gt;。&lt;/p&gt;
-&lt;h2 id=&#34;cli&#34;&gt;
-    &lt;a href=&#34;#cli&#34;&gt;#&lt;/a&gt;
-    cli
+&lt;h2 id=&#34;cli&#34;&gt;cli
 &lt;/h2&gt;&lt;p&gt;命令行程序由applicaton 和三个非必须部分command argument flag组成。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;application&lt;/li&gt;
@@ -96,9 +92,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;--flag x    // non-boolean flags only
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;app&#34;&gt;
-    &lt;a href=&#34;#app&#34;&gt;#&lt;/a&gt;
-    app
+&lt;/div&gt;&lt;h2 id=&#34;app&#34;&gt;app
 &lt;/h2&gt;&lt;p&gt;cobra提供了cobra-cli来自动生成application。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -158,9 +152,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      main.go
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;vscode&#34;&gt;
-    &lt;a href=&#34;#vscode&#34;&gt;#&lt;/a&gt;
-    vscode
+&lt;/div&gt;&lt;h2 id=&#34;vscode&#34;&gt;vscode
 &lt;/h2&gt;&lt;p&gt;vscode在调试app时需在launch.json中新增args来传参。&lt;br&gt;
 args传入app的command，argument，flag。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

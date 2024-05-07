@@ -12,28 +12,16 @@
         <pubDate>Wed, 23 Jun 2021 10:43:28 +0800</pubDate>
         
         <guid>https://tsinling.org/p/mdn-html-form/</guid>
-        <description>&lt;h1 id=&#34;4-form&#34;&gt;
-    &lt;a href=&#34;#4-form&#34;&gt;#&lt;/a&gt;
-    4 FORM
-&lt;/h1&gt;&lt;h2 id=&#34;41-web表单核心&#34;&gt;
-    &lt;a href=&#34;#41-web%e8%a1%a8%e5%8d%95%e6%a0%b8%e5%bf%83&#34;&gt;#&lt;/a&gt;
-    4.1 Web表单核心
-&lt;/h2&gt;&lt;h3 id=&#34;411-表单概述&#34;&gt;
-    &lt;a href=&#34;#411-%e8%a1%a8%e5%8d%95%e6%a6%82%e8%bf%b0&#34;&gt;#&lt;/a&gt;
-    4.1.1 表单概述
-&lt;/h3&gt;&lt;h3 id=&#34;412-第一个表单&#34;&gt;
-    &lt;a href=&#34;#412-%e7%ac%ac%e4%b8%80%e4%b8%aa%e8%a1%a8%e5%8d%95&#34;&gt;#&lt;/a&gt;
-    4.1.2 第一个表单
-&lt;/h3&gt;&lt;h4 id=&#34;4121-表单定义&#34;&gt;
-    &lt;a href=&#34;#4121-%e8%a1%a8%e5%8d%95%e5%ae%9a%e4%b9%89&#34;&gt;#&lt;/a&gt;
-    4.1.2.1 表单定义
+        <description>&lt;h1 id=&#34;4-form&#34;&gt;4 FORM
+&lt;/h1&gt;&lt;h2 id=&#34;41-web表单核心&#34;&gt;4.1 Web表单核心
+&lt;/h2&gt;&lt;h3 id=&#34;411-表单概述&#34;&gt;4.1.1 表单概述
+&lt;/h3&gt;&lt;h3 id=&#34;412-第一个表单&#34;&gt;4.1.2 第一个表单
+&lt;/h3&gt;&lt;h4 id=&#34;4121-表单定义&#34;&gt;4.1.2.1 表单定义
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;HTML Form 是用户和web站点交互的主要内容之一。&lt;/li&gt;
 &lt;li&gt;表单由一个或多个小部件组成，类似其他语言的可视化控件。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4122-设计表单&#34;&gt;
-    &lt;a href=&#34;#4122-%e8%ae%be%e8%ae%a1%e8%a1%a8%e5%8d%95&#34;&gt;#&lt;/a&gt;
-    4.1.2.2 设计表单
+&lt;h4 id=&#34;4122-设计表单&#34;&gt;4.1.2.2 设计表单
 &lt;/h4&gt;&lt;p&gt;构建一个简单的联系人表单。&lt;br&gt;
 &lt;img src=&#34;https://media.prod.mdn.mozit.cloud/attachments/2013/01/15/4579/4e332c8c2a22f459b786ce12c5071d73/form-sketch-low.jpg&#34;
 	
@@ -45,9 +33,7 @@
 	
 	
 &gt;&lt;/p&gt;
-&lt;h4 id=&#34;4123-实现表单&#34;&gt;
-    &lt;a href=&#34;#4123-%e5%ae%9e%e7%8e%b0%e8%a1%a8%e5%8d%95&#34;&gt;#&lt;/a&gt;
-    4.1.2.3 实现表单
+&lt;h4 id=&#34;4123-实现表单&#34;&gt;4.1.2.3 实现表单
 &lt;/h4&gt;&lt;p&gt;为了实现上述表单，需要使用以下HTML element&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/form&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -61,9 +47,7 @@
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/button&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&amp;lt;button&amp;gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4124-基本表单样式&#34;&gt;
-    &lt;a href=&#34;#4124-%e5%9f%ba%e6%9c%ac%e8%a1%a8%e5%8d%95%e6%a0%b7%e5%bc%8f&#34;&gt;#&lt;/a&gt;
-    4.1.2.4 基本表单样式
+&lt;h4 id=&#34;4124-基本表单样式&#34;&gt;4.1.2.4 基本表单样式
 &lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -266,16 +250,12 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;4125-发送数据&#34;&gt;
-    &lt;a href=&#34;#4125-%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae&#34;&gt;#&lt;/a&gt;
-    4.1.2.5 发送数据
+&lt;/div&gt;&lt;h4 id=&#34;4125-发送数据&#34;&gt;4.1.2.5 发送数据
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;action&lt;/li&gt;
 &lt;li&gt;method&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;413-构造表单&#34;&gt;
-    &lt;a href=&#34;#413-%e6%9e%84%e9%80%a0%e8%a1%a8%e5%8d%95&#34;&gt;#&lt;/a&gt;
-    4.1.3 构造表单
+&lt;h3 id=&#34;413-构造表单&#34;&gt;4.1.3 构造表单
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/form&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&amp;lt;form&amp;gt;&lt;/a&gt;&lt;/li&gt;
@@ -628,12 +608,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;414-表单控件&#34;&gt;
-    &lt;a href=&#34;#414-%e8%a1%a8%e5%8d%95%e6%8e%a7%e4%bb%b6&#34;&gt;#&lt;/a&gt;
-    4.1.4 表单控件
-&lt;/h3&gt;&lt;h4 id=&#34;4141-通用属性&#34;&gt;
-    &lt;a href=&#34;#4141-%e9%80%9a%e7%94%a8%e5%b1%9e%e6%80%a7&#34;&gt;#&lt;/a&gt;
-    4.1.4.1 通用属性
+&lt;/div&gt;&lt;h3 id=&#34;414-表单控件&#34;&gt;4.1.4 表单控件
+&lt;/h3&gt;&lt;h4 id=&#34;4141-通用属性&#34;&gt;4.1.4.1 通用属性
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;autofocus(false) 文档中只有一个与表单相关的元素可以指定具有输入焦点。&lt;/li&gt;
 &lt;li&gt;disabled(false) 用户不能与元素交互。&lt;/li&gt;
@@ -641,9 +617,7 @@
 &lt;li&gt;name&lt;/li&gt;
 &lt;li&gt;value&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4142-文本输入&#34;&gt;
-    &lt;a href=&#34;#4142-%e6%96%87%e6%9c%ac%e8%be%93%e5%85%a5&#34;&gt;#&lt;/a&gt;
-    4.1.4.2 文本输入
+&lt;h4 id=&#34;4142-文本输入&#34;&gt;4.1.4.2 文本输入
 &lt;/h4&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/Input&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/Input&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -678,9 +652,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4143-下拉内容&#34;&gt;
-    &lt;a href=&#34;#4143-%e4%b8%8b%e6%8b%89%e5%86%85%e5%ae%b9&#34;&gt;#&lt;/a&gt;
-    4.1.4.3 下拉内容
+&lt;h4 id=&#34;4143-下拉内容&#34;&gt;4.1.4.3 下拉内容
 &lt;/h4&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/select&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/select&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -768,9 +740,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;datalist&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;4144-可选中项&#34;&gt;
-    &lt;a href=&#34;#4144-%e5%8f%af%e9%80%89%e4%b8%ad%e9%a1%b9&#34;&gt;#&lt;/a&gt;
-    4.1.4.4 可选中项
+&lt;/div&gt;&lt;h4 id=&#34;4144-可选中项&#34;&gt;4.1.4.4 可选中项
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;单选
@@ -781,17 +751,13 @@
 &lt;code&gt;&amp;lt;input type=&amp;quot;checkbox&amp;quot; checked id=&amp;quot;carrots&amp;quot; name=&amp;quot;carrots&amp;quot; value=&amp;quot;carrots&amp;quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4145-按钮&#34;&gt;
-    &lt;a href=&#34;#4145-%e6%8c%89%e9%92%ae&#34;&gt;#&lt;/a&gt;
-    4.1.4.5 按钮
+&lt;h4 id=&#34;4145-按钮&#34;&gt;4.1.4.5 按钮
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Submit&lt;/li&gt;
 &lt;li&gt;Reset&lt;/li&gt;
 &lt;li&gt;Anonymous&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4146-高级表单部件&#34;&gt;
-    &lt;a href=&#34;#4146-%e9%ab%98%e7%ba%a7%e8%a1%a8%e5%8d%95%e9%83%a8%e4%bb%b6&#34;&gt;#&lt;/a&gt;
-    4.1.4.6 高级表单部件
+&lt;h4 id=&#34;4146-高级表单部件&#34;&gt;4.1.4.6 高级表单部件
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;数字
 &lt;code&gt;&amp;lt;input type=&amp;quot;number&amp;quot; name=&amp;quot;age&amp;quot; id=&amp;quot;age&amp;quot; min=&amp;quot;1&amp;quot; max=&amp;quot;10&amp;quot; step=&amp;quot;2&amp;quot;&amp;gt;&lt;/code&gt;&lt;/li&gt;
@@ -813,9 +779,7 @@
 &lt;code&gt;&amp;lt;input type=&amp;quot;color&amp;quot; name=&amp;quot;color&amp;quot; id=&amp;quot;color&amp;quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4147-其他小部件&#34;&gt;
-    &lt;a href=&#34;#4147-%e5%85%b6%e4%bb%96%e5%b0%8f%e9%83%a8%e4%bb%b6&#34;&gt;#&lt;/a&gt;
-    4.1.4.7 其他小部件
+&lt;h4 id=&#34;4147-其他小部件&#34;&gt;4.1.4.7 其他小部件
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;文件选择器
 &lt;code&gt;&amp;lt;input type=&amp;quot;file&amp;quot; name=&amp;quot;file&amp;quot; id=&amp;quot;file&amp;quot; accept=&amp;quot;image/*&amp;quot; multiple&amp;gt;&lt;/code&gt;&lt;/li&gt;
@@ -832,18 +796,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;415-html5的表单&#34;&gt;
-    &lt;a href=&#34;#415-html5%e7%9a%84%e8%a1%a8%e5%8d%95&#34;&gt;#&lt;/a&gt;
-    4.1.5 HTML5的表单
-&lt;/h3&gt;&lt;h3 id=&#34;416-其他表单&#34;&gt;
-    &lt;a href=&#34;#416-%e5%85%b6%e4%bb%96%e8%a1%a8%e5%8d%95&#34;&gt;#&lt;/a&gt;
-    4.1.6 其他表单
-&lt;/h3&gt;&lt;h3 id=&#34;417-样式化表单&#34;&gt;
-    &lt;a href=&#34;#417-%e6%a0%b7%e5%bc%8f%e5%8c%96%e8%a1%a8%e5%8d%95&#34;&gt;#&lt;/a&gt;
-    4.1.7 样式化表单
-&lt;/h3&gt;&lt;h4 id=&#34;4171-基本样式美化&#34;&gt;
-    &lt;a href=&#34;#4171-%e5%9f%ba%e6%9c%ac%e6%a0%b7%e5%bc%8f%e7%be%8e%e5%8c%96&#34;&gt;#&lt;/a&gt;
-    4.1.7.1 基本样式美化
+&lt;h3 id=&#34;415-html5的表单&#34;&gt;4.1.5 HTML5的表单
+&lt;/h3&gt;&lt;h3 id=&#34;416-其他表单&#34;&gt;4.1.6 其他表单
+&lt;/h3&gt;&lt;h3 id=&#34;417-样式化表单&#34;&gt;4.1.7 样式化表单
+&lt;/h3&gt;&lt;h4 id=&#34;4171-基本样式美化&#34;&gt;4.1.7.1 基本样式美化
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Search字段&lt;/li&gt;
 &lt;/ul&gt;
@@ -967,9 +923,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;4172-实际案例&#34;&gt;
-    &lt;a href=&#34;#4172-%e5%ae%9e%e9%99%85%e6%a1%88%e4%be%8b&#34;&gt;#&lt;/a&gt;
-    4.1.7.2 实际案例
+&lt;/div&gt;&lt;h4 id=&#34;4172-实际案例&#34;&gt;4.1.7.2 实际案例
 &lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;  1
@@ -1266,12 +1220,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;418-高级样式表单&#34;&gt;
-    &lt;a href=&#34;#418-%e9%ab%98%e7%ba%a7%e6%a0%b7%e5%bc%8f%e8%a1%a8%e5%8d%95&#34;&gt;#&lt;/a&gt;
-    4.1.8 高级样式表单
-&lt;/h3&gt;&lt;h4 id=&#34;4181-css表现力&#34;&gt;
-    &lt;a href=&#34;#4181-css%e8%a1%a8%e7%8e%b0%e5%8a%9b&#34;&gt;#&lt;/a&gt;
-    4.1.8.1 CSS表现力
+&lt;/div&gt;&lt;h3 id=&#34;418-高级样式表单&#34;&gt;4.1.8 高级样式表单
+&lt;/h3&gt;&lt;h4 id=&#34;4181-css表现力&#34;&gt;4.1.8.1 CSS表现力
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;CSS 2.1&lt;/p&gt;
@@ -1333,21 +1283,13 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4182-案例&#34;&gt;
-    &lt;a href=&#34;#4182-%e6%a1%88%e4%be%8b&#34;&gt;#&lt;/a&gt;
-    4.1.8.2 案例
+&lt;h4 id=&#34;4182-案例&#34;&gt;4.1.8.2 案例
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;复选框和单选框&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;419-ui伪类&#34;&gt;
-    &lt;a href=&#34;#419-ui%e4%bc%aa%e7%b1%bb&#34;&gt;#&lt;/a&gt;
-    4.1.9 UI伪类
-&lt;/h3&gt;&lt;h3 id=&#34;4110-客户端表单验证&#34;&gt;
-    &lt;a href=&#34;#4110-%e5%ae%a2%e6%88%b7%e7%ab%af%e8%a1%a8%e5%8d%95%e9%aa%8c%e8%af%81&#34;&gt;#&lt;/a&gt;
-    4.1.10 客户端表单验证
-&lt;/h3&gt;&lt;h4 id=&#34;41101-什么是表单数据校验&#34;&gt;
-    &lt;a href=&#34;#41101-%e4%bb%80%e4%b9%88%e6%98%af%e8%a1%a8%e5%8d%95%e6%95%b0%e6%8d%ae%e6%a0%a1%e9%aa%8c&#34;&gt;#&lt;/a&gt;
-    4.1.10.1 什么是表单数据校验
+&lt;h3 id=&#34;419-ui伪类&#34;&gt;4.1.9 UI伪类
+&lt;/h3&gt;&lt;h3 id=&#34;4110-客户端表单验证&#34;&gt;4.1.10 客户端表单验证
+&lt;/h3&gt;&lt;h4 id=&#34;41101-什么是表单数据校验&#34;&gt;4.1.10.1 什么是表单数据校验
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;客户端校验
 &lt;ul&gt;
@@ -1357,9 +1299,7 @@
 &lt;/li&gt;
 &lt;li&gt;服务器端校验&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;41102-html5内置表单校验&#34;&gt;
-    &lt;a href=&#34;#41102-html5%e5%86%85%e7%bd%ae%e8%a1%a8%e5%8d%95%e6%a0%a1%e9%aa%8c&#34;&gt;#&lt;/a&gt;
-    4.1.10.2 HTML5内置表单校验
+&lt;h4 id=&#34;41102-html5内置表单校验&#34;&gt;4.1.10.2 HTML5内置表单校验
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Input元素的校校验&lt;/li&gt;
 &lt;li&gt;Input元素required属性&lt;/li&gt;
@@ -1367,9 +1307,7 @@
 &lt;li&gt;限制输入长度maxlength/minlength&lt;/li&gt;
 &lt;li&gt;自定义错误信息(javascript)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;41103-javascript校验表单&#34;&gt;
-    &lt;a href=&#34;#41103-javascript%e6%a0%a1%e9%aa%8c%e8%a1%a8%e5%8d%95&#34;&gt;#&lt;/a&gt;
-    4.1.10.3 JavaScript校验表单
+&lt;h4 id=&#34;41103-javascript校验表单&#34;&gt;4.1.10.3 JavaScript校验表单
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;支持约束校验API的表单元素
 &lt;ul&gt;
@@ -1412,14 +1350,10 @@
 &lt;/li&gt;
 &lt;li&gt;使用约束校验API的例子&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;4111-发送表单数据&#34;&gt;
-    &lt;a href=&#34;#4111-%e5%8f%91%e9%80%81%e8%a1%a8%e5%8d%95%e6%95%b0%e6%8d%ae&#34;&gt;#&lt;/a&gt;
-    4.1.11 发送表单数据
+&lt;h3 id=&#34;4111-发送表单数据&#34;&gt;4.1.11 发送表单数据
 &lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/Forms/Sending_and_retrieving_form_data&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Learn/Forms/Sending_and_retrieving_form_data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;41111-数据都去那儿了&#34;&gt;
-    &lt;a href=&#34;#41111-%e6%95%b0%e6%8d%ae%e9%83%bd%e5%8e%bb%e9%82%a3%e5%84%bf%e4%ba%86&#34;&gt;#&lt;/a&gt;
-    4.1.11.1 数据都去那儿了
+&lt;h4 id=&#34;41111-数据都去那儿了&#34;&gt;4.1.11.1 数据都去那儿了
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;客户端/服务器体系结构&lt;/li&gt;
 &lt;li&gt;客户端定义如何发送数据
@@ -1455,16 +1389,12 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;41112-发送文件&#34;&gt;
-    &lt;a href=&#34;#41112-%e5%8f%91%e9%80%81%e6%96%87%e4%bb%b6&#34;&gt;#&lt;/a&gt;
-    4.1.11.2 发送文件
+&lt;h4 id=&#34;41112-发送文件&#34;&gt;4.1.11.2 发送文件
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;method get&lt;/li&gt;
 &lt;li&gt;enctype multipart/form-data&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;41113-安全问题&#34;&gt;
-    &lt;a href=&#34;#41113-%e5%ae%89%e5%85%a8%e9%97%ae%e9%a2%98&#34;&gt;#&lt;/a&gt;
-    4.1.11.3 安全问题
+&lt;h4 id=&#34;41113-安全问题&#34;&gt;4.1.11.3 安全问题
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;XSS CSRF&lt;/p&gt;
@@ -1479,15 +1409,9 @@
 &lt;p&gt;电子邮件注入&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;42-web表单进阶&#34;&gt;
-    &lt;a href=&#34;#42-web%e8%a1%a8%e5%8d%95%e8%bf%9b%e9%98%b6&#34;&gt;#&lt;/a&gt;
-    4.2 Web表单进阶
-&lt;/h2&gt;&lt;h3 id=&#34;421-构造自定义表单控件&#34;&gt;
-    &lt;a href=&#34;#421-%e6%9e%84%e9%80%a0%e8%87%aa%e5%ae%9a%e4%b9%89%e8%a1%a8%e5%8d%95%e6%8e%a7%e4%bb%b6&#34;&gt;#&lt;/a&gt;
-    4.2.1 构造自定义表单控件
-&lt;/h3&gt;&lt;h4 id=&#34;4211-设计结构和语义&#34;&gt;
-    &lt;a href=&#34;#4211-%e8%ae%be%e8%ae%a1%e7%bb%93%e6%9e%84%e5%92%8c%e8%af%ad%e4%b9%89&#34;&gt;#&lt;/a&gt;
-    4.2.1.1 设计、结构、和语义
+&lt;h2 id=&#34;42-web表单进阶&#34;&gt;4.2 Web表单进阶
+&lt;/h2&gt;&lt;h3 id=&#34;421-构造自定义表单控件&#34;&gt;4.2.1 构造自定义表单控件
+&lt;/h3&gt;&lt;h4 id=&#34;4211-设计结构和语义&#34;&gt;4.2.1.1 设计、结构、和语义
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;重建Select元素
 &lt;ul&gt;
@@ -1501,9 +1425,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4212-通过javascript让您的小部件动起来&#34;&gt;
-    &lt;a href=&#34;#4212-%e9%80%9a%e8%bf%87javascript%e8%ae%a9%e6%82%a8%e7%9a%84%e5%b0%8f%e9%83%a8%e4%bb%b6%e5%8a%a8%e8%b5%b7%e6%9d%a5&#34;&gt;#&lt;/a&gt;
-    4.2.1.2 通过JavaScript让您的小部件动起来
+&lt;h4 id=&#34;4212-通过javascript让您的小部件动起来&#34;&gt;4.2.1.2 通过JavaScript让您的小部件动起来
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;为什么不生效
 &lt;ul&gt;
@@ -1526,22 +1448,14 @@
 &lt;li&gt;构造事件回调&lt;/li&gt;
 &lt;li&gt;处理组件的值&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4213-可访问性&#34;&gt;
-    &lt;a href=&#34;#4213-%e5%8f%af%e8%ae%bf%e9%97%ae%e6%80%a7&#34;&gt;#&lt;/a&gt;
-    4.2.1.3 可访问性
-&lt;/h4&gt;&lt;h3 id=&#34;422-使用javascript发送表单&#34;&gt;
-    &lt;a href=&#34;#422-%e4%bd%bf%e7%94%a8javascript%e5%8f%91%e9%80%81%e8%a1%a8%e5%8d%95&#34;&gt;#&lt;/a&gt;
-    4.2.2 使用Javascript发送表单
-&lt;/h3&gt;&lt;h4 id=&#34;4221-表单不总是表单&#34;&gt;
-    &lt;a href=&#34;#4221-%e8%a1%a8%e5%8d%95%e4%b8%8d%e6%80%bb%e6%98%af%e8%a1%a8%e5%8d%95&#34;&gt;#&lt;/a&gt;
-    4.2.2.1 表单不总是表单
+&lt;h4 id=&#34;4213-可访问性&#34;&gt;4.2.1.3 可访问性
+&lt;/h4&gt;&lt;h3 id=&#34;422-使用javascript发送表单&#34;&gt;4.2.2 使用Javascript发送表单
+&lt;/h3&gt;&lt;h4 id=&#34;4221-表单不总是表单&#34;&gt;4.2.2.1 表单不总是表单
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;获得整体界面的控制&lt;/li&gt;
 &lt;li&gt;表单和AJAX的区别&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4222-发送表单数据&#34;&gt;
-    &lt;a href=&#34;#4222-%e5%8f%91%e9%80%81%e8%a1%a8%e5%8d%95%e6%95%b0%e6%8d%ae&#34;&gt;#&lt;/a&gt;
-    4.2.2.2 发送表单数据
+&lt;h4 id=&#34;4222-发送表单数据&#34;&gt;4.2.2.2 发送表单数据
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;构建XMLHttpRequest&lt;/li&gt;
 &lt;li&gt;FormDATA Object
@@ -1552,18 +1466,10 @@
 &lt;/li&gt;
 &lt;li&gt;在隐藏的iframe中构建DOM&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4223-处理二进制&#34;&gt;
-    &lt;a href=&#34;#4223-%e5%a4%84%e7%90%86%e4%ba%8c%e8%bf%9b%e5%88%b6&#34;&gt;#&lt;/a&gt;
-    4.2.2.3 处理二进制
-&lt;/h4&gt;&lt;h3 id=&#34;423-表单组件兼容性列表&#34;&gt;
-    &lt;a href=&#34;#423-%e8%a1%a8%e5%8d%95%e7%bb%84%e4%bb%b6%e5%85%bc%e5%ae%b9%e6%80%a7%e5%88%97%e8%a1%a8&#34;&gt;#&lt;/a&gt;
-    4.2.3 表单组件兼容性列表
-&lt;/h3&gt;&lt;h4 id=&#34;4231-如何阅读表格&#34;&gt;
-    &lt;a href=&#34;#4231-%e5%a6%82%e4%bd%95%e9%98%85%e8%af%bb%e8%a1%a8%e6%a0%bc&#34;&gt;#&lt;/a&gt;
-    4.2.3.1 如何阅读表格
-&lt;/h4&gt;&lt;h4 id=&#34;4232-兼容性表格&#34;&gt;
-    &lt;a href=&#34;#4232-%e5%85%bc%e5%ae%b9%e6%80%a7%e8%a1%a8%e6%a0%bc&#34;&gt;#&lt;/a&gt;
-    4.2.3.2 兼容性表格
+&lt;h4 id=&#34;4223-处理二进制&#34;&gt;4.2.2.3 处理二进制
+&lt;/h4&gt;&lt;h3 id=&#34;423-表单组件兼容性列表&#34;&gt;4.2.3 表单组件兼容性列表
+&lt;/h3&gt;&lt;h4 id=&#34;4231-如何阅读表格&#34;&gt;4.2.3.1 如何阅读表格
+&lt;/h4&gt;&lt;h4 id=&#34;4232-兼容性表格&#34;&gt;4.2.3.2 兼容性表格
 &lt;/h4&gt;</description>
         </item>
         <item>
@@ -1572,15 +1478,9 @@
         <pubDate>Sun, 30 May 2021 20:22:15 +0800</pubDate>
         
         <guid>https://tsinling.org/p/mdn-html/</guid>
-        <description>&lt;h1 id=&#34;1-html&#34;&gt;
-    &lt;a href=&#34;#1-html&#34;&gt;#&lt;/a&gt;
-    1 HTML
-&lt;/h1&gt;&lt;h2 id=&#34;11-介绍&#34;&gt;
-    &lt;a href=&#34;#11-%e4%bb%8b%e7%bb%8d&#34;&gt;#&lt;/a&gt;
-    1.1 介绍
-&lt;/h2&gt;&lt;h3 id=&#34;111-概述&#34;&gt;
-    &lt;a href=&#34;#111-%e6%a6%82%e8%bf%b0&#34;&gt;#&lt;/a&gt;
-    1.1.1 概述
+        <description>&lt;h1 id=&#34;1-html&#34;&gt;1 HTML
+&lt;/h1&gt;&lt;h2 id=&#34;11-介绍&#34;&gt;1.1 介绍
+&lt;/h2&gt;&lt;h3 id=&#34;111-概述&#34;&gt;1.1.1 概述
 &lt;/h3&gt;&lt;p&gt;1990 年，由于对 Web 未来发展的远见，Tim Berners-Lee 提出了 超文本 的概念，并在第二年在 SGML (en-US) 的基础上将其正式定义为一个标记语言。&lt;br&gt;
 1993 年，IETF (en-US) 正式开始制定 HTML 规范，并在经历了几个版本的草案后于 1995 年发布了 HTML 2.0 版本。&lt;br&gt;
 1994 年，Berners-Lee 为了 Web 发展而成立了 W3C (en-US)。&lt;br&gt;
@@ -1588,9 +1488,7 @@
 1999 年，HTML 4.0 发布，并在 2000 年成为 ISO (en-US) 标准。&lt;br&gt;
 2008 年，两个组织（译注：即 W3C 和 WHATWG）发布了第一份草案。&lt;br&gt;
 2014 年，两个组织（译注：即 W3C 和 WHATWG）发布了 HTML5 标准的最终版。&lt;/p&gt;
-&lt;h3 id=&#34;112-入门&#34;&gt;
-    &lt;a href=&#34;#112-%e5%85%a5%e9%97%a8&#34;&gt;#&lt;/a&gt;
-    1.1.2 入门
+&lt;h3 id=&#34;112-入门&#34;&gt;1.1.2 入门
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;什么是HTML&lt;/li&gt;
 &lt;/ul&gt;
@@ -1671,9 +1569,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;113-元数据httpsdevelopermozillaorgzh-cndocswebhtmlelementmeta&#34;&gt;
-    &lt;a href=&#34;#113-%e5%85%83%e6%95%b0%e6%8d%aehttpsdevelopermozillaorgzh-cndocswebhtmlelementmeta&#34;&gt;#&lt;/a&gt;
-    1.1.3 &lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;113-元数据httpsdevelopermozillaorgzh-cndocswebhtmlelementmeta&#34;&gt;1.1.3 &lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;元数据&lt;/a&gt;
 &lt;/h3&gt;&lt;p&gt;HTML中的&amp;lt;head&amp;gt;元素，他的内容不会在浏览器中显示，他的作用是保存页面中的一些元数据。&lt;br&gt;
 包含在&amp;lt;head&amp;gt;中的一些元数据有&amp;lt;title&amp;gt;,&amp;lt;meta&amp;gt;,&amp;lt;link&amp;gt;等。&lt;/p&gt;
@@ -1750,9 +1646,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;114-html文字基础&#34;&gt;
-    &lt;a href=&#34;#114-html%e6%96%87%e5%ad%97%e5%9f%ba%e7%a1%80&#34;&gt;#&lt;/a&gt;
-    1.1.4 HTML文字基础
+&lt;h3 id=&#34;114-html文字基础&#34;&gt;1.1.4 HTML文字基础
 &lt;/h3&gt;&lt;p&gt;标题标签&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -1825,9 +1719,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ol&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;115-超链接&#34;&gt;
-    &lt;a href=&#34;#115-%e8%b6%85%e9%93%be%e6%8e%a5&#34;&gt;#&lt;/a&gt;
-    1.1.5 超链接
+&lt;/div&gt;&lt;h3 id=&#34;115-超链接&#34;&gt;1.1.5 超链接
 &lt;/h3&gt;&lt;p&gt;超链接是互联网提供的最令人兴奋的创新之一。&lt;br&gt;
 通过将文本转换为&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a&#34;  title=&#34;mdn docs html element \&amp;lt;a\&amp;gt;&#34;
      target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1868,9 +1760,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;116-高级文字格式&#34;&gt;
-    &lt;a href=&#34;#116-%e9%ab%98%e7%ba%a7%e6%96%87%e5%ad%97%e6%a0%bc%e5%bc%8f&#34;&gt;#&lt;/a&gt;
-    1.1.6 高级文字格式
+&lt;/div&gt;&lt;h3 id=&#34;116-高级文字格式&#34;&gt;1.1.6 高级文字格式
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;描述列表(describtion list)&lt;/li&gt;
 &lt;/ul&gt;
@@ -1907,9 +1797,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;li&gt;展示计算机代码(code pre var kbd samp)&lt;/li&gt;
 &lt;li&gt;标记时间(time)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;117-文档与网站构架&#34;&gt;
-    &lt;a href=&#34;#117-%e6%96%87%e6%a1%a3%e4%b8%8e%e7%bd%91%e7%ab%99%e6%9e%84%e6%9e%b6&#34;&gt;#&lt;/a&gt;
-    1.1.7 文档与网站构架
+&lt;h3 id=&#34;117-文档与网站构架&#34;&gt;1.1.7 文档与网站构架
 &lt;/h3&gt;&lt;p&gt;网站由若干html文档组成，每一个html文档包含若干的布局元素。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;页眉 &amp;lt;header&amp;gt;&lt;/li&gt;
@@ -1924,19 +1812,11 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;118-html调试&#34;&gt;
-    &lt;a href=&#34;#118-html%e8%b0%83%e8%af%95&#34;&gt;#&lt;/a&gt;
-    1.1.8 HTML调试
+&lt;h3 id=&#34;118-html调试&#34;&gt;1.1.8 HTML调试
 &lt;/h3&gt;&lt;p&gt;firefox调试技术。&lt;/p&gt;
-&lt;h2 id=&#34;12-多媒体&#34;&gt;
-    &lt;a href=&#34;#12-%e5%a4%9a%e5%aa%92%e4%bd%93&#34;&gt;#&lt;/a&gt;
-    1.2 多媒体
-&lt;/h2&gt;&lt;h3 id=&#34;121-概述&#34;&gt;
-    &lt;a href=&#34;#121-%e6%a6%82%e8%bf%b0&#34;&gt;#&lt;/a&gt;
-    1.2.1 概述
-&lt;/h3&gt;&lt;h3 id=&#34;122-图片&#34;&gt;
-    &lt;a href=&#34;#122-%e5%9b%be%e7%89%87&#34;&gt;#&lt;/a&gt;
-    1.2.2 图片
+&lt;h2 id=&#34;12-多媒体&#34;&gt;1.2 多媒体
+&lt;/h2&gt;&lt;h3 id=&#34;121-概述&#34;&gt;1.2.1 概述
+&lt;/h3&gt;&lt;h3 id=&#34;122-图片&#34;&gt;1.2.2 图片
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&amp;lt;img&amp;gt;&lt;/a&gt;&lt;/li&gt;
@@ -2015,9 +1895,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;123-音频&#34;&gt;
-    &lt;a href=&#34;#123-%e9%9f%b3%e9%a2%91&#34;&gt;#&lt;/a&gt;
-    1.2.3 音频
+&lt;/div&gt;&lt;h3 id=&#34;123-音频&#34;&gt;1.2.3 音频
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/audio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&amp;lt;audio&amp;gt;&lt;/a&gt;&lt;/li&gt;
@@ -2038,9 +1916,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;audio&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;124-视频&#34;&gt;
-    &lt;a href=&#34;#124-%e8%a7%86%e9%a2%91&#34;&gt;#&lt;/a&gt;
-    1.2.4 视频
+&lt;/div&gt;&lt;h3 id=&#34;124-视频&#34;&gt;1.2.4 视频
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&amp;lt;video&amp;gt;&lt;/a&gt;&lt;/li&gt;
@@ -2067,9 +1943,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;video&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;125-嵌入&#34;&gt;
-    &lt;a href=&#34;#125-%e5%b5%8c%e5%85%a5&#34;&gt;#&lt;/a&gt;
-    1.2.5 嵌入
+&lt;/div&gt;&lt;h3 id=&#34;125-嵌入&#34;&gt;1.2.5 嵌入
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&amp;lt;iframe&amp;gt;&lt;/a&gt;&lt;/li&gt;
@@ -2134,9 +2008,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;object&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;126-矢量图&#34;&gt;
-    &lt;a href=&#34;#126-%e7%9f%a2%e9%87%8f%e5%9b%be&#34;&gt;#&lt;/a&gt;
-    1.2.6 矢量图
+&lt;/div&gt;&lt;h3 id=&#34;126-矢量图&#34;&gt;1.2.6 矢量图
 &lt;/h3&gt;&lt;p&gt;在网上，你会和两种类型的图片打交道-位图和矢量图。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;位图使用像素网络来定义&lt;/li&gt;
@@ -2194,9 +2066,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;svg&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;127-图片自适应&#34;&gt;
-    &lt;a href=&#34;#127-%e5%9b%be%e7%89%87%e8%87%aa%e9%80%82%e5%ba%94&#34;&gt;#&lt;/a&gt;
-    1.2.7 图片自适应
+&lt;/div&gt;&lt;h3 id=&#34;127-图片自适应&#34;&gt;1.2.7 图片自适应
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -2223,15 +2093,9 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;li&gt;查看给与该媒体查询的槽大小&lt;/li&gt;
 &lt;li&gt;加载srcset列表中引用的最接近所选槽大小的图像&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;13-表格&#34;&gt;
-    &lt;a href=&#34;#13-%e8%a1%a8%e6%a0%bc&#34;&gt;#&lt;/a&gt;
-    1.3 表格
-&lt;/h2&gt;&lt;h3 id=&#34;131-表格概述&#34;&gt;
-    &lt;a href=&#34;#131-%e8%a1%a8%e6%a0%bc%e6%a6%82%e8%bf%b0&#34;&gt;#&lt;/a&gt;
-    1.3.1 表格概述
-&lt;/h3&gt;&lt;h3 id=&#34;132-基础表格&#34;&gt;
-    &lt;a href=&#34;#132-%e5%9f%ba%e7%a1%80%e8%a1%a8%e6%a0%bc&#34;&gt;#&lt;/a&gt;
-    1.3.2 基础表格
+&lt;h2 id=&#34;13-表格&#34;&gt;1.3 表格
+&lt;/h2&gt;&lt;h3 id=&#34;131-表格概述&#34;&gt;1.3.1 表格概述
+&lt;/h3&gt;&lt;h3 id=&#34;132-基础表格&#34;&gt;1.3.2 基础表格
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -2382,9 +2246,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;table&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;133-高级表格&#34;&gt;
-    &lt;a href=&#34;#133-%e9%ab%98%e7%ba%a7%e8%a1%a8%e6%a0%bc&#34;&gt;#&lt;/a&gt;
-    1.3.3 高级表格
+&lt;/div&gt;&lt;h3 id=&#34;133-高级表格&#34;&gt;1.3.3 高级表格
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/caption&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&amp;lt;caption&amp;gt;&lt;/a&gt;&lt;/li&gt;

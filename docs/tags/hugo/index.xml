@@ -12,18 +12,12 @@
         <pubDate>Tue, 22 Sep 2020 13:27:37 +0800</pubDate>
         
         <guid>https://tsinling.org/p/install-hugo-with-extended/</guid>
-        <description>&lt;h1 id=&#34;hugo&#34;&gt;
-    &lt;a href=&#34;#hugo&#34;&gt;#&lt;/a&gt;
-    hugo
+        <description>&lt;h1 id=&#34;hugo&#34;&gt;hugo
 &lt;/h1&gt;&lt;p&gt;hugo 在windows X64平台支持Sass/SCCS。&lt;/p&gt;
-&lt;h2 id=&#34;快捷安装&#34;&gt;
-    &lt;a href=&#34;#%e5%bf%ab%e6%8d%b7%e5%ae%89%e8%a3%85&#34;&gt;#&lt;/a&gt;
-    快捷安装
+&lt;h2 id=&#34;快捷安装&#34;&gt;快捷安装
 &lt;/h2&gt;&lt;p&gt;最快捷的方法就是去tag下载二进制文件了，&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;hugo with extended&lt;/a&gt;。在下载页面寻找hugo_extended_version_os_arch下载。&lt;/p&gt;
-&lt;h2 id=&#34;编译安装&#34;&gt;
-    &lt;a href=&#34;#%e7%bc%96%e8%af%91%e5%ae%89%e8%a3%85&#34;&gt;#&lt;/a&gt;
-    编译安装
+&lt;h2 id=&#34;编译安装&#34;&gt;编译安装
 &lt;/h2&gt;&lt;p&gt;可以参考hugo的&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/blob/master/README.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Readme.md&lt;/a&gt;。&lt;br&gt;
 hugo extended 在编译之前需要CGO支持，在命令行运行&lt;/p&gt;
@@ -118,9 +112,7 @@ hugo extended 在编译之前需要CGO支持，在命令行运行&lt;/p&gt;
 &lt;/div&gt;&lt;p&gt;编译的时候报告&lt;em&gt;Error: export ordinal too large: 78124&lt;/em&gt;，参考 &lt;a class=&#34;link&#34; href=&#34;https://github.com/golang/go/issues/40795&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/golang/go/issues/40795&lt;/a&gt; 需要加上-buildmode=exe，具体原因需要等待golang官方调查&amp;hellip;&lt;/p&gt;
 &lt;p&gt;该问题已经在go1.16版本修复.&lt;/p&gt;
-&lt;h2 id=&#34;ldflags&#34;&gt;
-    &lt;a href=&#34;#ldflags&#34;&gt;#&lt;/a&gt;
-    ldflags
+&lt;h2 id=&#34;ldflags&#34;&gt;ldflags
 &lt;/h2&gt;&lt;p&gt;默认编译的文件比较大，可以使用-ldflags &amp;ldquo;-w -s&amp;quot;去掉调试信息。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

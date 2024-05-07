@@ -12,29 +12,21 @@
         <pubDate>Sun, 20 Sep 2020 16:10:22 +0800</pubDate>
         
         <guid>https://tsinling.org/p/iphone-restore/</guid>
-        <description>&lt;h1 id=&#34;ios14&#34;&gt;
-    &lt;a href=&#34;#ios14&#34;&gt;#&lt;/a&gt;
-    IOS14
+        <description>&lt;h1 id=&#34;ios14&#34;&gt;IOS14
 &lt;/h1&gt;&lt;p&gt;自从IOS 14发布后，很多人都去体验&lt;a class=&#34;link&#34; href=&#34;https://www.apple.com.cn/ios/ios-14/features/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;IOS 14 新特性&lt;/a&gt;。&lt;/p&gt;
-&lt;h2 id=&#34;ota升级&#34;&gt;
-    &lt;a href=&#34;#ota%e5%8d%87%e7%ba%a7&#34;&gt;#&lt;/a&gt;
-    OTA升级
+&lt;h2 id=&#34;ota升级&#34;&gt;OTA升级
 &lt;/h2&gt;&lt;p&gt;根据官方建议&lt;a class=&#34;link&#34; href=&#34;https://support.apple.com/zh-cn/ios/update&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://support.apple.com/zh-cn/ios/update&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Iphone-&amp;gt;设置-&amp;gt;通用-&amp;gt;软件更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;我也尝试升级到了IOS14，总体效果还是值得赞赏的。听了一下午网易云音乐，后盖烫的厉害，尝试DFU恢复一下看看。&lt;/p&gt;
-&lt;h2 id=&#34;itunes&#34;&gt;
-    &lt;a href=&#34;#itunes&#34;&gt;#&lt;/a&gt;
-    iTunes
+&lt;h2 id=&#34;itunes&#34;&gt;iTunes
 &lt;/h2&gt;&lt;p&gt;手机自身无法更新或恢复的时候，借助&lt;a class=&#34;link&#34; href=&#34;https://www.apple.com/itunes/download/win64&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Itunes&lt;/a&gt;来恢复，参考&lt;a class=&#34;link&#34; href=&#34;https://support.apple.com/zh-cn/HT201263&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;用Itunes来恢复&lt;/a&gt;。&lt;/p&gt;
-&lt;h3 id=&#34;recovery模式&#34;&gt;
-    &lt;a href=&#34;#recovery%e6%a8%a1%e5%bc%8f&#34;&gt;#&lt;/a&gt;
-    recovery模式
+&lt;h3 id=&#34;recovery模式&#34;&gt;recovery模式
 &lt;/h3&gt;&lt;p&gt;recovery模式是apple官方给出的刷机方式，进入恢复模式后屏幕显示笔记本和一根线缆。&lt;br&gt;
 操作步骤如下：&lt;/p&gt;
 &lt;ul&gt;
@@ -44,9 +36,7 @@
 &lt;li&gt;继续按住开机按钮，直到设备进入恢复模式。(适用iphone8以上版)&lt;/li&gt;
 &lt;li&gt;Itunes弹出“iphone出现问题需要更新或恢复”，点恢复下载ios14.ispw恢复Iphone。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;dfu模式&#34;&gt;
-    &lt;a href=&#34;#dfu%e6%a8%a1%e5%bc%8f&#34;&gt;#&lt;/a&gt;
-    dfu模式
+&lt;h3 id=&#34;dfu模式&#34;&gt;dfu模式
 &lt;/h3&gt;&lt;p&gt;Device firmware Upgrade mode，进入dft模式后屏幕显示黑色。&lt;br&gt;
 操作步骤如下：&lt;/p&gt;
 &lt;ul&gt;

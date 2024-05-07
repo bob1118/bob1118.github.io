@@ -12,9 +12,7 @@
         <pubDate>Thu, 06 Jul 2023 16:50:58 +0800</pubDate>
         
         <guid>https://tsinling.org/p/freeswitch-mod_fifo/</guid>
-        <description>&lt;h1 id=&#34;mod_fifo&#34;&gt;
-    &lt;a href=&#34;#mod_fifo&#34;&gt;#&lt;/a&gt;
-    MOD_FIFO
+        <description>&lt;h1 id=&#34;mod_fifo&#34;&gt;MOD_FIFO
 &lt;/h1&gt;&lt;p&gt;freeswitch mod_fifo 是一个做做排队的app，允许您使用分配的优先级创建自定义的呼叫队列。&lt;br&gt;
 在使用mod_fifo时，一般是caller(profile external的incoming channel/outgoing channel)执行app命中坐席的过程。&lt;/p&gt;
 &lt;p&gt;坐席定义了两种(consumer和member):&lt;/p&gt;
@@ -22,9 +20,7 @@
 &lt;li&gt;consumer是坐席先呼入，被应答，登入队列保持等待。consumer等待caller提供通道服务。&lt;/li&gt;
 &lt;li&gt;member是在配置fifo.conf.xml中定义或fifo_member动态增减。member等待caller。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;用法&#34;&gt;
-    &lt;a href=&#34;#%e7%94%a8%e6%b3%95&#34;&gt;#&lt;/a&gt;
-    用法
+&lt;h2 id=&#34;用法&#34;&gt;用法
 &lt;/h2&gt;&lt;p&gt;fifo app 在caller channel 执行。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

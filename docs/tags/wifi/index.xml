@@ -12,14 +12,10 @@
         <pubDate>Wed, 25 May 2022 15:49:34 +0800</pubDate>
         
         <guid>https://tsinling.org/p/rtl8188eu/</guid>
-        <description>&lt;h1 id=&#34;realtek-rtl8188eu&#34;&gt;
-    &lt;a href=&#34;#realtek-rtl8188eu&#34;&gt;#&lt;/a&gt;
-    Realtek rtl8188eu
+        <description>&lt;h1 id=&#34;realtek-rtl8188eu&#34;&gt;Realtek rtl8188eu
 &lt;/h1&gt;&lt;p&gt;在抽屉翻出来个十年前的USB无线网卡，怼到windows计算机的usb口上，直接使用即可（windows10带8188eu驱动程序）。
 切换一下系统到debian，默认是不能驱动的。于是到realtek官方网站看看有没有新的驱动，翻遍了网站也没找到下载链接。&lt;/p&gt;
-&lt;h2 id=&#34;debian&#34;&gt;
-    &lt;a href=&#34;#debian&#34;&gt;#&lt;/a&gt;
-    Debian
+&lt;h2 id=&#34;debian&#34;&gt;Debian
 &lt;/h2&gt;&lt;p&gt;在debian环境下，realtek的驱动和固件在non-free里面。
 打开sources.list，在main后面加入non-free search一下 rtl8188eu(源里面需支持non-free，否则要切换带nong-free的安装源)。&lt;br&gt;
 安装驱动firmware-realtek，ip link查看网卡，显示wlx0c826830b763网卡。&lt;br&gt;
@@ -86,36 +82,20 @@ ifup wlx0c826830b763，连ssid，获取ip完成联网。&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;...
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;wireless-modes&#34;&gt;
-    &lt;a href=&#34;#wireless-modes&#34;&gt;#&lt;/a&gt;
-    wireless modes
-&lt;/h2&gt;&lt;h3 id=&#34;ap&#34;&gt;
-    &lt;a href=&#34;#ap&#34;&gt;#&lt;/a&gt;
-    AP
+&lt;/div&gt;&lt;h2 id=&#34;wireless-modes&#34;&gt;wireless modes
+&lt;/h2&gt;&lt;h3 id=&#34;ap&#34;&gt;AP
 &lt;/h3&gt;&lt;p&gt;AP(AccessPoint infrastructure mode)，我们常用的热点就可以叫ap。&lt;/p&gt;
-&lt;h3 id=&#34;station&#34;&gt;
-    &lt;a href=&#34;#station&#34;&gt;#&lt;/a&gt;
-    Station
+&lt;h3 id=&#34;station&#34;&gt;Station
 &lt;/h3&gt;&lt;p&gt;Station连接到AP，成为WIFI网络的一部分。我们常用的手机、计算机、等终端。&lt;/p&gt;
-&lt;h3 id=&#34;monitor&#34;&gt;
-    &lt;a href=&#34;#monitor&#34;&gt;#&lt;/a&gt;
-    Monitor
+&lt;h3 id=&#34;monitor&#34;&gt;Monitor
 &lt;/h3&gt;&lt;p&gt;监听模式，只进不出，用来分析网络状况。&lt;/p&gt;
-&lt;h3 id=&#34;ad-hocibss&#34;&gt;
-    &lt;a href=&#34;#ad-hocibss&#34;&gt;#&lt;/a&gt;
-    Ad-Hoc（IBSS）
+&lt;h3 id=&#34;ad-hocibss&#34;&gt;Ad-Hoc（IBSS）
 &lt;/h3&gt;&lt;p&gt;IBSS(Independent Basic Service)，点对点模式。&lt;/p&gt;
-&lt;h3 id=&#34;wds&#34;&gt;
-    &lt;a href=&#34;#wds&#34;&gt;#&lt;/a&gt;
-    WDS
+&lt;h3 id=&#34;wds&#34;&gt;WDS
 &lt;/h3&gt;&lt;p&gt;Wireless Distribution System，有无线桥接和无线中继两种。&lt;/p&gt;
-&lt;h3 id=&#34;mesh&#34;&gt;
-    &lt;a href=&#34;#mesh&#34;&gt;#&lt;/a&gt;
-    mesh
+&lt;h3 id=&#34;mesh&#34;&gt;mesh
 &lt;/h3&gt;&lt;p&gt;多跳无线网格，mesh网络是一种基于多跳路由和对等网络的技术。&lt;/p&gt;
-&lt;h2 id=&#34;iw&#34;&gt;
-    &lt;a href=&#34;#iw&#34;&gt;#&lt;/a&gt;
-    iw
+&lt;h2 id=&#34;iw&#34;&gt;iw
 &lt;/h2&gt;&lt;p&gt;iw是管理802.11设备的命令行工具，支持被添加进内核的的驱动程序管理和配置。&lt;/p&gt;
 &lt;p&gt;iw list 列出所有的wireless设备的参数。&lt;br&gt;
 iw dev wlx0c826830b763 scan 扫描AP。&lt;br&gt;
@@ -172,9 +152,7 @@ iw wlx0c826830b763 connect myssid 连接到myssid。&lt;br&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;...
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;aircrack-ng&#34;&gt;
-    &lt;a href=&#34;#aircrack-ng&#34;&gt;#&lt;/a&gt;
-    aircrack-ng
+&lt;/div&gt;&lt;h2 id=&#34;aircrack-ng&#34;&gt;aircrack-ng
 &lt;/h2&gt;&lt;p&gt;aircrack-ng是无线网络的安全套件包。&lt;br&gt;
 主要致力于以下四个领域。&lt;/p&gt;
 &lt;ol&gt;
@@ -183,18 +161,14 @@ iw wlx0c826830b763 connect myssid 连接到myssid。&lt;br&gt;
 &lt;li&gt;测试，网卡和驱动功能的测试。&lt;/li&gt;
 &lt;li&gt;破解，WEP和WPA PSK（WPA1和WPA2）&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;开始前&#34;&gt;
-    &lt;a href=&#34;#%e5%bc%80%e5%a7%8b%e5%89%8d&#34;&gt;#&lt;/a&gt;
-    开始前
+&lt;h3 id=&#34;开始前&#34;&gt;开始前
 &lt;/h3&gt;&lt;p&gt;在使用aircrack-ng套件之前需要检查无线网卡的芯片组是否兼容。&lt;br&gt;
 检查了一下rtl8188eu在kernel.org中仅能做为station，不支持ap、ibss、mesh、monitor。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://wireless.wiki.kernel.org/en/users/drivers&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://wireless.wiki.kernel.org/en/users/drivers&lt;/a&gt;&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;http://linux-wless.passys.nl/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://linux-wless.passys.nl/&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;新的驱动&#34;&gt;
-    &lt;a href=&#34;#%e6%96%b0%e7%9a%84%e9%a9%b1%e5%8a%a8&#34;&gt;#&lt;/a&gt;
-    新的驱动
+&lt;h3 id=&#34;新的驱动&#34;&gt;新的驱动
 &lt;/h3&gt;&lt;p&gt;linux firmware 中rtl8188eu就是个普通的上网卡，其他方式是不可行的。&lt;br&gt;
 在aircrack-ng上翻了翻，找到了支持mesh、monitor和frame injiection的新驱动&lt;a class=&#34;link&#34; href=&#34;https://github.com/aircrack-ng/rtl8188eus&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/aircrack-ng/rtl8188eus&lt;/a&gt;。&lt;br&gt;
@@ -298,9 +272,7 @@ iw wlx0c826830b763 connect myssid 连接到myssid。&lt;br&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;网卡做为statsion可以正常上网了。新驱动支持其他几种模式，我们下来安装aircrack-ng来看看。&lt;/p&gt;
-&lt;h3 id=&#34;安装&#34;&gt;
-    &lt;a href=&#34;#%e5%ae%89%e8%a3%85&#34;&gt;#&lt;/a&gt;
-    安装
+&lt;h3 id=&#34;安装&#34;&gt;安装
 &lt;/h3&gt;&lt;p&gt;aircrack-ng可以编译安装也可以下安装包。&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://github.com/aircrack-ng/aircrack-ng.git&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/aircrack-ng/aircrack-ng.git&lt;/a&gt;&lt;br&gt;
@@ -318,9 +290,7 @@ iw wlx0c826830b763 connect myssid 连接到myssid。&lt;br&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dpkg -i aircrack-ng_1.7-1_amd64.deb
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;监控&#34;&gt;
-    &lt;a href=&#34;#%e7%9b%91%e6%8e%a7&#34;&gt;#&lt;/a&gt;
-    监控
+&lt;/div&gt;&lt;h3 id=&#34;监控&#34;&gt;监控
 &lt;/h3&gt;&lt;p&gt;断开刚才的station连接，设置网卡处于monitor模式，扫描周边网络。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

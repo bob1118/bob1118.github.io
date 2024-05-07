@@ -12,9 +12,7 @@
         <pubDate>Thu, 06 Jul 2023 16:50:58 +0800</pubDate>
         
         <guid>https://tsinling.org/p/freeswitch-mod_fifo/</guid>
-        <description>&lt;h1 id=&#34;mod_fifo&#34;&gt;
-    &lt;a href=&#34;#mod_fifo&#34;&gt;#&lt;/a&gt;
-    MOD_FIFO
+        <description>&lt;h1 id=&#34;mod_fifo&#34;&gt;MOD_FIFO
 &lt;/h1&gt;&lt;p&gt;freeswitch mod_fifo 是一个做做排队的app，允许您使用分配的优先级创建自定义的呼叫队列。&lt;br&gt;
 在使用mod_fifo时，一般是caller(profile external的incoming channel/outgoing channel)执行app命中坐席的过程。&lt;/p&gt;
 &lt;p&gt;坐席定义了两种(consumer和member):&lt;/p&gt;
@@ -22,9 +20,7 @@
 &lt;li&gt;consumer是坐席先呼入，被应答，登入队列保持等待。consumer等待caller提供通道服务。&lt;/li&gt;
 &lt;li&gt;member是在配置fifo.conf.xml中定义或fifo_member动态增减。member等待caller。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;用法&#34;&gt;
-    &lt;a href=&#34;#%e7%94%a8%e6%b3%95&#34;&gt;#&lt;/a&gt;
-    用法
+&lt;h2 id=&#34;用法&#34;&gt;用法
 &lt;/h2&gt;&lt;p&gt;fifo app 在caller channel 执行。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -74,17 +70,13 @@
         <pubDate>Sun, 14 May 2023 10:44:13 +0800</pubDate>
         
         <guid>https://tsinling.org/p/curl-how-to/</guid>
-        <description>&lt;h1 id=&#34;curl&#34;&gt;
-    &lt;a href=&#34;#curl&#34;&gt;#&lt;/a&gt;
-    CURL
+        <description>&lt;h1 id=&#34;curl&#34;&gt;CURL
 &lt;/h1&gt;&lt;p&gt;curl是一个linux下的命令行工具，基于libcurl开发。用来和服务器交互数据。&lt;br&gt;
 curl支持多种协议(DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS)。&lt;br&gt;
 curl常用来模仿浏览器向服务器发起请求，方便在开发、测试中调试httd接口。&lt;br&gt;
 要深入了解可以阅读在线文档&lt;a class=&#34;link&#34; href=&#34;https://everything.curl.dev/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://everything.curl.dev/&lt;/a&gt;。&lt;/p&gt;
-&lt;h2 id=&#34;http&#34;&gt;
-    &lt;a href=&#34;#http&#34;&gt;#&lt;/a&gt;
-    HTTP
+&lt;h2 id=&#34;http&#34;&gt;HTTP
 &lt;/h2&gt;&lt;p&gt;参考&lt;a class=&#34;link&#34; href=&#34;https://everything.curl.dev/http&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://everything.curl.dev/http&lt;/a&gt;结合man手册就可以上手。&lt;/p&gt;
 &lt;p&gt;比如curl模拟浏览器访问bing.com。&lt;/p&gt;
@@ -233,9 +225,7 @@ curl常用来模仿浏览器向服务器发起请求，方便在开发、测试�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;bing.com返回16094字节内容,返回内容如果让浏览器解析，在浏览器里就能看到微软搜索引擎UI了。&lt;/p&gt;
-&lt;h3 id=&#34;get&#34;&gt;
-    &lt;a href=&#34;#get&#34;&gt;#&lt;/a&gt;
-    GET
+&lt;h3 id=&#34;get&#34;&gt;GET
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -260,9 +250,7 @@ curl常用来模仿浏览器向服务器发起请求，方便在开发、测试�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl --get --data-urlencode &lt;span class=&#34;nv&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;b --data-urlencode &lt;span class=&#34;nv&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;d url
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;post&#34;&gt;
-    &lt;a href=&#34;#post&#34;&gt;#&lt;/a&gt;
-    POST
+&lt;/div&gt;&lt;h3 id=&#34;post&#34;&gt;POST
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -297,9 +285,7 @@ curl常用来模仿浏览器向服务器发起请求，方便在开发、测试�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -X POST -F &lt;span class=&#34;nv&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;b -F &lt;span class=&#34;nv&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;d url
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;put&#34;&gt;
-    &lt;a href=&#34;#put&#34;&gt;#&lt;/a&gt;
-    PUT
+&lt;/div&gt;&lt;h3 id=&#34;put&#34;&gt;PUT
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -310,9 +296,7 @@ curl常用来模仿浏览器向服务器发起请求，方便在开发、测试�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -X PUT  -H &lt;span class=&#34;s2&#34;&gt;&amp;#34;Content-Type: application/json&amp;#34;&lt;/span&gt; -H &lt;span class=&#34;s2&#34;&gt;&amp;#34;Accept: application/json&amp;#34;&lt;/span&gt; -d &lt;span class=&#34;nv&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;b -d &lt;span class=&#34;nv&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;d url
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;delete&#34;&gt;
-    &lt;a href=&#34;#delete&#34;&gt;#&lt;/a&gt;
-    DELETE
+&lt;/div&gt;&lt;h3 id=&#34;delete&#34;&gt;DELETE
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -325,12 +309,8 @@ curl常用来模仿浏览器向服务器发起请求，方便在开发、测试�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -X DELETE -H &lt;span class=&#34;s2&#34;&gt;&amp;#34;Accept: application/json&amp;#34;&lt;/span&gt; url?uuid&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;xxx
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;测试我的api&#34;&gt;
-    &lt;a href=&#34;#%e6%b5%8b%e8%af%95%e6%88%91%e7%9a%84api&#34;&gt;#&lt;/a&gt;
-    测试我的api
-&lt;/h2&gt;&lt;h3 id=&#34;get-1&#34;&gt;
-    &lt;a href=&#34;#get-1&#34;&gt;#&lt;/a&gt;
-    get
+&lt;/div&gt;&lt;h2 id=&#34;测试我的api&#34;&gt;测试我的api
+&lt;/h2&gt;&lt;h3 id=&#34;get-1&#34;&gt;get
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;请求10.10.10.20/api/v1，返回&amp;quot;default api v1 content&amp;quot;。&lt;/li&gt;
 &lt;/ul&gt;
@@ -610,9 +590,7 @@ curl常用来模仿浏览器向服务器发起请求，方便在开发、测试�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;post-1&#34;&gt;
-    &lt;a href=&#34;#post-1&#34;&gt;#&lt;/a&gt;
-    post
+&lt;/div&gt;&lt;h3 id=&#34;post-1&#34;&gt;post
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;form-urlencode&lt;/li&gt;
 &lt;/ul&gt;
@@ -852,9 +830,7 @@ curl常用来模仿浏览器向服务器发起请求，方便在开发、测试�
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -X POST -F &lt;span class=&#34;nv&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;b -F &lt;span class=&#34;nv&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;d url
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;put-1&#34;&gt;
-    &lt;a href=&#34;#put-1&#34;&gt;#&lt;/a&gt;
-    put
+&lt;/div&gt;&lt;h3 id=&#34;put-1&#34;&gt;put
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -945,9 +921,7 @@ curl常用来模仿浏览器向服务器发起请求，方便在开发、测试�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;delete-1&#34;&gt;
-    &lt;a href=&#34;#delete-1&#34;&gt;#&lt;/a&gt;
-    delete
+&lt;/div&gt;&lt;h3 id=&#34;delete-1&#34;&gt;delete
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -1014,14 +988,10 @@ curl常用来模仿浏览器向服务器发起请求，方便在开发、测试�
         <pubDate>Mon, 20 Jun 2022 13:25:51 +0800</pubDate>
         
         <guid>https://tsinling.org/p/command-line-develop/</guid>
-        <description>&lt;img src="https://tsinling.org/p/command-line-develop/cli.png" alt="Featured image of post Command Line develop" /&gt;&lt;h1 id=&#34;cobra&#34;&gt;
-    &lt;a href=&#34;#cobra&#34;&gt;#&lt;/a&gt;
-    Cobra
+        <description>&lt;img src="https://tsinling.org/p/command-line-develop/cli.png" alt="Featured image of post Command Line develop" /&gt;&lt;h1 id=&#34;cobra&#34;&gt;Cobra
 &lt;/h1&gt;&lt;p&gt;cobra是一个用来创建命令行程序的扩展库 &lt;a class=&#34;link&#34; href=&#34;https://github.com/spf13/cobra&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/spf13/cobra&lt;/a&gt;。&lt;/p&gt;
-&lt;h2 id=&#34;cli&#34;&gt;
-    &lt;a href=&#34;#cli&#34;&gt;#&lt;/a&gt;
-    cli
+&lt;h2 id=&#34;cli&#34;&gt;cli
 &lt;/h2&gt;&lt;p&gt;命令行程序由applicaton 和三个非必须部分command argument flag组成。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;application&lt;/li&gt;
@@ -1098,9 +1068,7 @@ curl常用来模仿浏览器向服务器发起请求，方便在开发、测试�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;--flag x    // non-boolean flags only
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;app&#34;&gt;
-    &lt;a href=&#34;#app&#34;&gt;#&lt;/a&gt;
-    app
+&lt;/div&gt;&lt;h2 id=&#34;app&#34;&gt;app
 &lt;/h2&gt;&lt;p&gt;cobra提供了cobra-cli来自动生成application。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -1160,9 +1128,7 @@ curl常用来模仿浏览器向服务器发起请求，方便在开发、测试�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      main.go
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;vscode&#34;&gt;
-    &lt;a href=&#34;#vscode&#34;&gt;#&lt;/a&gt;
-    vscode
+&lt;/div&gt;&lt;h2 id=&#34;vscode&#34;&gt;vscode
 &lt;/h2&gt;&lt;p&gt;vscode在调试app时需在launch.json中新增args来传参。&lt;br&gt;
 args传入app的command，argument，flag。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1213,14 +1179,10 @@ args传入app的command，argument，flag。&lt;/p&gt;
         <pubDate>Wed, 25 May 2022 15:49:34 +0800</pubDate>
         
         <guid>https://tsinling.org/p/rtl8188eu/</guid>
-        <description>&lt;h1 id=&#34;realtek-rtl8188eu&#34;&gt;
-    &lt;a href=&#34;#realtek-rtl8188eu&#34;&gt;#&lt;/a&gt;
-    Realtek rtl8188eu
+        <description>&lt;h1 id=&#34;realtek-rtl8188eu&#34;&gt;Realtek rtl8188eu
 &lt;/h1&gt;&lt;p&gt;在抽屉翻出来个十年前的USB无线网卡，怼到windows计算机的usb口上，直接使用即可（windows10带8188eu驱动程序）。
 切换一下系统到debian，默认是不能驱动的。于是到realtek官方网站看看有没有新的驱动，翻遍了网站也没找到下载链接。&lt;/p&gt;
-&lt;h2 id=&#34;debian&#34;&gt;
-    &lt;a href=&#34;#debian&#34;&gt;#&lt;/a&gt;
-    Debian
+&lt;h2 id=&#34;debian&#34;&gt;Debian
 &lt;/h2&gt;&lt;p&gt;在debian环境下，realtek的驱动和固件在non-free里面。
 打开sources.list，在main后面加入non-free search一下 rtl8188eu(源里面需支持non-free，否则要切换带nong-free的安装源)。&lt;br&gt;
 安装驱动firmware-realtek，ip link查看网卡，显示wlx0c826830b763网卡。&lt;br&gt;
@@ -1287,36 +1249,20 @@ ifup wlx0c826830b763，连ssid，获取ip完成联网。&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;...
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;wireless-modes&#34;&gt;
-    &lt;a href=&#34;#wireless-modes&#34;&gt;#&lt;/a&gt;
-    wireless modes
-&lt;/h2&gt;&lt;h3 id=&#34;ap&#34;&gt;
-    &lt;a href=&#34;#ap&#34;&gt;#&lt;/a&gt;
-    AP
+&lt;/div&gt;&lt;h2 id=&#34;wireless-modes&#34;&gt;wireless modes
+&lt;/h2&gt;&lt;h3 id=&#34;ap&#34;&gt;AP
 &lt;/h3&gt;&lt;p&gt;AP(AccessPoint infrastructure mode)，我们常用的热点就可以叫ap。&lt;/p&gt;
-&lt;h3 id=&#34;station&#34;&gt;
-    &lt;a href=&#34;#station&#34;&gt;#&lt;/a&gt;
-    Station
+&lt;h3 id=&#34;station&#34;&gt;Station
 &lt;/h3&gt;&lt;p&gt;Station连接到AP，成为WIFI网络的一部分。我们常用的手机、计算机、等终端。&lt;/p&gt;
-&lt;h3 id=&#34;monitor&#34;&gt;
-    &lt;a href=&#34;#monitor&#34;&gt;#&lt;/a&gt;
-    Monitor
+&lt;h3 id=&#34;monitor&#34;&gt;Monitor
 &lt;/h3&gt;&lt;p&gt;监听模式，只进不出，用来分析网络状况。&lt;/p&gt;
-&lt;h3 id=&#34;ad-hocibss&#34;&gt;
-    &lt;a href=&#34;#ad-hocibss&#34;&gt;#&lt;/a&gt;
-    Ad-Hoc（IBSS）
+&lt;h3 id=&#34;ad-hocibss&#34;&gt;Ad-Hoc（IBSS）
 &lt;/h3&gt;&lt;p&gt;IBSS(Independent Basic Service)，点对点模式。&lt;/p&gt;
-&lt;h3 id=&#34;wds&#34;&gt;
-    &lt;a href=&#34;#wds&#34;&gt;#&lt;/a&gt;
-    WDS
+&lt;h3 id=&#34;wds&#34;&gt;WDS
 &lt;/h3&gt;&lt;p&gt;Wireless Distribution System，有无线桥接和无线中继两种。&lt;/p&gt;
-&lt;h3 id=&#34;mesh&#34;&gt;
-    &lt;a href=&#34;#mesh&#34;&gt;#&lt;/a&gt;
-    mesh
+&lt;h3 id=&#34;mesh&#34;&gt;mesh
 &lt;/h3&gt;&lt;p&gt;多跳无线网格，mesh网络是一种基于多跳路由和对等网络的技术。&lt;/p&gt;
-&lt;h2 id=&#34;iw&#34;&gt;
-    &lt;a href=&#34;#iw&#34;&gt;#&lt;/a&gt;
-    iw
+&lt;h2 id=&#34;iw&#34;&gt;iw
 &lt;/h2&gt;&lt;p&gt;iw是管理802.11设备的命令行工具，支持被添加进内核的的驱动程序管理和配置。&lt;/p&gt;
 &lt;p&gt;iw list 列出所有的wireless设备的参数。&lt;br&gt;
 iw dev wlx0c826830b763 scan 扫描AP。&lt;br&gt;
@@ -1373,9 +1319,7 @@ iw wlx0c826830b763 connect myssid 连接到myssid。&lt;br&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;...
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;aircrack-ng&#34;&gt;
-    &lt;a href=&#34;#aircrack-ng&#34;&gt;#&lt;/a&gt;
-    aircrack-ng
+&lt;/div&gt;&lt;h2 id=&#34;aircrack-ng&#34;&gt;aircrack-ng
 &lt;/h2&gt;&lt;p&gt;aircrack-ng是无线网络的安全套件包。&lt;br&gt;
 主要致力于以下四个领域。&lt;/p&gt;
 &lt;ol&gt;
@@ -1384,18 +1328,14 @@ iw wlx0c826830b763 connect myssid 连接到myssid。&lt;br&gt;
 &lt;li&gt;测试，网卡和驱动功能的测试。&lt;/li&gt;
 &lt;li&gt;破解，WEP和WPA PSK（WPA1和WPA2）&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;开始前&#34;&gt;
-    &lt;a href=&#34;#%e5%bc%80%e5%a7%8b%e5%89%8d&#34;&gt;#&lt;/a&gt;
-    开始前
+&lt;h3 id=&#34;开始前&#34;&gt;开始前
 &lt;/h3&gt;&lt;p&gt;在使用aircrack-ng套件之前需要检查无线网卡的芯片组是否兼容。&lt;br&gt;
 检查了一下rtl8188eu在kernel.org中仅能做为station，不支持ap、ibss、mesh、monitor。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://wireless.wiki.kernel.org/en/users/drivers&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://wireless.wiki.kernel.org/en/users/drivers&lt;/a&gt;&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;http://linux-wless.passys.nl/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://linux-wless.passys.nl/&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;新的驱动&#34;&gt;
-    &lt;a href=&#34;#%e6%96%b0%e7%9a%84%e9%a9%b1%e5%8a%a8&#34;&gt;#&lt;/a&gt;
-    新的驱动
+&lt;h3 id=&#34;新的驱动&#34;&gt;新的驱动
 &lt;/h3&gt;&lt;p&gt;linux firmware 中rtl8188eu就是个普通的上网卡，其他方式是不可行的。&lt;br&gt;
 在aircrack-ng上翻了翻，找到了支持mesh、monitor和frame injiection的新驱动&lt;a class=&#34;link&#34; href=&#34;https://github.com/aircrack-ng/rtl8188eus&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/aircrack-ng/rtl8188eus&lt;/a&gt;。&lt;br&gt;
@@ -1499,9 +1439,7 @@ iw wlx0c826830b763 connect myssid 连接到myssid。&lt;br&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;网卡做为statsion可以正常上网了。新驱动支持其他几种模式，我们下来安装aircrack-ng来看看。&lt;/p&gt;
-&lt;h3 id=&#34;安装&#34;&gt;
-    &lt;a href=&#34;#%e5%ae%89%e8%a3%85&#34;&gt;#&lt;/a&gt;
-    安装
+&lt;h3 id=&#34;安装&#34;&gt;安装
 &lt;/h3&gt;&lt;p&gt;aircrack-ng可以编译安装也可以下安装包。&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://github.com/aircrack-ng/aircrack-ng.git&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/aircrack-ng/aircrack-ng.git&lt;/a&gt;&lt;br&gt;
@@ -1519,9 +1457,7 @@ iw wlx0c826830b763 connect myssid 连接到myssid。&lt;br&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dpkg -i aircrack-ng_1.7-1_amd64.deb
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;监控&#34;&gt;
-    &lt;a href=&#34;#%e7%9b%91%e6%8e%a7&#34;&gt;#&lt;/a&gt;
-    监控
+&lt;/div&gt;&lt;h3 id=&#34;监控&#34;&gt;监控
 &lt;/h3&gt;&lt;p&gt;断开刚才的station连接，设置网卡处于monitor模式，扫描周边网络。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -1565,21 +1501,15 @@ iw wlx0c826830b763 connect myssid 连接到myssid。&lt;br&gt;
         <pubDate>Fri, 15 Apr 2022 15:39:30 +0800</pubDate>
         
         <guid>https://tsinling.org/p/vscode-remote-ssh/</guid>
-        <description>&lt;h1 id=&#34;vscode远程开发&#34;&gt;
-    &lt;a href=&#34;#vscode%e8%bf%9c%e7%a8%8b%e5%bc%80%e5%8f%91&#34;&gt;#&lt;/a&gt;
-    VSCODE远程开发
-&lt;/h1&gt;&lt;h2 id=&#34;简介&#34;&gt;
-    &lt;a href=&#34;#%e7%ae%80%e4%bb%8b&#34;&gt;#&lt;/a&gt;
-    简介
+        <description>&lt;h1 id=&#34;vscode远程开发&#34;&gt;VSCODE远程开发
+&lt;/h1&gt;&lt;h2 id=&#34;简介&#34;&gt;简介
 &lt;/h2&gt;&lt;p&gt;微软家的开发工具从来不缺少远程开发，从二十年前的visual stuidio 6到现在的visual stuidio 2022都具有远程开发的功能。&lt;br&gt;
 那么号称宇宙第一IDE的vscode当然不会例外，vscode对远程开发的支持通过扩展remote-ssh来实现。&lt;br&gt;
 visualstudio的远程开发参考 &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/zh-cn/visualstudio/debugger/remote-debugging&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://docs.microsoft.com/zh-cn/visualstudio/debugger/remote-debugging&lt;/a&gt;&lt;br&gt;
 vscode的远程开发参考 &lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/docs/remote/remote-overview&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://code.visualstudio.com/docs/remote/remote-overview&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;构架&#34;&gt;
-    &lt;a href=&#34;#%e6%9e%84%e6%9e%b6&#34;&gt;#&lt;/a&gt;
-    构架
+&lt;h2 id=&#34;构架&#34;&gt;构架
 &lt;/h2&gt;&lt;p&gt;我们看一下vscode远程开发的结构示意图&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://code.visualstudio.com/assets/docs/remote/remote-overview/architecture.png&#34;
 	
@@ -1593,13 +1523,9 @@ vscode的远程开发参考 &lt;a class=&#34;link&#34; href=&#34;https://code.vi
 &gt;&lt;/p&gt;
 &lt;p&gt;LocalOS是vscode（remote-ssh）使用的客户端主机，RemoteOS是安装vscode server（具备真实开发环境的服务器）等服务端。&lt;br&gt;
 我们操作LocalOS上的vscode通过ssh遥控RemoteOS上的代码，完成开发、调试工作。&lt;/p&gt;
-&lt;h2 id=&#34;目标&#34;&gt;
-    &lt;a href=&#34;#%e7%9b%ae%e6%a0%87&#34;&gt;#&lt;/a&gt;
-    目标
+&lt;h2 id=&#34;目标&#34;&gt;目标
 &lt;/h2&gt;&lt;p&gt;在LocalOS Mac上远程调试 RemoteOS debian11.3上的golang中间件。&lt;/p&gt;
-&lt;h3 id=&#34;准备工作&#34;&gt;
-    &lt;a href=&#34;#%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c&#34;&gt;#&lt;/a&gt;
-    准备工作
+&lt;h3 id=&#34;准备工作&#34;&gt;准备工作
 &lt;/h3&gt;&lt;p&gt;RemoteOS安装openssh-server，build-essential，golang(Debian11源中的golang版本比较老，可以从&lt;a class=&#34;link&#34; href=&#34;https://golang.google.cn/dl/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://golang.google.cn/dl/&lt;/a&gt;下载新版本安装)。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1706,9 +1632,7 @@ LocalOS使用ssh_rsa登入root@remoteOS。&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;root@d113:~#
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;小试牛刀&#34;&gt;
-    &lt;a href=&#34;#%e5%b0%8f%e8%af%95%e7%89%9b%e5%88%80&#34;&gt;#&lt;/a&gt;
-    小试牛刀
+&lt;/div&gt;&lt;h3 id=&#34;小试牛刀&#34;&gt;小试牛刀
 &lt;/h3&gt;&lt;p&gt;LocalOS使用密钥ssh到RemoteOS成功后就可以打开vscode使用远程开发了。&lt;br&gt;
 接下来基本都是图形化操作，可以参考&lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/docs/remote/ssh-tutorial&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://code.visualstudio.com/docs/remote/ssh-tutorial&lt;/a&gt;。&lt;br&gt;
@@ -1737,27 +1661,19 @@ LocalOS使用ssh_rsa登入root@remoteOS。&lt;/p&gt;
         <pubDate>Wed, 22 Dec 2021 16:09:56 +0800</pubDate>
         
         <guid>https://tsinling.org/p/postgresql-how-to/</guid>
-        <description>&lt;h1 id=&#34;postgresql&#34;&gt;
-    &lt;a href=&#34;#postgresql&#34;&gt;#&lt;/a&gt;
-    postgresql
+        <description>&lt;h1 id=&#34;postgresql&#34;&gt;postgresql
 &lt;/h1&gt;&lt;p&gt;Postgresql 是一个功能强大的开源关系数据库系统.&lt;br&gt;
 Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgresql.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://postgresql.org&lt;/a&gt;.&lt;br&gt;
 最新的版本是14，了解可以访问 &lt;a class=&#34;link&#34; href=&#34;http://www.postgres.cn/docs/14/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://www.postgres.cn/docs/14/index.html&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;安装&#34;&gt;
-    &lt;a href=&#34;#%e5%ae%89%e8%a3%85&#34;&gt;#&lt;/a&gt;
-    安装
-&lt;/h2&gt;&lt;h3 id=&#34;windows&#34;&gt;
-    &lt;a href=&#34;#windows&#34;&gt;#&lt;/a&gt;
-    windows
+&lt;h2 id=&#34;安装&#34;&gt;安装
+&lt;/h2&gt;&lt;h3 id=&#34;windows&#34;&gt;windows
 &lt;/h3&gt;&lt;p&gt;由EDB认证的Postgresql installer.&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://www.enterprisedb.com/downloads/postgres-postgresql-downloads&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.enterprisedb.com/downloads/postgres-postgresql-downloads&lt;/a&gt;&lt;br&gt;
 下载并安装，按照提示设置postgres数据库的密码就可以了。&lt;/p&gt;
-&lt;h3 id=&#34;linux&#34;&gt;
-    &lt;a href=&#34;#linux&#34;&gt;#&lt;/a&gt;
-    linux
+&lt;h3 id=&#34;linux&#34;&gt;linux
 &lt;/h3&gt;&lt;p&gt;linux不同发行版本都可以从自己的软件库进行安装，以debian为例.&lt;br&gt;
 先安装postgresql，以postgres用户local（Unix domain socket）方式连接到postgres数据库.&lt;br&gt;
 修改用户postgres密码，再以postgres用户host（localhost）方式连接到数据库。&lt;/p&gt;
@@ -1849,9 +1765,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;postgres&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;# &lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;mac&#34;&gt;
-    &lt;a href=&#34;#mac&#34;&gt;#&lt;/a&gt;
-    mac
+&lt;/div&gt;&lt;h3 id=&#34;mac&#34;&gt;mac
 &lt;/h3&gt;&lt;p&gt;mac系统上可以去EDB下载，也可以用brew直接安装（brew安装后要以当前用户登入数据库）。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -1907,12 +1821,8 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;postgres&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;# &lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;客户端&#34;&gt;
-    &lt;a href=&#34;#%e5%ae%a2%e6%88%b7%e7%ab%af&#34;&gt;#&lt;/a&gt;
-    客户端
-&lt;/h2&gt;&lt;h3 id=&#34;psql&#34;&gt;
-    &lt;a href=&#34;#psql&#34;&gt;#&lt;/a&gt;
-    psql
+&lt;/div&gt;&lt;h2 id=&#34;客户端&#34;&gt;客户端
+&lt;/h2&gt;&lt;h3 id=&#34;psql&#34;&gt;psql
 &lt;/h3&gt;&lt;p&gt;命令行客户端工具psql。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -1940,9 +1850,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  -W, --password           force password prompt &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;should happen automatically&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;dbeaver&#34;&gt;
-    &lt;a href=&#34;#dbeaver&#34;&gt;#&lt;/a&gt;
-    DBeaver
+&lt;/div&gt;&lt;h3 id=&#34;dbeaver&#34;&gt;DBeaver
 &lt;/h3&gt;&lt;p&gt;开源图形客户端工具。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -1964,15 +1872,11 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
         <pubDate>Mon, 13 Dec 2021 14:51:09 +0800</pubDate>
         
         <guid>https://tsinling.org/p/port-8021-on-mac/</guid>
-        <description>&lt;h1 id=&#34;mac-port-8021&#34;&gt;
-    &lt;a href=&#34;#mac-port-8021&#34;&gt;#&lt;/a&gt;
-    Mac port 8021
+        <description>&lt;h1 id=&#34;mac-port-8021&#34;&gt;Mac port 8021
 &lt;/h1&gt;&lt;p&gt;在mac上调试程序的时，偶尔碰到tcp端口8021被系统占用，调试失败。&lt;br&gt;
 用lsof -Pi:8021看看PID，kill就可以了。碰到不能kill的需要进一步调查，然后得到如下命令，下次碰到被占用时试试。&lt;br&gt;
 &lt;code&gt;sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.ftp-proxy.plist&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;谁占用了8021&#34;&gt;
-    &lt;a href=&#34;#%e8%b0%81%e5%8d%a0%e7%94%a8%e4%ba%868021&#34;&gt;#&lt;/a&gt;
-    谁占用了8021
+&lt;h2 id=&#34;谁占用了8021&#34;&gt;谁占用了8021
 &lt;/h2&gt;&lt;p&gt;查看了mac上的&lt;a class=&#34;link&#34; href=&#34;https://support.apple.com/zh-cn/HT202944&#34;  title=&#34;Apple 软件产品使用的 TCP 和 UDP 端口&#34;
      target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;em&gt;端口占用表&lt;/em&gt;&lt;/a&gt;，表格里面没有8021是那个应用占用。&lt;br&gt;
@@ -1996,9 +1900,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
      target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;em&gt;解决方案&lt;/em&gt;&lt;/a&gt;.&lt;br&gt;
 /System/Library/LaunchDaemons/com.apple.ftp-proxy.plist文件中定义了8021端口。&lt;/p&gt;
-&lt;h2 id=&#34;如何释放8021&#34;&gt;
-    &lt;a href=&#34;#%e5%a6%82%e4%bd%95%e9%87%8a%e6%94%be8021&#34;&gt;#&lt;/a&gt;
-    如何释放8021
+&lt;h2 id=&#34;如何释放8021&#34;&gt;如何释放8021
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -2007,9 +1909,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.ftp-proxy.plist
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;附录&#34;&gt;
-    &lt;a href=&#34;#%e9%99%84%e5%bd%95&#34;&gt;#&lt;/a&gt;
-    附录
+&lt;/div&gt;&lt;h2 id=&#34;附录&#34;&gt;附录
 &lt;/h2&gt;&lt;p&gt;&lt;em&gt;&lt;a class=&#34;link&#34; href=&#34;https://support.apple.com/zh-cn/HT202944&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://support.apple.com/zh-cn/HT202944&lt;/a&gt;&lt;/em&gt;&lt;br&gt;
 &lt;em&gt;&lt;a class=&#34;link&#34; href=&#34;https://apple.stackexchange.com/questions/404346/what-is-intu-ec-client-listening-on-tcp-port-8021/404356#404356&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -2021,31 +1921,21 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
         <pubDate>Fri, 10 Dec 2021 16:52:16 +0800</pubDate>
         
         <guid>https://tsinling.org/p/macbook-pro-2021/</guid>
-        <description>&lt;h1 id=&#34;macbook-pro-2021&#34;&gt;
-    &lt;a href=&#34;#macbook-pro-2021&#34;&gt;#&lt;/a&gt;
-    Macbook Pro 2021
+        <description>&lt;h1 id=&#34;macbook-pro-2021&#34;&gt;Macbook Pro 2021
 &lt;/h1&gt;&lt;p&gt;2021年10月19日凌晨1点，apple召开了秋季线上发布会。&lt;br&gt;
 大家期待的arm M2 soc并没有到来，新发布的arm soc采用堆核心，发布14inch和16inch的macbook pro。&lt;br&gt;
 自己的使用对GPU要求不高，CPU核心提高为前提，拿到了macbook pro 14inch 10coreCPU/14coreGPU的机器。&lt;br&gt;
 这是第一次使用apple家的macbook，macbook pro 2021上手使用两个礼拜的一些情况。&lt;/p&gt;
-&lt;h2 id=&#34;cpugpu&#34;&gt;
-    &lt;a href=&#34;#cpugpu&#34;&gt;#&lt;/a&gt;
-    CPU/GPU
+&lt;h2 id=&#34;cpugpu&#34;&gt;CPU/GPU
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;2020 M1     (2+2)Firestorm + (2+2)icestorm CPU/8 core GPU&lt;/li&gt;
 &lt;li&gt;2021 M1 pro (2+2+2+2)Firestorm + 2icestorm CPU/14～32 core GPU&lt;/li&gt;
 &lt;li&gt;2021 M1 max (2+2+2+2)Firestorm + 2icestorm CPU/14～32 core GPU&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;主要用途&#34;&gt;
-    &lt;a href=&#34;#%e4%b8%bb%e8%a6%81%e7%94%a8%e9%80%94&#34;&gt;#&lt;/a&gt;
-    主要用途
+&lt;h2 id=&#34;主要用途&#34;&gt;主要用途
 &lt;/h2&gt;&lt;p&gt;以码字、后端API编译为主，影音为辅，以后可能需要处理点视频素材。&lt;/p&gt;
-&lt;h2 id=&#34;必备软件&#34;&gt;
-    &lt;a href=&#34;#%e5%bf%85%e5%a4%87%e8%bd%af%e4%bb%b6&#34;&gt;#&lt;/a&gt;
-    必备软件
-&lt;/h2&gt;&lt;h3 id=&#34;homebrew&#34;&gt;
-    &lt;a href=&#34;#homebrew&#34;&gt;#&lt;/a&gt;
-    Homebrew
+&lt;h2 id=&#34;必备软件&#34;&gt;必备软件
+&lt;/h2&gt;&lt;h3 id=&#34;homebrew&#34;&gt;Homebrew
 &lt;/h3&gt;&lt;p&gt;homebrew是mac上开源包管理器。官方安装提供了脚本，打开mac默认shell zsh执行脚本就可以安装（系统会提示安装git，按提示安装即可）。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -2095,14 +1985,10 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Already up-to-date.
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;oh-my-zsh&#34;&gt;
-    &lt;a href=&#34;#oh-my-zsh&#34;&gt;#&lt;/a&gt;
-    Oh-my-zsh
+&lt;/div&gt;&lt;h3 id=&#34;oh-my-zsh&#34;&gt;Oh-my-zsh
 &lt;/h3&gt;&lt;p&gt;oh-my-zsh是zsh的个性化配置管理器，默认安装就可以。&lt;br&gt;
 &lt;code&gt;sh -c &amp;quot;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;quot;&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;vim&#34;&gt;
-    &lt;a href=&#34;#vim&#34;&gt;#&lt;/a&gt;
-    Vim
+&lt;h3 id=&#34;vim&#34;&gt;Vim
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -2119,9 +2005,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;set&lt;/span&gt; autoindent
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;golang&#34;&gt;
-    &lt;a href=&#34;#golang&#34;&gt;#&lt;/a&gt;
-    Golang
+&lt;/div&gt;&lt;h3 id=&#34;golang&#34;&gt;Golang
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -2146,9 +2030,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;  export PATH=$(go env GOBIN):$PATH&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt;~/.zprofile
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;visual-studio-code&#34;&gt;
-    &lt;a href=&#34;#visual-studio-code&#34;&gt;#&lt;/a&gt;
-    Visual-studio-code
+&lt;/div&gt;&lt;h3 id=&#34;visual-studio-code&#34;&gt;Visual-studio-code
 &lt;/h3&gt;&lt;p&gt;先用brew安装vscode，打开vscode，设置同步一下插件就可以使用了。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -2158,9 +2040,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;brew install visual-studio-code
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;sshprivatekey&#34;&gt;
-    &lt;a href=&#34;#sshprivatekey&#34;&gt;#&lt;/a&gt;
-    SshPrivatekey
+&lt;/div&gt;&lt;h3 id=&#34;sshprivatekey&#34;&gt;SshPrivatekey
 &lt;/h3&gt;&lt;p&gt;mac对key的保护比较严格，一定要设置下key的权限，只能允许当前用户读取。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -2176,9 +2056,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh -T git@github.com
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;postgresql&#34;&gt;
-    &lt;a href=&#34;#postgresql&#34;&gt;#&lt;/a&gt;
-    Postgresql
+&lt;/div&gt;&lt;h3 id=&#34;postgresql&#34;&gt;Postgresql
 &lt;/h3&gt;&lt;p&gt;安装一下postgresql数据库和dbeaver数据库图形管理软件（登入postgre数据库以默认登入系统的用户登入）。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -2194,9 +2072,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;...
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;其他软件&#34;&gt;
-    &lt;a href=&#34;#%e5%85%b6%e4%bb%96%e8%bd%af%e4%bb%b6&#34;&gt;#&lt;/a&gt;
-    其他软件
+&lt;/div&gt;&lt;h2 id=&#34;其他软件&#34;&gt;其他软件
 &lt;/h2&gt;&lt;p&gt;使用brew安装就可以，比如utm，sourcetree，freeplane，libreoffice，firefox，iina，keka，wechat，ximalaya，downie，thunder，qbittorrent等。&lt;/p&gt;</description>
         </item>
         <item>
@@ -2205,28 +2081,16 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
         <pubDate>Wed, 14 Jul 2021 20:26:17 +0800</pubDate>
         
         <guid>https://tsinling.org/p/vmware-network/</guid>
-        <description>&lt;h1 id=&#34;vmware-network&#34;&gt;
-    &lt;a href=&#34;#vmware-network&#34;&gt;#&lt;/a&gt;
-    Vmware Network
-&lt;/h1&gt;&lt;h2 id=&#34;环境&#34;&gt;
-    &lt;a href=&#34;#%e7%8e%af%e5%a2%83&#34;&gt;#&lt;/a&gt;
-    环境
+        <description>&lt;h1 id=&#34;vmware-network&#34;&gt;Vmware Network
+&lt;/h1&gt;&lt;h2 id=&#34;环境&#34;&gt;环境
 &lt;/h2&gt;&lt;p&gt;本地机器两个千兆网卡，在本地机器上安装win10，VMwareWorkstation16，还有一些日常软件。&lt;br&gt;
 在VMware上创建一台虚拟机，网络桥接到本地，虚拟机DHCP获取IP地址上网。发现虚拟机的网络经常出现获取不到IP地址。&lt;/p&gt;
-&lt;h2 id=&#34;可能的原因&#34;&gt;
-    &lt;a href=&#34;#%e5%8f%af%e8%83%bd%e7%9a%84%e5%8e%9f%e5%9b%a0&#34;&gt;#&lt;/a&gt;
-    可能的原因
-&lt;/h2&gt;&lt;h3 id=&#34;dhcp-server&#34;&gt;
-    &lt;a href=&#34;#dhcp-server&#34;&gt;#&lt;/a&gt;
-    DHCP Server
+&lt;h2 id=&#34;可能的原因&#34;&gt;可能的原因
+&lt;/h2&gt;&lt;h3 id=&#34;dhcp-server&#34;&gt;DHCP Server
 &lt;/h3&gt;&lt;p&gt;dhcp server 使用RouterOS v6.48.3 dhcp package，dhcp client只有虚拟机上时好时坏，其他的dhcp client正常使用。在winbox里查看dhcp client的状态，在等待client发包。&lt;/p&gt;
-&lt;h3 id=&#34;dhcp-client&#34;&gt;
-    &lt;a href=&#34;#dhcp-client&#34;&gt;#&lt;/a&gt;
-    DHCP Client
+&lt;h3 id=&#34;dhcp-client&#34;&gt;DHCP Client
 &lt;/h3&gt;&lt;p&gt;dhcp client 使用命令ifdown,ifup皆不能从dhcp server收到任何回应。&lt;/p&gt;
-&lt;h2 id=&#34;罪魁祸首&#34;&gt;
-    &lt;a href=&#34;#%e7%bd%aa%e9%ad%81%e7%a5%b8%e9%a6%96&#34;&gt;#&lt;/a&gt;
-    罪魁祸首
+&lt;h2 id=&#34;罪魁祸首&#34;&gt;罪魁祸首
 &lt;/h2&gt;&lt;p&gt;Vmware-&amp;gt;编辑-&amp;gt;虚拟网络编辑器-&amp;gt;更改设置，把默认的已桥接至(自动)改成(目标网卡)，应用保存即可。&lt;/p&gt;</description>
         </item>
         <item>
@@ -2235,28 +2099,16 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
         <pubDate>Wed, 23 Jun 2021 10:43:28 +0800</pubDate>
         
         <guid>https://tsinling.org/p/mdn-html-form/</guid>
-        <description>&lt;h1 id=&#34;4-form&#34;&gt;
-    &lt;a href=&#34;#4-form&#34;&gt;#&lt;/a&gt;
-    4 FORM
-&lt;/h1&gt;&lt;h2 id=&#34;41-web表单核心&#34;&gt;
-    &lt;a href=&#34;#41-web%e8%a1%a8%e5%8d%95%e6%a0%b8%e5%bf%83&#34;&gt;#&lt;/a&gt;
-    4.1 Web表单核心
-&lt;/h2&gt;&lt;h3 id=&#34;411-表单概述&#34;&gt;
-    &lt;a href=&#34;#411-%e8%a1%a8%e5%8d%95%e6%a6%82%e8%bf%b0&#34;&gt;#&lt;/a&gt;
-    4.1.1 表单概述
-&lt;/h3&gt;&lt;h3 id=&#34;412-第一个表单&#34;&gt;
-    &lt;a href=&#34;#412-%e7%ac%ac%e4%b8%80%e4%b8%aa%e8%a1%a8%e5%8d%95&#34;&gt;#&lt;/a&gt;
-    4.1.2 第一个表单
-&lt;/h3&gt;&lt;h4 id=&#34;4121-表单定义&#34;&gt;
-    &lt;a href=&#34;#4121-%e8%a1%a8%e5%8d%95%e5%ae%9a%e4%b9%89&#34;&gt;#&lt;/a&gt;
-    4.1.2.1 表单定义
+        <description>&lt;h1 id=&#34;4-form&#34;&gt;4 FORM
+&lt;/h1&gt;&lt;h2 id=&#34;41-web表单核心&#34;&gt;4.1 Web表单核心
+&lt;/h2&gt;&lt;h3 id=&#34;411-表单概述&#34;&gt;4.1.1 表单概述
+&lt;/h3&gt;&lt;h3 id=&#34;412-第一个表单&#34;&gt;4.1.2 第一个表单
+&lt;/h3&gt;&lt;h4 id=&#34;4121-表单定义&#34;&gt;4.1.2.1 表单定义
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;HTML Form 是用户和web站点交互的主要内容之一。&lt;/li&gt;
 &lt;li&gt;表单由一个或多个小部件组成，类似其他语言的可视化控件。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4122-设计表单&#34;&gt;
-    &lt;a href=&#34;#4122-%e8%ae%be%e8%ae%a1%e8%a1%a8%e5%8d%95&#34;&gt;#&lt;/a&gt;
-    4.1.2.2 设计表单
+&lt;h4 id=&#34;4122-设计表单&#34;&gt;4.1.2.2 设计表单
 &lt;/h4&gt;&lt;p&gt;构建一个简单的联系人表单。&lt;br&gt;
 &lt;img src=&#34;https://media.prod.mdn.mozit.cloud/attachments/2013/01/15/4579/4e332c8c2a22f459b786ce12c5071d73/form-sketch-low.jpg&#34;
 	
@@ -2268,9 +2120,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 	
 	
 &gt;&lt;/p&gt;
-&lt;h4 id=&#34;4123-实现表单&#34;&gt;
-    &lt;a href=&#34;#4123-%e5%ae%9e%e7%8e%b0%e8%a1%a8%e5%8d%95&#34;&gt;#&lt;/a&gt;
-    4.1.2.3 实现表单
+&lt;h4 id=&#34;4123-实现表单&#34;&gt;4.1.2.3 实现表单
 &lt;/h4&gt;&lt;p&gt;为了实现上述表单，需要使用以下HTML element&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/form&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -2284,9 +2134,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/button&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&amp;lt;button&amp;gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4124-基本表单样式&#34;&gt;
-    &lt;a href=&#34;#4124-%e5%9f%ba%e6%9c%ac%e8%a1%a8%e5%8d%95%e6%a0%b7%e5%bc%8f&#34;&gt;#&lt;/a&gt;
-    4.1.2.4 基本表单样式
+&lt;h4 id=&#34;4124-基本表单样式&#34;&gt;4.1.2.4 基本表单样式
 &lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -2489,16 +2337,12 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;4125-发送数据&#34;&gt;
-    &lt;a href=&#34;#4125-%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae&#34;&gt;#&lt;/a&gt;
-    4.1.2.5 发送数据
+&lt;/div&gt;&lt;h4 id=&#34;4125-发送数据&#34;&gt;4.1.2.5 发送数据
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;action&lt;/li&gt;
 &lt;li&gt;method&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;413-构造表单&#34;&gt;
-    &lt;a href=&#34;#413-%e6%9e%84%e9%80%a0%e8%a1%a8%e5%8d%95&#34;&gt;#&lt;/a&gt;
-    4.1.3 构造表单
+&lt;h3 id=&#34;413-构造表单&#34;&gt;4.1.3 构造表单
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/form&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&amp;lt;form&amp;gt;&lt;/a&gt;&lt;/li&gt;
@@ -2851,12 +2695,8 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;414-表单控件&#34;&gt;
-    &lt;a href=&#34;#414-%e8%a1%a8%e5%8d%95%e6%8e%a7%e4%bb%b6&#34;&gt;#&lt;/a&gt;
-    4.1.4 表单控件
-&lt;/h3&gt;&lt;h4 id=&#34;4141-通用属性&#34;&gt;
-    &lt;a href=&#34;#4141-%e9%80%9a%e7%94%a8%e5%b1%9e%e6%80%a7&#34;&gt;#&lt;/a&gt;
-    4.1.4.1 通用属性
+&lt;/div&gt;&lt;h3 id=&#34;414-表单控件&#34;&gt;4.1.4 表单控件
+&lt;/h3&gt;&lt;h4 id=&#34;4141-通用属性&#34;&gt;4.1.4.1 通用属性
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;autofocus(false) 文档中只有一个与表单相关的元素可以指定具有输入焦点。&lt;/li&gt;
 &lt;li&gt;disabled(false) 用户不能与元素交互。&lt;/li&gt;
@@ -2864,9 +2704,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;li&gt;name&lt;/li&gt;
 &lt;li&gt;value&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4142-文本输入&#34;&gt;
-    &lt;a href=&#34;#4142-%e6%96%87%e6%9c%ac%e8%be%93%e5%85%a5&#34;&gt;#&lt;/a&gt;
-    4.1.4.2 文本输入
+&lt;h4 id=&#34;4142-文本输入&#34;&gt;4.1.4.2 文本输入
 &lt;/h4&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/Input&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/Input&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -2901,9 +2739,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4143-下拉内容&#34;&gt;
-    &lt;a href=&#34;#4143-%e4%b8%8b%e6%8b%89%e5%86%85%e5%ae%b9&#34;&gt;#&lt;/a&gt;
-    4.1.4.3 下拉内容
+&lt;h4 id=&#34;4143-下拉内容&#34;&gt;4.1.4.3 下拉内容
 &lt;/h4&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/select&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/select&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -2991,9 +2827,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;datalist&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;4144-可选中项&#34;&gt;
-    &lt;a href=&#34;#4144-%e5%8f%af%e9%80%89%e4%b8%ad%e9%a1%b9&#34;&gt;#&lt;/a&gt;
-    4.1.4.4 可选中项
+&lt;/div&gt;&lt;h4 id=&#34;4144-可选中项&#34;&gt;4.1.4.4 可选中项
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;单选
@@ -3004,17 +2838,13 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;code&gt;&amp;lt;input type=&amp;quot;checkbox&amp;quot; checked id=&amp;quot;carrots&amp;quot; name=&amp;quot;carrots&amp;quot; value=&amp;quot;carrots&amp;quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4145-按钮&#34;&gt;
-    &lt;a href=&#34;#4145-%e6%8c%89%e9%92%ae&#34;&gt;#&lt;/a&gt;
-    4.1.4.5 按钮
+&lt;h4 id=&#34;4145-按钮&#34;&gt;4.1.4.5 按钮
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Submit&lt;/li&gt;
 &lt;li&gt;Reset&lt;/li&gt;
 &lt;li&gt;Anonymous&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4146-高级表单部件&#34;&gt;
-    &lt;a href=&#34;#4146-%e9%ab%98%e7%ba%a7%e8%a1%a8%e5%8d%95%e9%83%a8%e4%bb%b6&#34;&gt;#&lt;/a&gt;
-    4.1.4.6 高级表单部件
+&lt;h4 id=&#34;4146-高级表单部件&#34;&gt;4.1.4.6 高级表单部件
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;数字
 &lt;code&gt;&amp;lt;input type=&amp;quot;number&amp;quot; name=&amp;quot;age&amp;quot; id=&amp;quot;age&amp;quot; min=&amp;quot;1&amp;quot; max=&amp;quot;10&amp;quot; step=&amp;quot;2&amp;quot;&amp;gt;&lt;/code&gt;&lt;/li&gt;
@@ -3036,9 +2866,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;code&gt;&amp;lt;input type=&amp;quot;color&amp;quot; name=&amp;quot;color&amp;quot; id=&amp;quot;color&amp;quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4147-其他小部件&#34;&gt;
-    &lt;a href=&#34;#4147-%e5%85%b6%e4%bb%96%e5%b0%8f%e9%83%a8%e4%bb%b6&#34;&gt;#&lt;/a&gt;
-    4.1.4.7 其他小部件
+&lt;h4 id=&#34;4147-其他小部件&#34;&gt;4.1.4.7 其他小部件
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;文件选择器
 &lt;code&gt;&amp;lt;input type=&amp;quot;file&amp;quot; name=&amp;quot;file&amp;quot; id=&amp;quot;file&amp;quot; accept=&amp;quot;image/*&amp;quot; multiple&amp;gt;&lt;/code&gt;&lt;/li&gt;
@@ -3055,18 +2883,10 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;415-html5的表单&#34;&gt;
-    &lt;a href=&#34;#415-html5%e7%9a%84%e8%a1%a8%e5%8d%95&#34;&gt;#&lt;/a&gt;
-    4.1.5 HTML5的表单
-&lt;/h3&gt;&lt;h3 id=&#34;416-其他表单&#34;&gt;
-    &lt;a href=&#34;#416-%e5%85%b6%e4%bb%96%e8%a1%a8%e5%8d%95&#34;&gt;#&lt;/a&gt;
-    4.1.6 其他表单
-&lt;/h3&gt;&lt;h3 id=&#34;417-样式化表单&#34;&gt;
-    &lt;a href=&#34;#417-%e6%a0%b7%e5%bc%8f%e5%8c%96%e8%a1%a8%e5%8d%95&#34;&gt;#&lt;/a&gt;
-    4.1.7 样式化表单
-&lt;/h3&gt;&lt;h4 id=&#34;4171-基本样式美化&#34;&gt;
-    &lt;a href=&#34;#4171-%e5%9f%ba%e6%9c%ac%e6%a0%b7%e5%bc%8f%e7%be%8e%e5%8c%96&#34;&gt;#&lt;/a&gt;
-    4.1.7.1 基本样式美化
+&lt;h3 id=&#34;415-html5的表单&#34;&gt;4.1.5 HTML5的表单
+&lt;/h3&gt;&lt;h3 id=&#34;416-其他表单&#34;&gt;4.1.6 其他表单
+&lt;/h3&gt;&lt;h3 id=&#34;417-样式化表单&#34;&gt;4.1.7 样式化表单
+&lt;/h3&gt;&lt;h4 id=&#34;4171-基本样式美化&#34;&gt;4.1.7.1 基本样式美化
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Search字段&lt;/li&gt;
 &lt;/ul&gt;
@@ -3190,9 +3010,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;4172-实际案例&#34;&gt;
-    &lt;a href=&#34;#4172-%e5%ae%9e%e9%99%85%e6%a1%88%e4%be%8b&#34;&gt;#&lt;/a&gt;
-    4.1.7.2 实际案例
+&lt;/div&gt;&lt;h4 id=&#34;4172-实际案例&#34;&gt;4.1.7.2 实际案例
 &lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;  1
@@ -3489,12 +3307,8 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;418-高级样式表单&#34;&gt;
-    &lt;a href=&#34;#418-%e9%ab%98%e7%ba%a7%e6%a0%b7%e5%bc%8f%e8%a1%a8%e5%8d%95&#34;&gt;#&lt;/a&gt;
-    4.1.8 高级样式表单
-&lt;/h3&gt;&lt;h4 id=&#34;4181-css表现力&#34;&gt;
-    &lt;a href=&#34;#4181-css%e8%a1%a8%e7%8e%b0%e5%8a%9b&#34;&gt;#&lt;/a&gt;
-    4.1.8.1 CSS表现力
+&lt;/div&gt;&lt;h3 id=&#34;418-高级样式表单&#34;&gt;4.1.8 高级样式表单
+&lt;/h3&gt;&lt;h4 id=&#34;4181-css表现力&#34;&gt;4.1.8.1 CSS表现力
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;CSS 2.1&lt;/p&gt;
@@ -3556,21 +3370,13 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4182-案例&#34;&gt;
-    &lt;a href=&#34;#4182-%e6%a1%88%e4%be%8b&#34;&gt;#&lt;/a&gt;
-    4.1.8.2 案例
+&lt;h4 id=&#34;4182-案例&#34;&gt;4.1.8.2 案例
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;复选框和单选框&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;419-ui伪类&#34;&gt;
-    &lt;a href=&#34;#419-ui%e4%bc%aa%e7%b1%bb&#34;&gt;#&lt;/a&gt;
-    4.1.9 UI伪类
-&lt;/h3&gt;&lt;h3 id=&#34;4110-客户端表单验证&#34;&gt;
-    &lt;a href=&#34;#4110-%e5%ae%a2%e6%88%b7%e7%ab%af%e8%a1%a8%e5%8d%95%e9%aa%8c%e8%af%81&#34;&gt;#&lt;/a&gt;
-    4.1.10 客户端表单验证
-&lt;/h3&gt;&lt;h4 id=&#34;41101-什么是表单数据校验&#34;&gt;
-    &lt;a href=&#34;#41101-%e4%bb%80%e4%b9%88%e6%98%af%e8%a1%a8%e5%8d%95%e6%95%b0%e6%8d%ae%e6%a0%a1%e9%aa%8c&#34;&gt;#&lt;/a&gt;
-    4.1.10.1 什么是表单数据校验
+&lt;h3 id=&#34;419-ui伪类&#34;&gt;4.1.9 UI伪类
+&lt;/h3&gt;&lt;h3 id=&#34;4110-客户端表单验证&#34;&gt;4.1.10 客户端表单验证
+&lt;/h3&gt;&lt;h4 id=&#34;41101-什么是表单数据校验&#34;&gt;4.1.10.1 什么是表单数据校验
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;客户端校验
 &lt;ul&gt;
@@ -3580,9 +3386,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/li&gt;
 &lt;li&gt;服务器端校验&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;41102-html5内置表单校验&#34;&gt;
-    &lt;a href=&#34;#41102-html5%e5%86%85%e7%bd%ae%e8%a1%a8%e5%8d%95%e6%a0%a1%e9%aa%8c&#34;&gt;#&lt;/a&gt;
-    4.1.10.2 HTML5内置表单校验
+&lt;h4 id=&#34;41102-html5内置表单校验&#34;&gt;4.1.10.2 HTML5内置表单校验
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Input元素的校校验&lt;/li&gt;
 &lt;li&gt;Input元素required属性&lt;/li&gt;
@@ -3590,9 +3394,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;li&gt;限制输入长度maxlength/minlength&lt;/li&gt;
 &lt;li&gt;自定义错误信息(javascript)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;41103-javascript校验表单&#34;&gt;
-    &lt;a href=&#34;#41103-javascript%e6%a0%a1%e9%aa%8c%e8%a1%a8%e5%8d%95&#34;&gt;#&lt;/a&gt;
-    4.1.10.3 JavaScript校验表单
+&lt;h4 id=&#34;41103-javascript校验表单&#34;&gt;4.1.10.3 JavaScript校验表单
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;支持约束校验API的表单元素
 &lt;ul&gt;
@@ -3635,14 +3437,10 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/li&gt;
 &lt;li&gt;使用约束校验API的例子&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;4111-发送表单数据&#34;&gt;
-    &lt;a href=&#34;#4111-%e5%8f%91%e9%80%81%e8%a1%a8%e5%8d%95%e6%95%b0%e6%8d%ae&#34;&gt;#&lt;/a&gt;
-    4.1.11 发送表单数据
+&lt;h3 id=&#34;4111-发送表单数据&#34;&gt;4.1.11 发送表单数据
 &lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/Forms/Sending_and_retrieving_form_data&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Learn/Forms/Sending_and_retrieving_form_data&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;41111-数据都去那儿了&#34;&gt;
-    &lt;a href=&#34;#41111-%e6%95%b0%e6%8d%ae%e9%83%bd%e5%8e%bb%e9%82%a3%e5%84%bf%e4%ba%86&#34;&gt;#&lt;/a&gt;
-    4.1.11.1 数据都去那儿了
+&lt;h4 id=&#34;41111-数据都去那儿了&#34;&gt;4.1.11.1 数据都去那儿了
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;客户端/服务器体系结构&lt;/li&gt;
 &lt;li&gt;客户端定义如何发送数据
@@ -3678,16 +3476,12 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;41112-发送文件&#34;&gt;
-    &lt;a href=&#34;#41112-%e5%8f%91%e9%80%81%e6%96%87%e4%bb%b6&#34;&gt;#&lt;/a&gt;
-    4.1.11.2 发送文件
+&lt;h4 id=&#34;41112-发送文件&#34;&gt;4.1.11.2 发送文件
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;method get&lt;/li&gt;
 &lt;li&gt;enctype multipart/form-data&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;41113-安全问题&#34;&gt;
-    &lt;a href=&#34;#41113-%e5%ae%89%e5%85%a8%e9%97%ae%e9%a2%98&#34;&gt;#&lt;/a&gt;
-    4.1.11.3 安全问题
+&lt;h4 id=&#34;41113-安全问题&#34;&gt;4.1.11.3 安全问题
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;XSS CSRF&lt;/p&gt;
@@ -3702,15 +3496,9 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;p&gt;电子邮件注入&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;42-web表单进阶&#34;&gt;
-    &lt;a href=&#34;#42-web%e8%a1%a8%e5%8d%95%e8%bf%9b%e9%98%b6&#34;&gt;#&lt;/a&gt;
-    4.2 Web表单进阶
-&lt;/h2&gt;&lt;h3 id=&#34;421-构造自定义表单控件&#34;&gt;
-    &lt;a href=&#34;#421-%e6%9e%84%e9%80%a0%e8%87%aa%e5%ae%9a%e4%b9%89%e8%a1%a8%e5%8d%95%e6%8e%a7%e4%bb%b6&#34;&gt;#&lt;/a&gt;
-    4.2.1 构造自定义表单控件
-&lt;/h3&gt;&lt;h4 id=&#34;4211-设计结构和语义&#34;&gt;
-    &lt;a href=&#34;#4211-%e8%ae%be%e8%ae%a1%e7%bb%93%e6%9e%84%e5%92%8c%e8%af%ad%e4%b9%89&#34;&gt;#&lt;/a&gt;
-    4.2.1.1 设计、结构、和语义
+&lt;h2 id=&#34;42-web表单进阶&#34;&gt;4.2 Web表单进阶
+&lt;/h2&gt;&lt;h3 id=&#34;421-构造自定义表单控件&#34;&gt;4.2.1 构造自定义表单控件
+&lt;/h3&gt;&lt;h4 id=&#34;4211-设计结构和语义&#34;&gt;4.2.1.1 设计、结构、和语义
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;重建Select元素
 &lt;ul&gt;
@@ -3724,9 +3512,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4212-通过javascript让您的小部件动起来&#34;&gt;
-    &lt;a href=&#34;#4212-%e9%80%9a%e8%bf%87javascript%e8%ae%a9%e6%82%a8%e7%9a%84%e5%b0%8f%e9%83%a8%e4%bb%b6%e5%8a%a8%e8%b5%b7%e6%9d%a5&#34;&gt;#&lt;/a&gt;
-    4.2.1.2 通过JavaScript让您的小部件动起来
+&lt;h4 id=&#34;4212-通过javascript让您的小部件动起来&#34;&gt;4.2.1.2 通过JavaScript让您的小部件动起来
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;为什么不生效
 &lt;ul&gt;
@@ -3749,22 +3535,14 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;li&gt;构造事件回调&lt;/li&gt;
 &lt;li&gt;处理组件的值&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4213-可访问性&#34;&gt;
-    &lt;a href=&#34;#4213-%e5%8f%af%e8%ae%bf%e9%97%ae%e6%80%a7&#34;&gt;#&lt;/a&gt;
-    4.2.1.3 可访问性
-&lt;/h4&gt;&lt;h3 id=&#34;422-使用javascript发送表单&#34;&gt;
-    &lt;a href=&#34;#422-%e4%bd%bf%e7%94%a8javascript%e5%8f%91%e9%80%81%e8%a1%a8%e5%8d%95&#34;&gt;#&lt;/a&gt;
-    4.2.2 使用Javascript发送表单
-&lt;/h3&gt;&lt;h4 id=&#34;4221-表单不总是表单&#34;&gt;
-    &lt;a href=&#34;#4221-%e8%a1%a8%e5%8d%95%e4%b8%8d%e6%80%bb%e6%98%af%e8%a1%a8%e5%8d%95&#34;&gt;#&lt;/a&gt;
-    4.2.2.1 表单不总是表单
+&lt;h4 id=&#34;4213-可访问性&#34;&gt;4.2.1.3 可访问性
+&lt;/h4&gt;&lt;h3 id=&#34;422-使用javascript发送表单&#34;&gt;4.2.2 使用Javascript发送表单
+&lt;/h3&gt;&lt;h4 id=&#34;4221-表单不总是表单&#34;&gt;4.2.2.1 表单不总是表单
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;获得整体界面的控制&lt;/li&gt;
 &lt;li&gt;表单和AJAX的区别&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4222-发送表单数据&#34;&gt;
-    &lt;a href=&#34;#4222-%e5%8f%91%e9%80%81%e8%a1%a8%e5%8d%95%e6%95%b0%e6%8d%ae&#34;&gt;#&lt;/a&gt;
-    4.2.2.2 发送表单数据
+&lt;h4 id=&#34;4222-发送表单数据&#34;&gt;4.2.2.2 发送表单数据
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;构建XMLHttpRequest&lt;/li&gt;
 &lt;li&gt;FormDATA Object
@@ -3775,18 +3553,10 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/li&gt;
 &lt;li&gt;在隐藏的iframe中构建DOM&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;4223-处理二进制&#34;&gt;
-    &lt;a href=&#34;#4223-%e5%a4%84%e7%90%86%e4%ba%8c%e8%bf%9b%e5%88%b6&#34;&gt;#&lt;/a&gt;
-    4.2.2.3 处理二进制
-&lt;/h4&gt;&lt;h3 id=&#34;423-表单组件兼容性列表&#34;&gt;
-    &lt;a href=&#34;#423-%e8%a1%a8%e5%8d%95%e7%bb%84%e4%bb%b6%e5%85%bc%e5%ae%b9%e6%80%a7%e5%88%97%e8%a1%a8&#34;&gt;#&lt;/a&gt;
-    4.2.3 表单组件兼容性列表
-&lt;/h3&gt;&lt;h4 id=&#34;4231-如何阅读表格&#34;&gt;
-    &lt;a href=&#34;#4231-%e5%a6%82%e4%bd%95%e9%98%85%e8%af%bb%e8%a1%a8%e6%a0%bc&#34;&gt;#&lt;/a&gt;
-    4.2.3.1 如何阅读表格
-&lt;/h4&gt;&lt;h4 id=&#34;4232-兼容性表格&#34;&gt;
-    &lt;a href=&#34;#4232-%e5%85%bc%e5%ae%b9%e6%80%a7%e8%a1%a8%e6%a0%bc&#34;&gt;#&lt;/a&gt;
-    4.2.3.2 兼容性表格
+&lt;h4 id=&#34;4223-处理二进制&#34;&gt;4.2.2.3 处理二进制
+&lt;/h4&gt;&lt;h3 id=&#34;423-表单组件兼容性列表&#34;&gt;4.2.3 表单组件兼容性列表
+&lt;/h3&gt;&lt;h4 id=&#34;4231-如何阅读表格&#34;&gt;4.2.3.1 如何阅读表格
+&lt;/h4&gt;&lt;h4 id=&#34;4232-兼容性表格&#34;&gt;4.2.3.2 兼容性表格
 &lt;/h4&gt;</description>
         </item>
         <item>
@@ -3795,23 +3565,13 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
         <pubDate>Tue, 15 Jun 2021 09:24:52 +0800</pubDate>
         
         <guid>https://tsinling.org/p/mdn-javascript/</guid>
-        <description>&lt;h1 id=&#34;3-javascript&#34;&gt;
-    &lt;a href=&#34;#3-javascript&#34;&gt;#&lt;/a&gt;
-    3 JAVASCRIPT
+        <description>&lt;h1 id=&#34;3-javascript&#34;&gt;3 JAVASCRIPT
 &lt;/h1&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;31-first-steps&#34;&gt;
-    &lt;a href=&#34;#31-first-steps&#34;&gt;#&lt;/a&gt;
-    3.1 First Steps
-&lt;/h2&gt;&lt;h3 id=&#34;311-概述&#34;&gt;
-    &lt;a href=&#34;#311-%e6%a6%82%e8%bf%b0&#34;&gt;#&lt;/a&gt;
-    3.1.1 概述
-&lt;/h3&gt;&lt;h3 id=&#34;312-什么是javascript&#34;&gt;
-    &lt;a href=&#34;#312-%e4%bb%80%e4%b9%88%e6%98%afjavascript&#34;&gt;#&lt;/a&gt;
-    3.1.2 什么是javascript
-&lt;/h3&gt;&lt;h4 id=&#34;3121-javascript定义&#34;&gt;
-    &lt;a href=&#34;#3121-javascript%e5%ae%9a%e4%b9%89&#34;&gt;#&lt;/a&gt;
-    3.1.2.1 javascript定义
+&lt;h2 id=&#34;31-first-steps&#34;&gt;3.1 First Steps
+&lt;/h2&gt;&lt;h3 id=&#34;311-概述&#34;&gt;3.1.1 概述
+&lt;/h3&gt;&lt;h3 id=&#34;312-什么是javascript&#34;&gt;3.1.2 什么是javascript
+&lt;/h3&gt;&lt;h4 id=&#34;3121-javascript定义&#34;&gt;3.1.2.1 javascript定义
 &lt;/h4&gt;&lt;p&gt;javascript是一种脚本，一门编程语言，它可以在网页上实现复杂的功能，网页展现给你的不在是简单的静态信息，而是实时的内容更新，交互式的地图，2D/3D动画，滚动播放的视频等等。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;HTML是一种标记语言，用来结构化我们的网页内容并赋予内容含义，例如定义段落、标题和数据表，或在页面中嵌入图片和视频。&lt;/li&gt;
@@ -3828,9 +3588,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 	
 	
 &gt;&lt;/p&gt;
-&lt;h4 id=&#34;3122-javascript可以做什么&#34;&gt;
-    &lt;a href=&#34;#3122-javascript%e5%8f%af%e4%bb%a5%e5%81%9a%e4%bb%80%e4%b9%88&#34;&gt;#&lt;/a&gt;
-    3.1.2.2 javascript可以做什么
+&lt;h4 id=&#34;3122-javascript可以做什么&#34;&gt;3.1.2.2 javascript可以做什么
 &lt;/h4&gt;&lt;p&gt;javascript api分类&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;浏览器api，内建与web浏览器，他们可以将数据从周边计算机环境中筛选出来，还可以做复杂的工作。
@@ -3854,9 +3612,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;3123-javascript在页面上做了什么&#34;&gt;
-    &lt;a href=&#34;#3123-javascript%e5%9c%a8%e9%a1%b5%e9%9d%a2%e4%b8%8a%e5%81%9a%e4%ba%86%e4%bb%80%e4%b9%88&#34;&gt;#&lt;/a&gt;
-    3.1.2.3 javascript在页面上做了什么
+&lt;h4 id=&#34;3123-javascript在页面上做了什么&#34;&gt;3.1.2.3 javascript在页面上做了什么
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;浏览器安全&lt;/li&gt;
 &lt;li&gt;JavaScript运行次序&lt;/li&gt;
@@ -3864,9 +3620,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;li&gt;服务端VS客户端&lt;/li&gt;
 &lt;li&gt;动态代码VS静态代码&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;3124-向页面添加javascript&#34;&gt;
-    &lt;a href=&#34;#3124-%e5%90%91%e9%a1%b5%e9%9d%a2%e6%b7%bb%e5%8a%a0javascript&#34;&gt;#&lt;/a&gt;
-    3.1.2.4 向页面添加JavaScript
+&lt;h4 id=&#34;3124-向页面添加javascript&#34;&gt;3.1.2.4 向页面添加JavaScript
 &lt;/h4&gt;&lt;p&gt;css使用&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/link&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&amp;lt;link&amp;gt;&lt;/a&gt;元素链接外部样式表，使用&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/style&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&amp;lt;style&amp;gt;&lt;/a&gt;元素向HTML嵌入内部样式表，javascript这里只需要一个元素&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/script&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -3878,9 +3632,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;li&gt;脚本调用策略&lt;/li&gt;
 &lt;li&gt;async和defer&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;3125-注释&#34;&gt;
-    &lt;a href=&#34;#3125-%e6%b3%a8%e9%87%8a&#34;&gt;#&lt;/a&gt;
-    3.1.2.5 注释
+&lt;h4 id=&#34;3125-注释&#34;&gt;3.1.2.5 注释
 &lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3899,15 +3651,9 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cm&#34;&gt;*/&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;313-javascript初体验&#34;&gt;
-    &lt;a href=&#34;#313-javascript%e5%88%9d%e4%bd%93%e9%aa%8c&#34;&gt;#&lt;/a&gt;
-    3.1.3 Javascript初体验
-&lt;/h3&gt;&lt;h4 id=&#34;3131-像程序员一样思考&#34;&gt;
-    &lt;a href=&#34;#3131-%e5%83%8f%e7%a8%8b%e5%ba%8f%e5%91%98%e4%b8%80%e6%a0%b7%e6%80%9d%e8%80%83&#34;&gt;#&lt;/a&gt;
-    3.1.3.1 像程序员一样思考
-&lt;/h4&gt;&lt;h4 id=&#34;3132-猜数字游戏&#34;&gt;
-    &lt;a href=&#34;#3132-%e7%8c%9c%e6%95%b0%e5%ad%97%e6%b8%b8%e6%88%8f&#34;&gt;#&lt;/a&gt;
-    3.1.3.2 猜数字游戏
+&lt;/div&gt;&lt;h3 id=&#34;313-javascript初体验&#34;&gt;3.1.3 Javascript初体验
+&lt;/h3&gt;&lt;h4 id=&#34;3131-像程序员一样思考&#34;&gt;3.1.3.1 像程序员一样思考
+&lt;/h4&gt;&lt;h4 id=&#34;3132-猜数字游戏&#34;&gt;3.1.3.2 猜数字游戏
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;初始设置&lt;/li&gt;
 &lt;li&gt;添加变量&lt;/li&gt;
@@ -3925,9 +3671,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;li&gt;对象&lt;/li&gt;
 &lt;li&gt;浏览器对象&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;3133-大功告成&#34;&gt;
-    &lt;a href=&#34;#3133-%e5%a4%a7%e5%8a%9f%e5%91%8a%e6%88%90&#34;&gt;#&lt;/a&gt;
-    3.1.3.3 大功告成
+&lt;h4 id=&#34;3133-大功告成&#34;&gt;3.1.3.3 大功告成
 &lt;/h4&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://roy-tian.github.io/learning-area/javascript/introduction-to-js-1/first-splash/number-guessing-game.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://roy-tian.github.io/learning-area/javascript/introduction-to-js-1/first-splash/number-guessing-game.html&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -4166,41 +3910,21 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;314-javascript代码的错误&#34;&gt;
-    &lt;a href=&#34;#314-javascript%e4%bb%a3%e7%a0%81%e7%9a%84%e9%94%99%e8%af%af&#34;&gt;#&lt;/a&gt;
-    3.1.4 Javascript代码的错误
-&lt;/h3&gt;&lt;h4 id=&#34;3141-错误类型&#34;&gt;
-    &lt;a href=&#34;#3141-%e9%94%99%e8%af%af%e7%b1%bb%e5%9e%8b&#34;&gt;#&lt;/a&gt;
-    3.1.4.1 错误类型
+&lt;/div&gt;&lt;h3 id=&#34;314-javascript代码的错误&#34;&gt;3.1.4 Javascript代码的错误
+&lt;/h3&gt;&lt;h4 id=&#34;3141-错误类型&#34;&gt;3.1.4.1 错误类型
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;语法错误&lt;/li&gt;
 &lt;li&gt;逻辑错误&lt;/li&gt;
 &lt;li&gt;其他错误&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;3142-出错的示例&#34;&gt;
-    &lt;a href=&#34;#3142-%e5%87%ba%e9%94%99%e7%9a%84%e7%a4%ba%e4%be%8b&#34;&gt;#&lt;/a&gt;
-    3.1.4.2 出错的示例
-&lt;/h4&gt;&lt;h4 id=&#34;3143-修复语法错误&#34;&gt;
-    &lt;a href=&#34;#3143-%e4%bf%ae%e5%a4%8d%e8%af%ad%e6%b3%95%e9%94%99%e8%af%af&#34;&gt;#&lt;/a&gt;
-    3.1.4.3 修复语法错误
-&lt;/h4&gt;&lt;h3 id=&#34;315-变量&#34;&gt;
-    &lt;a href=&#34;#315-%e5%8f%98%e9%87%8f&#34;&gt;#&lt;/a&gt;
-    3.1.5 变量
-&lt;/h3&gt;&lt;h4 id=&#34;3151-声明变量&#34;&gt;
-    &lt;a href=&#34;#3151-%e5%a3%b0%e6%98%8e%e5%8f%98%e9%87%8f&#34;&gt;#&lt;/a&gt;
-    3.1.5.1 声明变量
-&lt;/h4&gt;&lt;h4 id=&#34;3152-初始化变量&#34;&gt;
-    &lt;a href=&#34;#3152-%e5%88%9d%e5%a7%8b%e5%8c%96%e5%8f%98%e9%87%8f&#34;&gt;#&lt;/a&gt;
-    3.1.5.2 初始化变量
-&lt;/h4&gt;&lt;h4 id=&#34;3153-var与let的区别&#34;&gt;
-    &lt;a href=&#34;#3153-var%e4%b8%8elet%e7%9a%84%e5%8c%ba%e5%88%ab&#34;&gt;#&lt;/a&gt;
-    3.1.5.3 var与let的区别
-&lt;/h4&gt;&lt;h4 id=&#34;3154-更新变量&#34;&gt;
-    &lt;a href=&#34;#3154-%e6%9b%b4%e6%96%b0%e5%8f%98%e9%87%8f&#34;&gt;#&lt;/a&gt;
-    3.1.5.4 更新变量
-&lt;/h4&gt;&lt;h4 id=&#34;3155-变量类型&#34;&gt;
-    &lt;a href=&#34;#3155-%e5%8f%98%e9%87%8f%e7%b1%bb%e5%9e%8b&#34;&gt;#&lt;/a&gt;
-    3.1.5.5 变量类型
+&lt;h4 id=&#34;3142-出错的示例&#34;&gt;3.1.4.2 出错的示例
+&lt;/h4&gt;&lt;h4 id=&#34;3143-修复语法错误&#34;&gt;3.1.4.3 修复语法错误
+&lt;/h4&gt;&lt;h3 id=&#34;315-变量&#34;&gt;3.1.5 变量
+&lt;/h3&gt;&lt;h4 id=&#34;3151-声明变量&#34;&gt;3.1.5.1 声明变量
+&lt;/h4&gt;&lt;h4 id=&#34;3152-初始化变量&#34;&gt;3.1.5.2 初始化变量
+&lt;/h4&gt;&lt;h4 id=&#34;3153-var与let的区别&#34;&gt;3.1.5.3 var与let的区别
+&lt;/h4&gt;&lt;h4 id=&#34;3154-更新变量&#34;&gt;3.1.5.4 更新变量
+&lt;/h4&gt;&lt;h4 id=&#34;3155-变量类型&#34;&gt;3.1.5.5 变量类型
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Number&lt;/li&gt;
 &lt;li&gt;String&lt;/li&gt;
@@ -4208,15 +3932,9 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;li&gt;Array&lt;/li&gt;
 &lt;li&gt;Object&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;3156-动态类型&#34;&gt;
-    &lt;a href=&#34;#3156-%e5%8a%a8%e6%80%81%e7%b1%bb%e5%9e%8b&#34;&gt;#&lt;/a&gt;
-    3.1.5.6 动态类型
-&lt;/h4&gt;&lt;h3 id=&#34;316-数字与运算符&#34;&gt;
-    &lt;a href=&#34;#316-%e6%95%b0%e5%ad%97%e4%b8%8e%e8%bf%90%e7%ae%97%e7%ac%a6&#34;&gt;#&lt;/a&gt;
-    3.1.6 数字与运算符
-&lt;/h3&gt;&lt;h4 id=&#34;3161-数字&#34;&gt;
-    &lt;a href=&#34;#3161-%e6%95%b0%e5%ad%97&#34;&gt;#&lt;/a&gt;
-    3.1.6.1 数字
+&lt;h4 id=&#34;3156-动态类型&#34;&gt;3.1.5.6 动态类型
+&lt;/h4&gt;&lt;h3 id=&#34;316-数字与运算符&#34;&gt;3.1.6 数字与运算符
+&lt;/h3&gt;&lt;h4 id=&#34;3161-数字&#34;&gt;3.1.6.1 数字
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Number
 &lt;ul&gt;
@@ -4233,9 +3951,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;3162-算术运算符&#34;&gt;
-    &lt;a href=&#34;#3162-%e7%ae%97%e6%9c%af%e8%bf%90%e7%ae%97%e7%ac%a6&#34;&gt;#&lt;/a&gt;
-    3.1.6.2 算术运算符
+&lt;h4 id=&#34;3162-算术运算符&#34;&gt;3.1.6.2 算术运算符
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;加法(+)&lt;/li&gt;
 &lt;li&gt;减法(-)&lt;/li&gt;
@@ -4244,25 +3960,19 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;li&gt;求余(%)&lt;/li&gt;
 &lt;li&gt;幂(**)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;3163-自增和自减&#34;&gt;
-    &lt;a href=&#34;#3163-%e8%87%aa%e5%a2%9e%e5%92%8c%e8%87%aa%e5%87%8f&#34;&gt;#&lt;/a&gt;
-    3.1.6.3 自增和自减
+&lt;h4 id=&#34;3163-自增和自减&#34;&gt;3.1.6.3 自增和自减
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;自增(++)&lt;/li&gt;
 &lt;li&gt;自减(&amp;ndash;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;3164-赋值运算符&#34;&gt;
-    &lt;a href=&#34;#3164-%e8%b5%8b%e5%80%bc%e8%bf%90%e7%ae%97%e7%ac%a6&#34;&gt;#&lt;/a&gt;
-    3.1.6.4 赋值运算符
+&lt;h4 id=&#34;3164-赋值运算符&#34;&gt;3.1.6.4 赋值运算符
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;加法赋值(+=)&lt;/li&gt;
 &lt;li&gt;减法赋值(-=)&lt;/li&gt;
 &lt;li&gt;乘法赋值(*=)&lt;/li&gt;
 &lt;li&gt;除法赋值(/=)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;3165-比较运算符&#34;&gt;
-    &lt;a href=&#34;#3165-%e6%af%94%e8%be%83%e8%bf%90%e7%ae%97%e7%ac%a6&#34;&gt;#&lt;/a&gt;
-    3.1.6.5 比较运算符
+&lt;h4 id=&#34;3165-比较运算符&#34;&gt;3.1.6.5 比较运算符
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;严格等于(===)&lt;/li&gt;
 &lt;li&gt;严格不等于(!==)&lt;/li&gt;
@@ -4271,25 +3981,15 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;li&gt;小于等于(&amp;lt;=)&lt;/li&gt;
 &lt;li&gt;大于等于(&amp;gt;=)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;317-字符串&#34;&gt;
-    &lt;a href=&#34;#317-%e5%ad%97%e7%ac%a6%e4%b8%b2&#34;&gt;#&lt;/a&gt;
-    3.1.7 字符串
-&lt;/h3&gt;&lt;h4 id=&#34;3171-基本知识&#34;&gt;
-    &lt;a href=&#34;#3171-%e5%9f%ba%e6%9c%ac%e7%9f%a5%e8%af%86&#34;&gt;#&lt;/a&gt;
-    3.1.7.1 基本知识
+&lt;h3 id=&#34;317-字符串&#34;&gt;3.1.7 字符串
+&lt;/h3&gt;&lt;h4 id=&#34;3171-基本知识&#34;&gt;3.1.7.1 基本知识
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;单引号和双引号&lt;/li&gt;
 &lt;li&gt;转义字符(\)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;3172-连接字符串&#34;&gt;
-    &lt;a href=&#34;#3172-%e8%bf%9e%e6%8e%a5%e5%ad%97%e7%ac%a6%e4%b8%b2&#34;&gt;#&lt;/a&gt;
-    3.1.7.2 连接字符串
-&lt;/h4&gt;&lt;h3 id=&#34;318-有用的字符串方法&#34;&gt;
-    &lt;a href=&#34;#318-%e6%9c%89%e7%94%a8%e7%9a%84%e5%ad%97%e7%ac%a6%e4%b8%b2%e6%96%b9%e6%b3%95&#34;&gt;#&lt;/a&gt;
-    3.1.8 有用的字符串方法
-&lt;/h3&gt;&lt;h4 id=&#34;3181-字符串当对象&#34;&gt;
-    &lt;a href=&#34;#3181-%e5%ad%97%e7%ac%a6%e4%b8%b2%e5%bd%93%e5%af%b9%e8%b1%a1&#34;&gt;#&lt;/a&gt;
-    3.1.8.1 字符串当对象
+&lt;h4 id=&#34;3172-连接字符串&#34;&gt;3.1.7.2 连接字符串
+&lt;/h4&gt;&lt;h3 id=&#34;318-有用的字符串方法&#34;&gt;3.1.8 有用的字符串方法
+&lt;/h3&gt;&lt;h4 id=&#34;3181-字符串当对象&#34;&gt;3.1.8.1 字符串当对象
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;字符串长度&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/length&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;(length)&lt;/a&gt;&lt;/li&gt;
@@ -4302,15 +4002,9 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;li&gt;替换字符串&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/replace&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;(replace)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;319-数组&#34;&gt;
-    &lt;a href=&#34;#319-%e6%95%b0%e7%bb%84&#34;&gt;#&lt;/a&gt;
-    3.1.9 数组
-&lt;/h3&gt;&lt;h4 id=&#34;3191-什么是数组&#34;&gt;
-    &lt;a href=&#34;#3191-%e4%bb%80%e4%b9%88%e6%98%af%e6%95%b0%e7%bb%84&#34;&gt;#&lt;/a&gt;
-    3.1.9.1 什么是数组
-&lt;/h4&gt;&lt;h4 id=&#34;3192-有用的方法&#34;&gt;
-    &lt;a href=&#34;#3192-%e6%9c%89%e7%94%a8%e7%9a%84%e6%96%b9%e6%b3%95&#34;&gt;#&lt;/a&gt;
-    3.1.9.2 有用的方法
+&lt;h3 id=&#34;319-数组&#34;&gt;3.1.9 数组
+&lt;/h3&gt;&lt;h4 id=&#34;3191-什么是数组&#34;&gt;3.1.9.1 什么是数组
+&lt;/h4&gt;&lt;h4 id=&#34;3192-有用的方法&#34;&gt;3.1.9.2 有用的方法
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;字符串和数组转换
 &lt;ul&gt;
@@ -4335,38 +4029,18 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;3110-笑话生成器&#34;&gt;
-    &lt;a href=&#34;#3110-%e7%ac%91%e8%af%9d%e7%94%9f%e6%88%90%e5%99%a8&#34;&gt;#&lt;/a&gt;
-    3.1.10 笑话生成器
-&lt;/h3&gt;&lt;h2 id=&#34;32-javascript基础要件&#34;&gt;
-    &lt;a href=&#34;#32-javascript%e5%9f%ba%e7%a1%80%e8%a6%81%e4%bb%b6&#34;&gt;#&lt;/a&gt;
-    3.2 Javascript基础要件
-&lt;/h2&gt;&lt;h3 id=&#34;321-基础要件概述&#34;&gt;
-    &lt;a href=&#34;#321-%e5%9f%ba%e7%a1%80%e8%a6%81%e4%bb%b6%e6%a6%82%e8%bf%b0&#34;&gt;#&lt;/a&gt;
-    3.2.1 基础要件概述
-&lt;/h3&gt;&lt;h3 id=&#34;322-条件语句&#34;&gt;
-    &lt;a href=&#34;#322-%e6%9d%a1%e4%bb%b6%e8%af%ad%e5%8f%a5&#34;&gt;#&lt;/a&gt;
-    3.2.2 条件语句
-&lt;/h3&gt;&lt;h3 id=&#34;323-代码循环&#34;&gt;
-    &lt;a href=&#34;#323-%e4%bb%a3%e7%a0%81%e5%be%aa%e7%8e%af&#34;&gt;#&lt;/a&gt;
-    3.2.3 代码循环
-&lt;/h3&gt;&lt;h3 id=&#34;324-函数&#34;&gt;
-    &lt;a href=&#34;#324-%e5%87%bd%e6%95%b0&#34;&gt;#&lt;/a&gt;
-    3.2.4 函数
-&lt;/h3&gt;&lt;h3 id=&#34;325-建立自己的函数&#34;&gt;
-    &lt;a href=&#34;#325-%e5%bb%ba%e7%ab%8b%e8%87%aa%e5%b7%b1%e7%9a%84%e5%87%bd%e6%95%b0&#34;&gt;#&lt;/a&gt;
-    3.2.5 建立自己的函数
-&lt;/h3&gt;&lt;h3 id=&#34;325-函数返回值&#34;&gt;
-    &lt;a href=&#34;#325-%e5%87%bd%e6%95%b0%e8%bf%94%e5%9b%9e%e5%80%bc&#34;&gt;#&lt;/a&gt;
-    3.2.5 函数返回值
-&lt;/h3&gt;&lt;h3 id=&#34;326-事件介绍&#34;&gt;
-    &lt;a href=&#34;#326-%e4%ba%8b%e4%bb%b6%e4%bb%8b%e7%bb%8d&#34;&gt;#&lt;/a&gt;
-    3.2.6 事件介绍
+&lt;h3 id=&#34;3110-笑话生成器&#34;&gt;3.1.10 笑话生成器
+&lt;/h3&gt;&lt;h2 id=&#34;32-javascript基础要件&#34;&gt;3.2 Javascript基础要件
+&lt;/h2&gt;&lt;h3 id=&#34;321-基础要件概述&#34;&gt;3.2.1 基础要件概述
+&lt;/h3&gt;&lt;h3 id=&#34;322-条件语句&#34;&gt;3.2.2 条件语句
+&lt;/h3&gt;&lt;h3 id=&#34;323-代码循环&#34;&gt;3.2.3 代码循环
+&lt;/h3&gt;&lt;h3 id=&#34;324-函数&#34;&gt;3.2.4 函数
+&lt;/h3&gt;&lt;h3 id=&#34;325-建立自己的函数&#34;&gt;3.2.5 建立自己的函数
+&lt;/h3&gt;&lt;h3 id=&#34;325-函数返回值&#34;&gt;3.2.5 函数返回值
+&lt;/h3&gt;&lt;h3 id=&#34;326-事件介绍&#34;&gt;3.2.6 事件介绍
 &lt;/h3&gt;&lt;p&gt;在web中，&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/Events&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;事件&lt;/a&gt;在浏览器窗口中被触发并且通常被绑定到窗口内部的特定部分。&lt;/p&gt;
-&lt;h4 id=&#34;3261-事件举例&#34;&gt;
-    &lt;a href=&#34;#3261-%e4%ba%8b%e4%bb%b6%e4%b8%be%e4%be%8b&#34;&gt;#&lt;/a&gt;
-    3.2.6.1 事件举例
+&lt;h4 id=&#34;3261-事件举例&#34;&gt;3.2.6.1 事件举例
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;用户在某个元素上点击鼠标或者悬停光标。&lt;/li&gt;
 &lt;li&gt;用户在键盘按下某个按键。&lt;/li&gt;
@@ -4377,9 +4051,7 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;li&gt;发生错误。&lt;/li&gt;
 &lt;li&gt;等&amp;hellip;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;3262-使用事件&#34;&gt;
-    &lt;a href=&#34;#3262-%e4%bd%bf%e7%94%a8%e4%ba%8b%e4%bb%b6&#34;&gt;#&lt;/a&gt;
-    3.2.6.2 使用事件
+&lt;h4 id=&#34;3262-使用事件&#34;&gt;3.2.6.2 使用事件
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;事件处理器属性&lt;/li&gt;
 &lt;li&gt;行内事件处理器&lt;/li&gt;
@@ -4388,86 +4060,36 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;removeEventListener&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;3262-其他事件概念&#34;&gt;
-    &lt;a href=&#34;#3262-%e5%85%b6%e4%bb%96%e4%ba%8b%e4%bb%b6%e6%a6%82%e5%bf%b5&#34;&gt;#&lt;/a&gt;
-    3.2.6.2 其他事件概念
+&lt;h4 id=&#34;3262-其他事件概念&#34;&gt;3.2.6.2 其他事件概念
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;事件对象&lt;/li&gt;
 &lt;li&gt;阻止默认行为&lt;/li&gt;
 &lt;li&gt;事件冒泡及捕获&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;33-javascript对象介绍&#34;&gt;
-    &lt;a href=&#34;#33-javascript%e5%af%b9%e8%b1%a1%e4%bb%8b%e7%bb%8d&#34;&gt;#&lt;/a&gt;
-    3.3 Javascript对象介绍
-&lt;/h2&gt;&lt;h3 id=&#34;331-对象概述&#34;&gt;
-    &lt;a href=&#34;#331-%e5%af%b9%e8%b1%a1%e6%a6%82%e8%bf%b0&#34;&gt;#&lt;/a&gt;
-    3.3.1 对象概述
-&lt;/h3&gt;&lt;h3 id=&#34;332-对象基础概念&#34;&gt;
-    &lt;a href=&#34;#332-%e5%af%b9%e8%b1%a1%e5%9f%ba%e7%a1%80%e6%a6%82%e5%bf%b5&#34;&gt;#&lt;/a&gt;
-    3.3.2 对象基础概念
-&lt;/h3&gt;&lt;h3 id=&#34;333-适合新手的javascript&#34;&gt;
-    &lt;a href=&#34;#333-%e9%80%82%e5%90%88%e6%96%b0%e6%89%8b%e7%9a%84javascript&#34;&gt;#&lt;/a&gt;
-    3.3.3 适合新手的javascript
-&lt;/h3&gt;&lt;h3 id=&#34;334-对象原型&#34;&gt;
-    &lt;a href=&#34;#334-%e5%af%b9%e8%b1%a1%e5%8e%9f%e5%9e%8b&#34;&gt;#&lt;/a&gt;
-    3.3.4 对象原型
-&lt;/h3&gt;&lt;h3 id=&#34;335-继承&#34;&gt;
-    &lt;a href=&#34;#335-%e7%bb%a7%e6%89%bf&#34;&gt;#&lt;/a&gt;
-    3.3.5 继承
-&lt;/h3&gt;&lt;h3 id=&#34;336-json&#34;&gt;
-    &lt;a href=&#34;#336-json&#34;&gt;#&lt;/a&gt;
-    3.3.6 JSON
-&lt;/h3&gt;&lt;h3 id=&#34;337-对象构建实践&#34;&gt;
-    &lt;a href=&#34;#337-%e5%af%b9%e8%b1%a1%e6%9e%84%e5%bb%ba%e5%ae%9e%e8%b7%b5&#34;&gt;#&lt;/a&gt;
-    3.3.7 对象构建实践
-&lt;/h3&gt;&lt;h2 id=&#34;34-异步javascript&#34;&gt;
-    &lt;a href=&#34;#34-%e5%bc%82%e6%ad%a5javascript&#34;&gt;#&lt;/a&gt;
-    3.4 异步Javascript
-&lt;/h2&gt;&lt;h3 id=&#34;341-异步概述&#34;&gt;
-    &lt;a href=&#34;#341-%e5%bc%82%e6%ad%a5%e6%a6%82%e8%bf%b0&#34;&gt;#&lt;/a&gt;
-    3.4.1 异步概述
-&lt;/h3&gt;&lt;h3 id=&#34;342-异步编程概念&#34;&gt;
-    &lt;a href=&#34;#342-%e5%bc%82%e6%ad%a5%e7%bc%96%e7%a8%8b%e6%a6%82%e5%bf%b5&#34;&gt;#&lt;/a&gt;
-    3.4.2 异步编程概念
-&lt;/h3&gt;&lt;h3 id=&#34;343-异步javascript简介&#34;&gt;
-    &lt;a href=&#34;#343-%e5%bc%82%e6%ad%a5javascript%e7%ae%80%e4%bb%8b&#34;&gt;#&lt;/a&gt;
-    3.4.3 异步JavaScript简介
-&lt;/h3&gt;&lt;h3 id=&#34;344-超时和间隔&#34;&gt;
-    &lt;a href=&#34;#344-%e8%b6%85%e6%97%b6%e5%92%8c%e9%97%b4%e9%9a%94&#34;&gt;#&lt;/a&gt;
-    3.4.4 超时和间隔
-&lt;/h3&gt;&lt;h3 id=&#34;345-优雅的异步处理&#34;&gt;
-    &lt;a href=&#34;#345-%e4%bc%98%e9%9b%85%e7%9a%84%e5%bc%82%e6%ad%a5%e5%a4%84%e7%90%86&#34;&gt;#&lt;/a&gt;
-    3.4.5 优雅的异步处理
-&lt;/h3&gt;&lt;h3 id=&#34;346-async和await&#34;&gt;
-    &lt;a href=&#34;#346-async%e5%92%8cawait&#34;&gt;#&lt;/a&gt;
-    3.4.6 async和await
-&lt;/h3&gt;&lt;h3 id=&#34;347-选择正确的方法&#34;&gt;
-    &lt;a href=&#34;#347-%e9%80%89%e6%8b%a9%e6%ad%a3%e7%a1%ae%e7%9a%84%e6%96%b9%e6%b3%95&#34;&gt;#&lt;/a&gt;
-    3.4.7 选择正确的方法
-&lt;/h3&gt;&lt;h2 id=&#34;35-客户端网页api&#34;&gt;
-    &lt;a href=&#34;#35-%e5%ae%a2%e6%88%b7%e7%ab%af%e7%bd%91%e9%a1%b5api&#34;&gt;#&lt;/a&gt;
-    3.5 客户端网页API
-&lt;/h2&gt;&lt;h3 id=&#34;351-网页api介绍&#34;&gt;
-    &lt;a href=&#34;#351-%e7%bd%91%e9%a1%b5api%e4%bb%8b%e7%bb%8d&#34;&gt;#&lt;/a&gt;
-    3.5.1 网页API介绍
-&lt;/h3&gt;&lt;h3 id=&#34;352-操纵文档&#34;&gt;
-    &lt;a href=&#34;#352-%e6%93%8d%e7%ba%b5%e6%96%87%e6%a1%a3&#34;&gt;#&lt;/a&gt;
-    3.5.2 操纵文档
-&lt;/h3&gt;&lt;h3 id=&#34;353-从服务器获取数据&#34;&gt;
-    &lt;a href=&#34;#353-%e4%bb%8e%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%8e%b7%e5%8f%96%e6%95%b0%e6%8d%ae&#34;&gt;#&lt;/a&gt;
-    3.5.3 从服务器获取数据
-&lt;/h3&gt;&lt;h3 id=&#34;354-第三方api&#34;&gt;
-    &lt;a href=&#34;#354-%e7%ac%ac%e4%b8%89%e6%96%b9api&#34;&gt;#&lt;/a&gt;
-    3.5.4 第三方API
-&lt;/h3&gt;&lt;h3 id=&#34;355-画图&#34;&gt;
-    &lt;a href=&#34;#355-%e7%94%bb%e5%9b%be&#34;&gt;#&lt;/a&gt;
-    3.5.5 画图
-&lt;/h3&gt;&lt;h3 id=&#34;356-视频与音频&#34;&gt;
-    &lt;a href=&#34;#356-%e8%a7%86%e9%a2%91%e4%b8%8e%e9%9f%b3%e9%a2%91&#34;&gt;#&lt;/a&gt;
-    3.5.6 视频与音频
-&lt;/h3&gt;&lt;h3 id=&#34;357-客户端存储&#34;&gt;
-    &lt;a href=&#34;#357-%e5%ae%a2%e6%88%b7%e7%ab%af%e5%ad%98%e5%82%a8&#34;&gt;#&lt;/a&gt;
-    3.5.7 客户端存储
+&lt;h2 id=&#34;33-javascript对象介绍&#34;&gt;3.3 Javascript对象介绍
+&lt;/h2&gt;&lt;h3 id=&#34;331-对象概述&#34;&gt;3.3.1 对象概述
+&lt;/h3&gt;&lt;h3 id=&#34;332-对象基础概念&#34;&gt;3.3.2 对象基础概念
+&lt;/h3&gt;&lt;h3 id=&#34;333-适合新手的javascript&#34;&gt;3.3.3 适合新手的javascript
+&lt;/h3&gt;&lt;h3 id=&#34;334-对象原型&#34;&gt;3.3.4 对象原型
+&lt;/h3&gt;&lt;h3 id=&#34;335-继承&#34;&gt;3.3.5 继承
+&lt;/h3&gt;&lt;h3 id=&#34;336-json&#34;&gt;3.3.6 JSON
+&lt;/h3&gt;&lt;h3 id=&#34;337-对象构建实践&#34;&gt;3.3.7 对象构建实践
+&lt;/h3&gt;&lt;h2 id=&#34;34-异步javascript&#34;&gt;3.4 异步Javascript
+&lt;/h2&gt;&lt;h3 id=&#34;341-异步概述&#34;&gt;3.4.1 异步概述
+&lt;/h3&gt;&lt;h3 id=&#34;342-异步编程概念&#34;&gt;3.4.2 异步编程概念
+&lt;/h3&gt;&lt;h3 id=&#34;343-异步javascript简介&#34;&gt;3.4.3 异步JavaScript简介
+&lt;/h3&gt;&lt;h3 id=&#34;344-超时和间隔&#34;&gt;3.4.4 超时和间隔
+&lt;/h3&gt;&lt;h3 id=&#34;345-优雅的异步处理&#34;&gt;3.4.5 优雅的异步处理
+&lt;/h3&gt;&lt;h3 id=&#34;346-async和await&#34;&gt;3.4.6 async和await
+&lt;/h3&gt;&lt;h3 id=&#34;347-选择正确的方法&#34;&gt;3.4.7 选择正确的方法
+&lt;/h3&gt;&lt;h2 id=&#34;35-客户端网页api&#34;&gt;3.5 客户端网页API
+&lt;/h2&gt;&lt;h3 id=&#34;351-网页api介绍&#34;&gt;3.5.1 网页API介绍
+&lt;/h3&gt;&lt;h3 id=&#34;352-操纵文档&#34;&gt;3.5.2 操纵文档
+&lt;/h3&gt;&lt;h3 id=&#34;353-从服务器获取数据&#34;&gt;3.5.3 从服务器获取数据
+&lt;/h3&gt;&lt;h3 id=&#34;354-第三方api&#34;&gt;3.5.4 第三方API
+&lt;/h3&gt;&lt;h3 id=&#34;355-画图&#34;&gt;3.5.5 画图
+&lt;/h3&gt;&lt;h3 id=&#34;356-视频与音频&#34;&gt;3.5.6 视频与音频
+&lt;/h3&gt;&lt;h3 id=&#34;357-客户端存储&#34;&gt;3.5.7 客户端存储
 &lt;/h3&gt;</description>
         </item>
         <item>
@@ -4476,23 +4098,13 @@ Postgresql的官方网站是 &lt;a class=&#34;link&#34; href=&#34;https://postgr
         <pubDate>Wed, 02 Jun 2021 07:17:50 +0800</pubDate>
         
         <guid>https://tsinling.org/p/mdn-css/</guid>
-        <description>&lt;h1 id=&#34;2-css&#34;&gt;
-    &lt;a href=&#34;#2-css&#34;&gt;#&lt;/a&gt;
-    2 CSS
-&lt;/h1&gt;&lt;h2 id=&#34;21-css第一步&#34;&gt;
-    &lt;a href=&#34;#21-css%e7%ac%ac%e4%b8%80%e6%ad%a5&#34;&gt;#&lt;/a&gt;
-    2.1 CSS第一步
-&lt;/h2&gt;&lt;h3 id=&#34;211-css概述&#34;&gt;
-    &lt;a href=&#34;#211-css%e6%a6%82%e8%bf%b0&#34;&gt;#&lt;/a&gt;
-    2.1.1 CSS概述
-&lt;/h3&gt;&lt;h3 id=&#34;212-什么是css&#34;&gt;
-    &lt;a href=&#34;#212-%e4%bb%80%e4%b9%88%e6%98%afcss&#34;&gt;#&lt;/a&gt;
-    2.1.2 什么是CSS
+        <description>&lt;h1 id=&#34;2-css&#34;&gt;2 CSS
+&lt;/h1&gt;&lt;h2 id=&#34;21-css第一步&#34;&gt;2.1 CSS第一步
+&lt;/h2&gt;&lt;h3 id=&#34;211-css概述&#34;&gt;2.1.1 CSS概述
+&lt;/h3&gt;&lt;h3 id=&#34;212-什么是css&#34;&gt;2.1.2 什么是CSS
 &lt;/h3&gt;&lt;p&gt;CSS(层叠样式表)是用来指定文档如何展示给用户的一门语言，如网页的样式、布局、等等。&lt;br&gt;
 CSS可以用于给文档添加样式，比如改变标题和链接的颜色及大小。它也可以用于创建布局，比如将一个单列文本变成包含主要内容区域和存放相关信息的侧边栏区域的布局。他甚至还可以用来做一些特效，比如动画。&lt;/p&gt;
-&lt;h3 id=&#34;213-css入门&#34;&gt;
-    &lt;a href=&#34;#213-css%e5%85%a5%e9%97%a8&#34;&gt;#&lt;/a&gt;
-    2.1.3 CSS入门
+&lt;h3 id=&#34;213-css入门&#34;&gt;2.1.3 CSS入门
 &lt;/h3&gt;&lt;p&gt;index.html&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -4629,9 +4241,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;214-如何构建&#34;&gt;
-    &lt;a href=&#34;#214-%e5%a6%82%e4%bd%95%e6%9e%84%e5%bb%ba&#34;&gt;#&lt;/a&gt;
-    2.1.4 如何构建
+&lt;/div&gt;&lt;h3 id=&#34;214-如何构建&#34;&gt;2.1.4 如何构建
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/link&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&amp;lt;link&amp;gt;&lt;/a&gt;外部样式&lt;/li&gt;
@@ -4781,9 +4391,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;选择器属性和值&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;215-如何运行&#34;&gt;
-    &lt;a href=&#34;#215-%e5%a6%82%e4%bd%95%e8%bf%90%e8%a1%8c&#34;&gt;#&lt;/a&gt;
-    2.1.5 如何运行
+&lt;h3 id=&#34;215-如何运行&#34;&gt;2.1.5 如何运行
 &lt;/h3&gt;&lt;p&gt;当浏览器展示一个文件的时候，处理文件的基本流程。&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;ol&gt;
@@ -4795,15 +4403,9 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;li&gt;渲染树会依照该出现的结构进行布局。&lt;/li&gt;
 &lt;li&gt;网页展示在屏幕上(这一步被称为着色)。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;22-css构建基础&#34;&gt;
-    &lt;a href=&#34;#22-css%e6%9e%84%e5%bb%ba%e5%9f%ba%e7%a1%80&#34;&gt;#&lt;/a&gt;
-    2.2 CSS构建基础
-&lt;/h2&gt;&lt;h3 id=&#34;221-ccs构建基础概览&#34;&gt;
-    &lt;a href=&#34;#221-ccs%e6%9e%84%e5%bb%ba%e5%9f%ba%e7%a1%80%e6%a6%82%e8%a7%88&#34;&gt;#&lt;/a&gt;
-    2.2.1 CCS构建基础概览
-&lt;/h3&gt;&lt;h3 id=&#34;222-层叠与继承&#34;&gt;
-    &lt;a href=&#34;#222-%e5%b1%82%e5%8f%a0%e4%b8%8e%e7%bb%a7%e6%89%bf&#34;&gt;#&lt;/a&gt;
-    2.2.2 层叠与继承
+&lt;h2 id=&#34;22-css构建基础&#34;&gt;2.2 CSS构建基础
+&lt;/h2&gt;&lt;h3 id=&#34;221-ccs构建基础概览&#34;&gt;2.2.1 CCS构建基础概览
+&lt;/h3&gt;&lt;h3 id=&#34;222-层叠与继承&#34;&gt;2.2.2 层叠与继承
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;冲突规则&lt;/p&gt;
@@ -5234,9 +4836,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;223-css选择器&#34;&gt;
-    &lt;a href=&#34;#223-css%e9%80%89%e6%8b%a9%e5%99%a8&#34;&gt;#&lt;/a&gt;
-    2.2.3 CSS选择器
+&lt;/div&gt;&lt;h3 id=&#34;223-css选择器&#34;&gt;2.2.3 CSS选择器
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;类型、类和ID选择器&lt;/p&gt;
@@ -5855,9 +5455,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;224-盒模型&#34;&gt;
-    &lt;a href=&#34;#224-%e7%9b%92%e6%a8%a1%e5%9e%8b&#34;&gt;#&lt;/a&gt;
-    2.2.4 盒模型
+&lt;/div&gt;&lt;h3 id=&#34;224-盒模型&#34;&gt;2.2.4 盒模型
 &lt;/h3&gt;&lt;p&gt;网页上的区块(&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Glossary/Block/CSS&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;block&lt;/a&gt;)是指出现在新行上的&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Glossary/HTML&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;HTML&lt;/a&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Glossary/Element&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -6363,9 +5961,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;225-背景与边框&#34;&gt;
-    &lt;a href=&#34;#225-%e8%83%8c%e6%99%af%e4%b8%8e%e8%be%b9%e6%a1%86&#34;&gt;#&lt;/a&gt;
-    2.2.5 背景与边框
+&lt;/div&gt;&lt;h3 id=&#34;225-背景与边框&#34;&gt;2.2.5 背景与边框
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/background&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;background&lt;/a&gt;
@@ -6472,9 +6068,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;226-处理不同的文本方向&#34;&gt;
-    &lt;a href=&#34;#226-%e5%a4%84%e7%90%86%e4%b8%8d%e5%90%8c%e7%9a%84%e6%96%87%e6%9c%ac%e6%96%b9%e5%90%91&#34;&gt;#&lt;/a&gt;
-    2.2.6 处理不同的文本方向
+&lt;/div&gt;&lt;h3 id=&#34;226-处理不同的文本方向&#34;&gt;2.2.6 处理不同的文本方向
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;书写模式是指文本的排列方向是横向还是纵向。&lt;/p&gt;
@@ -6525,9 +6119,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;p&gt;逻辑内边距、边框和外边框属性&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;227-溢出的内容&#34;&gt;
-    &lt;a href=&#34;#227-%e6%ba%a2%e5%87%ba%e7%9a%84%e5%86%85%e5%ae%b9&#34;&gt;#&lt;/a&gt;
-    2.2.7 溢出的内容
+&lt;h3 id=&#34;227-溢出的内容&#34;&gt;2.2.7 溢出的内容
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/overflow&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;overflow&lt;/a&gt;
@@ -6538,39 +6130,21 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;228-值和单位&#34;&gt;
-    &lt;a href=&#34;#228-%e5%80%bc%e5%92%8c%e5%8d%95%e4%bd%8d&#34;&gt;#&lt;/a&gt;
-    2.2.8 值和单位
+&lt;h3 id=&#34;228-值和单位&#34;&gt;2.2.8 值和单位
 &lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;229-在css中调整大小&#34;&gt;
-    &lt;a href=&#34;#229-%e5%9c%a8css%e4%b8%ad%e8%b0%83%e6%95%b4%e5%a4%a7%e5%b0%8f&#34;&gt;#&lt;/a&gt;
-    2.2.9 在CSS中调整大小
+&lt;h3 id=&#34;229-在css中调整大小&#34;&gt;2.2.9 在CSS中调整大小
 &lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;2210-图片媒体和表单元素&#34;&gt;
-    &lt;a href=&#34;#2210-%e5%9b%be%e7%89%87%e5%aa%92%e4%bd%93%e5%92%8c%e8%a1%a8%e5%8d%95%e5%85%83%e7%b4%a0&#34;&gt;#&lt;/a&gt;
-    2.2.10 图片媒体和表单元素
+&lt;h3 id=&#34;2210-图片媒体和表单元素&#34;&gt;2.2.10 图片媒体和表单元素
 &lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Images_media_form_elements&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Images_media_form_elements&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;2211-样式化表格&#34;&gt;
-    &lt;a href=&#34;#2211-%e6%a0%b7%e5%bc%8f%e5%8c%96%e8%a1%a8%e6%a0%bc&#34;&gt;#&lt;/a&gt;
-    2.2.11 样式化表格
-&lt;/h3&gt;&lt;h3 id=&#34;2212-调试css&#34;&gt;
-    &lt;a href=&#34;#2212-%e8%b0%83%e8%af%95css&#34;&gt;#&lt;/a&gt;
-    2.2.12 调试CSS
-&lt;/h3&gt;&lt;h3 id=&#34;2213-组织css&#34;&gt;
-    &lt;a href=&#34;#2213-%e7%bb%84%e7%bb%87css&#34;&gt;#&lt;/a&gt;
-    2.2.13 组织CSS
-&lt;/h3&gt;&lt;h2 id=&#34;23-样式化文本&#34;&gt;
-    &lt;a href=&#34;#23-%e6%a0%b7%e5%bc%8f%e5%8c%96%e6%96%87%e6%9c%ac&#34;&gt;#&lt;/a&gt;
-    2.3 样式化文本
-&lt;/h2&gt;&lt;h3 id=&#34;231-样式化文字概述&#34;&gt;
-    &lt;a href=&#34;#231-%e6%a0%b7%e5%bc%8f%e5%8c%96%e6%96%87%e5%ad%97%e6%a6%82%e8%bf%b0&#34;&gt;#&lt;/a&gt;
-    2.3.1 样式化文字概述
-&lt;/h3&gt;&lt;h3 id=&#34;232-基础文字与样式&#34;&gt;
-    &lt;a href=&#34;#232-%e5%9f%ba%e7%a1%80%e6%96%87%e5%ad%97%e4%b8%8e%e6%a0%b7%e5%bc%8f&#34;&gt;#&lt;/a&gt;
-    2.3.2 基础文字与样式
+&lt;h3 id=&#34;2211-样式化表格&#34;&gt;2.2.11 样式化表格
+&lt;/h3&gt;&lt;h3 id=&#34;2212-调试css&#34;&gt;2.2.12 调试CSS
+&lt;/h3&gt;&lt;h3 id=&#34;2213-组织css&#34;&gt;2.2.13 组织CSS
+&lt;/h3&gt;&lt;h2 id=&#34;23-样式化文本&#34;&gt;2.3 样式化文本
+&lt;/h2&gt;&lt;h3 id=&#34;231-样式化文字概述&#34;&gt;2.3.1 样式化文字概述
+&lt;/h3&gt;&lt;h3 id=&#34;232-基础文字与样式&#34;&gt;2.3.2 基础文字与样式
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;用于样式文本的CSS属性分类：
 &lt;ul&gt;
@@ -6721,9 +6295,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;233-样式化列表&#34;&gt;
-    &lt;a href=&#34;#233-%e6%a0%b7%e5%bc%8f%e5%8c%96%e5%88%97%e8%a1%a8&#34;&gt;#&lt;/a&gt;
-    2.3.3 样式化列表
+&lt;h3 id=&#34;233-样式化列表&#34;&gt;2.3.3 样式化列表
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/line-height&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;line-height&lt;/a&gt;&lt;/li&gt;
@@ -6745,9 +6317,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ol#attr-value&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;value&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;234-样式化链接&#34;&gt;
-    &lt;a href=&#34;#234-%e6%a0%b7%e5%bc%8f%e5%8c%96%e9%93%be%e6%8e%a5&#34;&gt;#&lt;/a&gt;
-    2.3.4 样式化链接
+&lt;h3 id=&#34;234-样式化链接&#34;&gt;2.3.4 样式化链接
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;链接状态
 &lt;ul&gt;
@@ -6764,9 +6334,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;234-web字体&#34;&gt;
-    &lt;a href=&#34;#234-web%e5%ad%97%e4%bd%93&#34;&gt;#&lt;/a&gt;
-    2.3.4 web字体
+&lt;h3 id=&#34;234-web字体&#34;&gt;2.3.4 web字体
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/@font-face&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;@font-face&lt;/a&gt;
@@ -6782,15 +6350,9 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;24-css-layout&#34;&gt;
-    &lt;a href=&#34;#24-css-layout&#34;&gt;#&lt;/a&gt;
-    2.4 CSS layout
-&lt;/h2&gt;&lt;h3 id=&#34;241-layout概述&#34;&gt;
-    &lt;a href=&#34;#241-layout%e6%a6%82%e8%bf%b0&#34;&gt;#&lt;/a&gt;
-    2.4.1 layout概述
-&lt;/h3&gt;&lt;h3 id=&#34;242-layout简介&#34;&gt;
-    &lt;a href=&#34;#242-layout%e7%ae%80%e4%bb%8b&#34;&gt;#&lt;/a&gt;
-    2.4.2 layout简介
+&lt;h2 id=&#34;24-css-layout&#34;&gt;2.4 CSS layout
+&lt;/h2&gt;&lt;h3 id=&#34;241-layout概述&#34;&gt;2.4.1 layout概述
+&lt;/h3&gt;&lt;h3 id=&#34;242-layout简介&#34;&gt;2.4.2 layout简介
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Normal flow(&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/display&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;display&lt;/a&gt;)&lt;/li&gt;
@@ -6807,9 +6369,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/column-count&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;多列布局&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;243-normal-flow&#34;&gt;
-    &lt;a href=&#34;#243-normal-flow&#34;&gt;#&lt;/a&gt;
-    2.4.3 Normal flow
+&lt;h3 id=&#34;243-normal-flow&#34;&gt;2.4.3 Normal flow
 &lt;/h3&gt;&lt;p&gt;取得元素的内容来放在一个独立的元素盒子中，然后在其周边加上内边距、边框和外边距。就是之前练习过的盒子模型。&lt;br&gt;
 块级元素的内容宽度是其父元素的100%，其高度与其内容高度一致。&lt;br&gt;
 内联元素的高度和宽度与内容一致。内联元素的高宽无法设置，如果想要控制内联元素的尺寸，需要为元素设置display:block(或display:inline-block)。&lt;/p&gt;
@@ -6914,9 +6474,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;244-flexbox&#34;&gt;
-    &lt;a href=&#34;#244-flexbox&#34;&gt;#&lt;/a&gt;
-    2.4.4 Flexbox
+&lt;/div&gt;&lt;h3 id=&#34;244-flexbox&#34;&gt;2.4.4 Flexbox
 &lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://wiki.developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://wiki.developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -7192,45 +6750,29 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;44-grid&#34;&gt;
-    &lt;a href=&#34;#44-grid&#34;&gt;#&lt;/a&gt;
-    4.4 Grid
+&lt;/div&gt;&lt;h3 id=&#34;44-grid&#34;&gt;4.4 Grid
 &lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Grids&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Grids&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;网格是由一系列水平及垂直的线构成的一种布局模式。根据网格，我们能够将设计元素进行排列，帮助我们设计一系列具有固定位置以及宽度的元素的页面，使我们的网站页面更加统一。一个网格通常由列(column)与行(row)组成，列与列、行与行之间的间隙被称为沟槽(gutter)。&lt;/p&gt;
-&lt;h3 id=&#34;45-float&#34;&gt;
-    &lt;a href=&#34;#45-float&#34;&gt;#&lt;/a&gt;
-    4.5 Float
+&lt;h3 id=&#34;45-float&#34;&gt;4.5 Float
 &lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/float&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Web/CSS/float&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;46-position&#34;&gt;
-    &lt;a href=&#34;#46-position&#34;&gt;#&lt;/a&gt;
-    4.6 Position
+&lt;h3 id=&#34;46-position&#34;&gt;4.6 Position
 &lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/position&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Web/CSS/position&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;47-multi-column&#34;&gt;
-    &lt;a href=&#34;#47-multi-column&#34;&gt;#&lt;/a&gt;
-    4.7 Multi column
+&lt;h3 id=&#34;47-multi-column&#34;&gt;4.7 Multi column
 &lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Columns&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Columns&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;48-响应式布局&#34;&gt;
-    &lt;a href=&#34;#48-%e5%93%8d%e5%ba%94%e5%bc%8f%e5%b8%83%e5%b1%80&#34;&gt;#&lt;/a&gt;
-    4.8 响应式布局
+&lt;h3 id=&#34;48-响应式布局&#34;&gt;4.8 响应式布局
 &lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Responsive_Design&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Responsive_Design&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;49-媒体查询&#34;&gt;
-    &lt;a href=&#34;#49-%e5%aa%92%e4%bd%93%e6%9f%a5%e8%af%a2&#34;&gt;#&lt;/a&gt;
-    4.9 媒体查询
+&lt;h3 id=&#34;49-媒体查询&#34;&gt;4.9 媒体查询
 &lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Media_queries&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Media_queries&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;410-传统布局&#34;&gt;
-    &lt;a href=&#34;#410-%e4%bc%a0%e7%bb%9f%e5%b8%83%e5%b1%80&#34;&gt;#&lt;/a&gt;
-    4.10 传统布局
+&lt;h3 id=&#34;410-传统布局&#34;&gt;4.10 传统布局
 &lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;411-支持旧浏览器&#34;&gt;
-    &lt;a href=&#34;#411-%e6%94%af%e6%8c%81%e6%97%a7%e6%b5%8f%e8%a7%88%e5%99%a8&#34;&gt;#&lt;/a&gt;
-    4.11 支持旧浏览器
+&lt;h3 id=&#34;411-支持旧浏览器&#34;&gt;4.11 支持旧浏览器
 &lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Supporting_Older_Browsers&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Supporting_Older_Browsers&lt;/a&gt;&lt;/p&gt;</description>
         </item>
@@ -7240,15 +6782,9 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
         <pubDate>Sun, 30 May 2021 20:22:15 +0800</pubDate>
         
         <guid>https://tsinling.org/p/mdn-html/</guid>
-        <description>&lt;h1 id=&#34;1-html&#34;&gt;
-    &lt;a href=&#34;#1-html&#34;&gt;#&lt;/a&gt;
-    1 HTML
-&lt;/h1&gt;&lt;h2 id=&#34;11-介绍&#34;&gt;
-    &lt;a href=&#34;#11-%e4%bb%8b%e7%bb%8d&#34;&gt;#&lt;/a&gt;
-    1.1 介绍
-&lt;/h2&gt;&lt;h3 id=&#34;111-概述&#34;&gt;
-    &lt;a href=&#34;#111-%e6%a6%82%e8%bf%b0&#34;&gt;#&lt;/a&gt;
-    1.1.1 概述
+        <description>&lt;h1 id=&#34;1-html&#34;&gt;1 HTML
+&lt;/h1&gt;&lt;h2 id=&#34;11-介绍&#34;&gt;1.1 介绍
+&lt;/h2&gt;&lt;h3 id=&#34;111-概述&#34;&gt;1.1.1 概述
 &lt;/h3&gt;&lt;p&gt;1990 年，由于对 Web 未来发展的远见，Tim Berners-Lee 提出了 超文本 的概念，并在第二年在 SGML (en-US) 的基础上将其正式定义为一个标记语言。&lt;br&gt;
 1993 年，IETF (en-US) 正式开始制定 HTML 规范，并在经历了几个版本的草案后于 1995 年发布了 HTML 2.0 版本。&lt;br&gt;
 1994 年，Berners-Lee 为了 Web 发展而成立了 W3C (en-US)。&lt;br&gt;
@@ -7256,9 +6792,7 @@ CSS可以用于给文档添加样式，比如改变标题和链接的颜色及�
 1999 年，HTML 4.0 发布，并在 2000 年成为 ISO (en-US) 标准。&lt;br&gt;
 2008 年，两个组织（译注：即 W3C 和 WHATWG）发布了第一份草案。&lt;br&gt;
 2014 年，两个组织（译注：即 W3C 和 WHATWG）发布了 HTML5 标准的最终版。&lt;/p&gt;
-&lt;h3 id=&#34;112-入门&#34;&gt;
-    &lt;a href=&#34;#112-%e5%85%a5%e9%97%a8&#34;&gt;#&lt;/a&gt;
-    1.1.2 入门
+&lt;h3 id=&#34;112-入门&#34;&gt;1.1.2 入门
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;什么是HTML&lt;/li&gt;
 &lt;/ul&gt;
@@ -7339,9 +6873,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;113-元数据httpsdevelopermozillaorgzh-cndocswebhtmlelementmeta&#34;&gt;
-    &lt;a href=&#34;#113-%e5%85%83%e6%95%b0%e6%8d%aehttpsdevelopermozillaorgzh-cndocswebhtmlelementmeta&#34;&gt;#&lt;/a&gt;
-    1.1.3 &lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;113-元数据httpsdevelopermozillaorgzh-cndocswebhtmlelementmeta&#34;&gt;1.1.3 &lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;元数据&lt;/a&gt;
 &lt;/h3&gt;&lt;p&gt;HTML中的&amp;lt;head&amp;gt;元素，他的内容不会在浏览器中显示，他的作用是保存页面中的一些元数据。&lt;br&gt;
 包含在&amp;lt;head&amp;gt;中的一些元数据有&amp;lt;title&amp;gt;,&amp;lt;meta&amp;gt;,&amp;lt;link&amp;gt;等。&lt;/p&gt;
@@ -7418,9 +6950,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;114-html文字基础&#34;&gt;
-    &lt;a href=&#34;#114-html%e6%96%87%e5%ad%97%e5%9f%ba%e7%a1%80&#34;&gt;#&lt;/a&gt;
-    1.1.4 HTML文字基础
+&lt;h3 id=&#34;114-html文字基础&#34;&gt;1.1.4 HTML文字基础
 &lt;/h3&gt;&lt;p&gt;标题标签&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -7493,9 +7023,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ol&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;115-超链接&#34;&gt;
-    &lt;a href=&#34;#115-%e8%b6%85%e9%93%be%e6%8e%a5&#34;&gt;#&lt;/a&gt;
-    1.1.5 超链接
+&lt;/div&gt;&lt;h3 id=&#34;115-超链接&#34;&gt;1.1.5 超链接
 &lt;/h3&gt;&lt;p&gt;超链接是互联网提供的最令人兴奋的创新之一。&lt;br&gt;
 通过将文本转换为&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a&#34;  title=&#34;mdn docs html element \&amp;lt;a\&amp;gt;&#34;
      target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -7536,9 +7064,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;116-高级文字格式&#34;&gt;
-    &lt;a href=&#34;#116-%e9%ab%98%e7%ba%a7%e6%96%87%e5%ad%97%e6%a0%bc%e5%bc%8f&#34;&gt;#&lt;/a&gt;
-    1.1.6 高级文字格式
+&lt;/div&gt;&lt;h3 id=&#34;116-高级文字格式&#34;&gt;1.1.6 高级文字格式
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;描述列表(describtion list)&lt;/li&gt;
 &lt;/ul&gt;
@@ -7575,9 +7101,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;li&gt;展示计算机代码(code pre var kbd samp)&lt;/li&gt;
 &lt;li&gt;标记时间(time)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;117-文档与网站构架&#34;&gt;
-    &lt;a href=&#34;#117-%e6%96%87%e6%a1%a3%e4%b8%8e%e7%bd%91%e7%ab%99%e6%9e%84%e6%9e%b6&#34;&gt;#&lt;/a&gt;
-    1.1.7 文档与网站构架
+&lt;h3 id=&#34;117-文档与网站构架&#34;&gt;1.1.7 文档与网站构架
 &lt;/h3&gt;&lt;p&gt;网站由若干html文档组成，每一个html文档包含若干的布局元素。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;页眉 &amp;lt;header&amp;gt;&lt;/li&gt;
@@ -7592,19 +7116,11 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;118-html调试&#34;&gt;
-    &lt;a href=&#34;#118-html%e8%b0%83%e8%af%95&#34;&gt;#&lt;/a&gt;
-    1.1.8 HTML调试
+&lt;h3 id=&#34;118-html调试&#34;&gt;1.1.8 HTML调试
 &lt;/h3&gt;&lt;p&gt;firefox调试技术。&lt;/p&gt;
-&lt;h2 id=&#34;12-多媒体&#34;&gt;
-    &lt;a href=&#34;#12-%e5%a4%9a%e5%aa%92%e4%bd%93&#34;&gt;#&lt;/a&gt;
-    1.2 多媒体
-&lt;/h2&gt;&lt;h3 id=&#34;121-概述&#34;&gt;
-    &lt;a href=&#34;#121-%e6%a6%82%e8%bf%b0&#34;&gt;#&lt;/a&gt;
-    1.2.1 概述
-&lt;/h3&gt;&lt;h3 id=&#34;122-图片&#34;&gt;
-    &lt;a href=&#34;#122-%e5%9b%be%e7%89%87&#34;&gt;#&lt;/a&gt;
-    1.2.2 图片
+&lt;h2 id=&#34;12-多媒体&#34;&gt;1.2 多媒体
+&lt;/h2&gt;&lt;h3 id=&#34;121-概述&#34;&gt;1.2.1 概述
+&lt;/h3&gt;&lt;h3 id=&#34;122-图片&#34;&gt;1.2.2 图片
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&amp;lt;img&amp;gt;&lt;/a&gt;&lt;/li&gt;
@@ -7683,9 +7199,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;123-音频&#34;&gt;
-    &lt;a href=&#34;#123-%e9%9f%b3%e9%a2%91&#34;&gt;#&lt;/a&gt;
-    1.2.3 音频
+&lt;/div&gt;&lt;h3 id=&#34;123-音频&#34;&gt;1.2.3 音频
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/audio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&amp;lt;audio&amp;gt;&lt;/a&gt;&lt;/li&gt;
@@ -7706,9 +7220,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;audio&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;124-视频&#34;&gt;
-    &lt;a href=&#34;#124-%e8%a7%86%e9%a2%91&#34;&gt;#&lt;/a&gt;
-    1.2.4 视频
+&lt;/div&gt;&lt;h3 id=&#34;124-视频&#34;&gt;1.2.4 视频
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&amp;lt;video&amp;gt;&lt;/a&gt;&lt;/li&gt;
@@ -7735,9 +7247,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;video&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;125-嵌入&#34;&gt;
-    &lt;a href=&#34;#125-%e5%b5%8c%e5%85%a5&#34;&gt;#&lt;/a&gt;
-    1.2.5 嵌入
+&lt;/div&gt;&lt;h3 id=&#34;125-嵌入&#34;&gt;1.2.5 嵌入
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&amp;lt;iframe&amp;gt;&lt;/a&gt;&lt;/li&gt;
@@ -7802,9 +7312,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;object&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;126-矢量图&#34;&gt;
-    &lt;a href=&#34;#126-%e7%9f%a2%e9%87%8f%e5%9b%be&#34;&gt;#&lt;/a&gt;
-    1.2.6 矢量图
+&lt;/div&gt;&lt;h3 id=&#34;126-矢量图&#34;&gt;1.2.6 矢量图
 &lt;/h3&gt;&lt;p&gt;在网上，你会和两种类型的图片打交道-位图和矢量图。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;位图使用像素网络来定义&lt;/li&gt;
@@ -7862,9 +7370,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;svg&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;127-图片自适应&#34;&gt;
-    &lt;a href=&#34;#127-%e5%9b%be%e7%89%87%e8%87%aa%e9%80%82%e5%ba%94&#34;&gt;#&lt;/a&gt;
-    1.2.7 图片自适应
+&lt;/div&gt;&lt;h3 id=&#34;127-图片自适应&#34;&gt;1.2.7 图片自适应
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -7891,15 +7397,9 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;li&gt;查看给与该媒体查询的槽大小&lt;/li&gt;
 &lt;li&gt;加载srcset列表中引用的最接近所选槽大小的图像&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;13-表格&#34;&gt;
-    &lt;a href=&#34;#13-%e8%a1%a8%e6%a0%bc&#34;&gt;#&lt;/a&gt;
-    1.3 表格
-&lt;/h2&gt;&lt;h3 id=&#34;131-表格概述&#34;&gt;
-    &lt;a href=&#34;#131-%e8%a1%a8%e6%a0%bc%e6%a6%82%e8%bf%b0&#34;&gt;#&lt;/a&gt;
-    1.3.1 表格概述
-&lt;/h3&gt;&lt;h3 id=&#34;132-基础表格&#34;&gt;
-    &lt;a href=&#34;#132-%e5%9f%ba%e7%a1%80%e8%a1%a8%e6%a0%bc&#34;&gt;#&lt;/a&gt;
-    1.3.2 基础表格
+&lt;h2 id=&#34;13-表格&#34;&gt;1.3 表格
+&lt;/h2&gt;&lt;h3 id=&#34;131-表格概述&#34;&gt;1.3.1 表格概述
+&lt;/h3&gt;&lt;h3 id=&#34;132-基础表格&#34;&gt;1.3.2 基础表格
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -8050,9 +7550,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;table&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;133-高级表格&#34;&gt;
-    &lt;a href=&#34;#133-%e9%ab%98%e7%ba%a7%e8%a1%a8%e6%a0%bc&#34;&gt;#&lt;/a&gt;
-    1.3.3 高级表格
+&lt;/div&gt;&lt;h3 id=&#34;133-高级表格&#34;&gt;1.3.3 高级表格
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/caption&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&amp;lt;caption&amp;gt;&lt;/a&gt;&lt;/li&gt;
@@ -8282,17 +7780,13 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
         <pubDate>Sat, 31 Oct 2020 09:49:45 +0800</pubDate>
         
         <guid>https://tsinling.org/p/freeswitch-stunserver/</guid>
-        <description>&lt;h1 id=&#34;stun-unreachable&#34;&gt;
-    &lt;a href=&#34;#stun-unreachable&#34;&gt;#&lt;/a&gt;
-    stun unreachable
+        <description>&lt;h1 id=&#34;stun-unreachable&#34;&gt;stun unreachable
 &lt;/h1&gt;&lt;p&gt;最近的freesiwtch stun server stun.freeswitch.org因不明原因不可达。
 默认的stun.freeswitch.org是指向第三方的stun server的。stun.freeswitch.org指向stun.signalwire.com，很有可能freeswitch team自举了stunserver，丢弃了外部的stun请求。
 这样造成了采取默认配置的freeswitch启动的时候失败(mod_sofia获取不到external ip)。&lt;/p&gt;
 &lt;p&gt;可以调整配置中默认的stun地址解决，也可以配置sofia的external ip地址来解决。&lt;/p&gt;
 &lt;p&gt;以上源自FS-11604: [Configuration] Improve Vanilla config所造成。&lt;/p&gt;
-&lt;h2 id=&#34;公共的stun&#34;&gt;
-    &lt;a href=&#34;#%e5%85%ac%e5%85%b1%e7%9a%84stun&#34;&gt;#&lt;/a&gt;
-    公共的stun
+&lt;h2 id=&#34;公共的stun&#34;&gt;公共的stun
 &lt;/h2&gt;&lt;p&gt;stun.xten.com&lt;/p&gt;
 &lt;p&gt;stun.sipgate.net&lt;/p&gt;
 &lt;p&gt;&amp;hellip;&lt;/p&gt;
@@ -8317,9 +7811,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;freeswitch@debian10&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;修改varsxml&#34;&gt;
-    &lt;a href=&#34;#%e4%bf%ae%e6%94%b9varsxml&#34;&gt;#&lt;/a&gt;
-    修改vars.xml
+&lt;/div&gt;&lt;h2 id=&#34;修改varsxml&#34;&gt;修改vars.xml
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -8332,9 +7824,7 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;lt;X-PRE-PROCESS&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;cmd=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;stun-set&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;data=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;external_rtp_ip=auto-nat&amp;#34;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;/&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;maillist&#34;&gt;
-    &lt;a href=&#34;#maillist&#34;&gt;#&lt;/a&gt;
-    maillist
+&lt;/div&gt;&lt;h2 id=&#34;maillist&#34;&gt;maillist
 &lt;/h2&gt;&lt;p&gt;在邮件列表里的讨论后，stun.freeswitch.org在不被滥用的前提下暂时恢复&amp;hellip;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -8364,18 +7854,12 @@ HTML由一系列的元素（elements）组成，每一个元素都用一对开�
         <pubDate>Tue, 22 Sep 2020 13:27:37 +0800</pubDate>
         
         <guid>https://tsinling.org/p/install-hugo-with-extended/</guid>
-        <description>&lt;h1 id=&#34;hugo&#34;&gt;
-    &lt;a href=&#34;#hugo&#34;&gt;#&lt;/a&gt;
-    hugo
+        <description>&lt;h1 id=&#34;hugo&#34;&gt;hugo
 &lt;/h1&gt;&lt;p&gt;hugo 在windows X64平台支持Sass/SCCS。&lt;/p&gt;
-&lt;h2 id=&#34;快捷安装&#34;&gt;
-    &lt;a href=&#34;#%e5%bf%ab%e6%8d%b7%e5%ae%89%e8%a3%85&#34;&gt;#&lt;/a&gt;
-    快捷安装
+&lt;h2 id=&#34;快捷安装&#34;&gt;快捷安装
 &lt;/h2&gt;&lt;p&gt;最快捷的方法就是去tag下载二进制文件了，&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;hugo with extended&lt;/a&gt;。在下载页面寻找hugo_extended_version_os_arch下载。&lt;/p&gt;
-&lt;h2 id=&#34;编译安装&#34;&gt;
-    &lt;a href=&#34;#%e7%bc%96%e8%af%91%e5%ae%89%e8%a3%85&#34;&gt;#&lt;/a&gt;
-    编译安装
+&lt;h2 id=&#34;编译安装&#34;&gt;编译安装
 &lt;/h2&gt;&lt;p&gt;可以参考hugo的&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/blob/master/README.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Readme.md&lt;/a&gt;。&lt;br&gt;
 hugo extended 在编译之前需要CGO支持，在命令行运行&lt;/p&gt;
@@ -8470,9 +7954,7 @@ hugo extended 在编译之前需要CGO支持，在命令行运行&lt;/p&gt;
 &lt;/div&gt;&lt;p&gt;编译的时候报告&lt;em&gt;Error: export ordinal too large: 78124&lt;/em&gt;，参考 &lt;a class=&#34;link&#34; href=&#34;https://github.com/golang/go/issues/40795&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/golang/go/issues/40795&lt;/a&gt; 需要加上-buildmode=exe，具体原因需要等待golang官方调查&amp;hellip;&lt;/p&gt;
 &lt;p&gt;该问题已经在go1.16版本修复.&lt;/p&gt;
-&lt;h2 id=&#34;ldflags&#34;&gt;
-    &lt;a href=&#34;#ldflags&#34;&gt;#&lt;/a&gt;
-    ldflags
+&lt;h2 id=&#34;ldflags&#34;&gt;ldflags
 &lt;/h2&gt;&lt;p&gt;默认编译的文件比较大，可以使用-ldflags &amp;ldquo;-w -s&amp;quot;去掉调试信息。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -8499,29 +7981,21 @@ hugo extended 在编译之前需要CGO支持，在命令行运行&lt;/p&gt;
         <pubDate>Sun, 20 Sep 2020 16:10:22 +0800</pubDate>
         
         <guid>https://tsinling.org/p/iphone-restore/</guid>
-        <description>&lt;h1 id=&#34;ios14&#34;&gt;
-    &lt;a href=&#34;#ios14&#34;&gt;#&lt;/a&gt;
-    IOS14
+        <description>&lt;h1 id=&#34;ios14&#34;&gt;IOS14
 &lt;/h1&gt;&lt;p&gt;自从IOS 14发布后，很多人都去体验&lt;a class=&#34;link&#34; href=&#34;https://www.apple.com.cn/ios/ios-14/features/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;IOS 14 新特性&lt;/a&gt;。&lt;/p&gt;
-&lt;h2 id=&#34;ota升级&#34;&gt;
-    &lt;a href=&#34;#ota%e5%8d%87%e7%ba%a7&#34;&gt;#&lt;/a&gt;
-    OTA升级
+&lt;h2 id=&#34;ota升级&#34;&gt;OTA升级
 &lt;/h2&gt;&lt;p&gt;根据官方建议&lt;a class=&#34;link&#34; href=&#34;https://support.apple.com/zh-cn/ios/update&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://support.apple.com/zh-cn/ios/update&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Iphone-&amp;gt;设置-&amp;gt;通用-&amp;gt;软件更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;我也尝试升级到了IOS14，总体效果还是值得赞赏的。听了一下午网易云音乐，后盖烫的厉害，尝试DFU恢复一下看看。&lt;/p&gt;
-&lt;h2 id=&#34;itunes&#34;&gt;
-    &lt;a href=&#34;#itunes&#34;&gt;#&lt;/a&gt;
-    iTunes
+&lt;h2 id=&#34;itunes&#34;&gt;iTunes
 &lt;/h2&gt;&lt;p&gt;手机自身无法更新或恢复的时候，借助&lt;a class=&#34;link&#34; href=&#34;https://www.apple.com/itunes/download/win64&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Itunes&lt;/a&gt;来恢复，参考&lt;a class=&#34;link&#34; href=&#34;https://support.apple.com/zh-cn/HT201263&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;用Itunes来恢复&lt;/a&gt;。&lt;/p&gt;
-&lt;h3 id=&#34;recovery模式&#34;&gt;
-    &lt;a href=&#34;#recovery%e6%a8%a1%e5%bc%8f&#34;&gt;#&lt;/a&gt;
-    recovery模式
+&lt;h3 id=&#34;recovery模式&#34;&gt;recovery模式
 &lt;/h3&gt;&lt;p&gt;recovery模式是apple官方给出的刷机方式，进入恢复模式后屏幕显示笔记本和一根线缆。&lt;br&gt;
 操作步骤如下：&lt;/p&gt;
 &lt;ul&gt;
@@ -8531,9 +8005,7 @@ hugo extended 在编译之前需要CGO支持，在命令行运行&lt;/p&gt;
 &lt;li&gt;继续按住开机按钮，直到设备进入恢复模式。(适用iphone8以上版)&lt;/li&gt;
 &lt;li&gt;Itunes弹出“iphone出现问题需要更新或恢复”，点恢复下载ios14.ispw恢复Iphone。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;dfu模式&#34;&gt;
-    &lt;a href=&#34;#dfu%e6%a8%a1%e5%bc%8f&#34;&gt;#&lt;/a&gt;
-    dfu模式
+&lt;h3 id=&#34;dfu模式&#34;&gt;dfu模式
 &lt;/h3&gt;&lt;p&gt;Device firmware Upgrade mode，进入dft模式后屏幕显示黑色。&lt;br&gt;
 操作步骤如下：&lt;/p&gt;
 &lt;ul&gt;

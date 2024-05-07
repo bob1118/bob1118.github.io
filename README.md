@@ -38,7 +38,7 @@ hugo server -D
 ## build
 
 ```shell
-hugo mod get -u -v github.com/bob1118/hugo-theme-stack/v3
+hugo mod get -u -v github.com/bob1118/hugo-theme-stack
 hugo mod tidy
 hugo -D -d docs -b https://tsinling.org
 ```

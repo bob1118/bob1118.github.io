@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://tsinling.org/p/vmware-network/'>
 
-<link rel="stylesheet" href="/scss/style.min.8e60baf4cd3fc55968717a6e39762f4d28ed7ef6007566b6c7970ad0fe907198.css"><meta property='og:title' content="Vmware Network">
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="Vmware Network">
 <meta property='og:description' content="virtual machine networking missing">
 <meta property='og:url' content='https://tsinling.org/p/vmware-network/'>
 <meta property='og:site_name' content='bob&#39;s rabbit hole'>
@@ -363,28 +363,16 @@
     <section class="article-content">
     
     
-    <h1 id="vmware-network">
-    <a href="#vmware-network">#</a>
-    Vmware Network
-</h1><h2 id="环境">
-    <a href="#%e7%8e%af%e5%a2%83">#</a>
-    环境
+    <h1 id="vmware-network">Vmware Network
+</h1><h2 id="环境">环境
 </h2><p>本地机器两个千兆网卡，在本地机器上安装win10，VMwareWorkstation16，还有一些日常软件。<br>
 在VMware上创建一台虚拟机，网络桥接到本地，虚拟机DHCP获取IP地址上网。发现虚拟机的网络经常出现获取不到IP地址。</p>
-<h2 id="可能的原因">
-    <a href="#%e5%8f%af%e8%83%bd%e7%9a%84%e5%8e%9f%e5%9b%a0">#</a>
-    可能的原因
-</h2><h3 id="dhcp-server">
-    <a href="#dhcp-server">#</a>
-    DHCP Server
+<h2 id="可能的原因">可能的原因
+</h2><h3 id="dhcp-server">DHCP Server
 </h3><p>dhcp server 使用RouterOS v6.48.3 dhcp package，dhcp client只有虚拟机上时好时坏，其他的dhcp client正常使用。在winbox里查看dhcp client的状态，在等待client发包。</p>
-<h3 id="dhcp-client">
-    <a href="#dhcp-client">#</a>
-    DHCP Client
+<h3 id="dhcp-client">DHCP Client
 </h3><p>dhcp client 使用命令ifdown,ifup皆不能从dhcp server收到任何回应。</p>
-<h2 id="罪魁祸首">
-    <a href="#%e7%bd%aa%e9%ad%81%e7%a5%b8%e9%a6%96">#</a>
-    罪魁祸首
+<h2 id="罪魁祸首">罪魁祸首
 </h2><p>Vmware-&gt;编辑-&gt;虚拟网络编辑器-&gt;更改设置，把默认的已桥接至(自动)改成(目标网卡)，应用保存即可。</p>
 </section>
 
@@ -526,7 +514,7 @@
         
             <a href ="http://beian.miit.gov.cn/" target="_blank">陕ICP备14012495号-1</a><img src="https://www.12389.gov.cn/images/5692312.png"><a href ="http://www.beian.gov.cn/portal/registerSystemInfo" target="_blank">陕公安备61012402000103号</a> <br/>
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.25.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 

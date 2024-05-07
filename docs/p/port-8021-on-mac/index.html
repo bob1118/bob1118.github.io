@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://tsinling.org/p/port-8021-on-mac/'>
 
-<link rel="stylesheet" href="/scss/style.min.8e60baf4cd3fc55968717a6e39762f4d28ed7ef6007566b6c7970ad0fe907198.css"><meta property='og:title' content="Port 8021 on mac">
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="Port 8021 on mac">
 <meta property='og:description' content="port 8021 already used on macbook 2021 pro.">
 <meta property='og:url' content='https://tsinling.org/p/port-8021-on-mac/'>
 <meta property='og:site_name' content='bob&#39;s rabbit hole'>
@@ -358,15 +358,11 @@
     <section class="article-content">
     
     
-    <h1 id="mac-port-8021">
-    <a href="#mac-port-8021">#</a>
-    Mac port 8021
+    <h1 id="mac-port-8021">Mac port 8021
 </h1><p>在mac上调试程序的时，偶尔碰到tcp端口8021被系统占用，调试失败。<br>
 用lsof -Pi:8021看看PID，kill就可以了。碰到不能kill的需要进一步调查，然后得到如下命令，下次碰到被占用时试试。<br>
 <code>sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.ftp-proxy.plist</code></p>
-<h2 id="谁占用了8021">
-    <a href="#%e8%b0%81%e5%8d%a0%e7%94%a8%e4%ba%868021">#</a>
-    谁占用了8021
+<h2 id="谁占用了8021">谁占用了8021
 </h2><p>查看了mac上的<a class="link" href="https://support.apple.com/zh-cn/HT202944"  title="Apple 软件产品使用的 TCP 和 UDP 端口"
      target="_blank" rel="noopener"
     ><em>端口占用表</em></a>，表格里面没有8021是那个应用占用。<br>
@@ -390,9 +386,7 @@
      target="_blank" rel="noopener"
     ><em>解决方案</em></a>.<br>
 /System/Library/LaunchDaemons/com.apple.ftp-proxy.plist文件中定义了8021端口。</p>
-<h2 id="如何释放8021">
-    <a href="#%e5%a6%82%e4%bd%95%e9%87%8a%e6%94%be8021">#</a>
-    如何释放8021
+<h2 id="如何释放8021">如何释放8021
 </h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -401,9 +395,7 @@
 <pre tabindex="0" class="chroma"><code class="language-zsh" data-lang="zsh"><span class="line"><span class="cl">sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.ftp-proxy.plist
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="附录">
-    <a href="#%e9%99%84%e5%bd%95">#</a>
-    附录
+</div><h2 id="附录">附录
 </h2><p><em><a class="link" href="https://support.apple.com/zh-cn/HT202944"  target="_blank" rel="noopener"
     >https://support.apple.com/zh-cn/HT202944</a></em><br>
 <em><a class="link" href="https://apple.stackexchange.com/questions/404346/what-is-intu-ec-client-listening-on-tcp-port-8021/404356#404356"  target="_blank" rel="noopener"
@@ -546,7 +538,7 @@
         
             <a href ="http://beian.miit.gov.cn/" target="_blank">陕ICP备14012495号-1</a><img src="https://www.12389.gov.cn/images/5692312.png"><a href ="http://www.beian.gov.cn/portal/registerSystemInfo" target="_blank">陕公安备61012402000103号</a> <br/>
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.25.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
 
