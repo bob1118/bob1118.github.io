@@ -1,5 +1,6 @@
 ---
 title: "Mac Port 8021"
+description: port 8021 already used on macbook 2021 pro.
 date: 2021-12-13T14:51:09+08:00
 lastmod: 2021-12-13T14:51:09+08:00
 draft: false
@@ -7,26 +8,12 @@ keywords:
     - mac tcp port 8021
     - mac udp port 8021
     - mac port 8021
-description: "mac port already used."
 tags: 
     - mac
 categories: 
     - pub
 author: "bob"
-
-title: Port 8021 on mac
-description: port 8021 already used on macbook 2021 pro.
-date: 2021-12-13T14:51:09+08:00
 image: 
-keywords: 
-    - macbook
-    - port 8021
-tags: 
-    - mac
-categories: 
-    - pub
-author: bob
-draft: false
 hidden: false
 comments: true
 ---
